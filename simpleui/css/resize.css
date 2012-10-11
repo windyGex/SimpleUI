@@ -1,0 +1,54 @@
+.simple-resize{
+	position:absolute;
+	background:url(../images/transparent.gif) repeat;
+}
+.simple-resize-n,.simple-resize-s{
+	width:100%;
+	height:5px;
+	left:0;
+	top:-2px;
+	cursor:n-resize;
+}
+.simple-resize-ne,.simple-resize-sw,.simple-resize-se,.simple-resize-nw{
+	width:5px;
+	height:5px;
+}
+.simple-resize-ne{
+	top:-1px;
+	right:-1px;
+	cursor:ne-resize;
+}
+.simple-resize-e{
+	height:100%;
+	width:5px;
+	top:0;
+	right:-2px;
+	cursor:e-resize;
+}
+.simple-resize-se{
+	right:-1px;
+	bottom:-1px;
+	cursor:se-resize;
+}
+.simple-resize-s{
+	top:auto;
+	bottom:-2px;
+	cursor:s-resize;
+}
+.simple-resize-sw{
+	left:-1px;
+	bottom:-1px;
+	cursor:sw-resize;
+}
+.simple-resize-w{
+	height:100%;
+	width:5px;
+	left:-2px;
+	top:0;
+	cursor:w-resize;
+}
+.simple-resize-nw{
+	top:-1px;
+	left:-1px;
+	cursor:nw-resize;
+}

@@ -1,0 +1,80 @@
+.simple-btn,.simple-btn-content,.simple-btn-arrow{
+	border: 1px solid #bbb;
+    display:inline-block;
+	border-radius: 2px;
+	padding: 3px 10px;
+	color: #444;
+	background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAcCAMAAACgTerKAAAAA3NCSVQICAjb4U/gAAAASFBMVEX+/v79/f38/Pz7+/v6+vr4+Pj39/f29vb19fX09PTz8/Px8fHw8PDv7+/u7u7t7e3s7Ozr6+vp6eno6Ojn5+fm5ubl5eX///8jGyilAAAAGHRSTlP//////////////////////////////wDNEy7qAAAACXBIWXMAAArwAAAK8AFCrDSYAAAAFnRFWHRDcmVhdGlvbiBUaW1lADA0LzEyLzEyiu5yJQAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNAay06AAAABNSURBVEiJ3c/XFYAgAMDAWFBUitj2H9Ut8sEtkBfoxiBgFDAJnMgsIAhYBKwCooBNwC7gEJAEZAFFQBVwCmgCLgG3wIk8Al4Bn6Cfkx/Rg3w59D7HjwAAAABJRU5ErkJggg==");
+    background-repeat:x;
+	box-shadow:0px 1px 1px rgba(0,0,0,0.1);
+    cursor:pointer;
+    /*hack ie 8-*/
+    *display: inline;
+    zoom:1;
+    -moz-transition:all 0.1s ease-in 0.1s;
+	-webkit-transition:all 0.1s ease-in 0.1s;
+	transition:all 0.1s ease-in 0.1s;
+    line-height:1.5;
+}
+.simple-btn-hover,.simple-btn-hover:hover{
+	border-color: 1px solid #777;
+    text-decoration:none;
+    
+}
+.simple-btn:active,.simple-btn-focus,.simple-btn-content:active,.simple-btn-arrow:active{
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2) inset;
+    border-color:#36c;
+}
+.simple-btn-disabled,.simple-btn-disabled:hover{
+	color:#999;
+	cursor:default;
+	border-color:#ccc;
+	background:#fff;
+	box-shadow:none;
+}
+.simple-btn-arrow,.simple-btn-content{
+    float:left;
+    height:18px;
+}
+.simple-btn-content{
+    border-radius:2px 0 0 2px;
+}
+.simple-btn-arrow{
+    border-left:0;
+    border-radius:0px 2px 2px 0px;
+    padding-left:3px;
+    padding-right:3px;
+}
+.simple-btn-arrow i{
+    background:url(../images/menu-dropdown.png) no-repeat;
+    display:block;
+    width:8px;
+    height:4px;
+    position:relative;
+    top:50%;
+    margin-top:-2px;
+}
+.simple-dropdown-btn{
+	padding-right:5px;
+}
+.simple-dropdown-btn span{
+	float:left;
+	border:0;
+	background-image:none;
+	box-shadow:none;
+	padding:0;
+}
+.simple-dropdown-btn .simple-btn-arrow{
+	margin-left:5px;
+}
+.simple-btn-wrap .simple-btn{
+    margin-right:10px;
+}
+.simple-combo-btn{
+	height:26px;
+	display: inline-block;
+	 /*hack ie 8-*/
+    *display: inline;
+    zoom:1;
+}
+

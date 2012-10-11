@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>simple.js</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    
+	<link href="http://simpleui.org/wp-content/themes/simpleui/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+<div class="navbar navbar-fixed-top">
+     
+        <div class="container navbar-inner">
+            <h1 class="nav-title">
+                <a href="http://simpleui.org/">Simple <span class="nav-title-em">UI</span></a>
+				<p>Simple UI library for the web & make web build quickly</p>
+            </h1>
+           
+           <!-- <div class="navbar-col" title="切换显示咧">
+                <a class="navbar-col2-demo ib" title="两栏" rel="two" href="javascript:;">
+                    
+                </a>
+                <a class="navbar-col3-demo ib" title="三栏" rel="three" href="javascript:;">
+                    
+                </a>
+            </div> -->
+            <div class="navbar-search">
+                <form action="http://simpleui.org/" method="get" id="searchForm">
+                        <input type="text" placeholder="请输入搜索的关键字" name="s"/><button type="submit"></button>
+                </form>
+                      
+            </div>
+        </div>
+      
+</div>
+<div class="nav-menu-container">
+ <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+</ul> </div> 
+	<div class="container">
+    <div id="bd" class="yui3-g">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Simple.Attribute.html">Simple.Attribute</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.AutoComplete.html">Simple.AutoComplete</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Button.html">Simple.Button</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ButtonGroup.html">Simple.ButtonGroup</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ComboButton.html">Simple.ComboButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ContextMenu.html">Simple.ContextMenu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePicker.html">Simple.DatePicker</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePickerBase.html">Simple.DatePickerBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Dialog.html">Simple.Dialog</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Drag.html">Simple.Drag</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DropDownButton.html">Simple.DropDownButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.EventTarget.html">Simple.EventTarget</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Menu.html">Simple.Menu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.MenuItem.html">Simple.MenuItem</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Modal.html">Simple.Modal</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Pagination.html">Simple.Pagination</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Resize.html">Simple.Resize</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Selectable.html">Simple.Selectable</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Tip.html">Simple.Tip</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/attribute.html">attribute</a></li>
+            
+                <li><a href="..&#x2F;modules/declare.html">declare</a></li>
+            
+                <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button.html">ui.button</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button-group.html">ui.button-group</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.date-picker.html">ui.date-picker</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.dialog.html">ui.dialog</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.drag.html">ui.drag</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.menu.html">ui.menu</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.modal.html">ui.modal</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.pagination.html">ui.pagination</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.resize.html">ui.resize</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.selectable.html">ui.selectable</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.tool-tip.html">ui.tool-tip</a></li>
+            
+                <li><a href="..&#x2F;modules/widget.html">widget</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: simple.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+&#x2F;*!
+ * SimpleUI javascript UI library
+ * Copyright 2012, simpleui.org
+ * Released under the MIT, BSD, and GPL Licenses.
+ * More information: http:&#x2F;&#x2F;simpleui.org&#x2F;
+ * version : 2.0
+ *&#x2F;
+define([&#x27;jquery&#x27;, &#x27;css!css&#x2F;simple-ui&#x27;], function ($) {
+	if (typeof Simple == &quot;undefined&quot;) {
+		window.Simple = {};
+	}
+	var S = Simple;
+	S.$ = $;
+	S.isPlainObject = $.isPlainObject;
+	S.isArray = $.isArray;
+	S.uuid = 0;
+	
+	&#x2F;**
+	 * 拷贝一个对象到另外一个对象上，如果只有一个参数，那个这个对象的属性或者方法将被添加到Simple上。
+	 * @param {Object} dest 源对象
+	 * @param {Object} prop 拷贝的对象
+	 * @return {Object} dest 修改后的dest对象
+	 *&#x2F;
+	S.mixin = function (dest, prop) {
+		if (!prop) {
+			prop = dest
+				dest = S;
+		}
+		for (var key in prop) {
+			
+			dest[key] = prop[key];
+			
+		}
+		return dest;
+	};
+	&#x2F;**
+	 * 拷贝一个对象到另外一个对象上，不会覆盖冲突属性
+	 * @param {Object} dest 源对象
+	 * @param {Object} prop 拷贝的对象
+	 * @return {Object} dest 修改后的dest对象
+	 *&#x2F;
+	S.mixinIf = function (dest, prop) {
+		if (!prop) {
+			prop = dest
+				dest = S;
+		}
+		for (var key in prop) {
+			if (!dest[key]) {
+				dest[key] = prop[key];
+			}
+		}
+		return dest;
+	};
+	S.mixin({
+		&#x2F;**
+		 * 设置一个类为另外一个类的子类，可以使用instanceof判断之间的关系
+		 * @param {object} subCls 用于继承的子类
+		 * @param {object} superCls 被继承的父类
+		 * @return {object} subCls 返回子类
+		 *&#x2F;
+		extend : function (subCls, superCls) {
+			var F = function () {},
+			subClsProp;
+			F.prototype = superCls.prototype;
+			subClsProp = subCls.prototype = new F();
+			subCls.prototype.constructor = subCls;
+			subCls.superclass = superCls.prototype;
+			return subCls;
+		},
+		
+		&#x2F;**
+		 * 遍历一个数组或者对象，并执行回调函数
+		 * @param {Object | Array} object 被遍历的对象
+		 * @param {Function} callback 执行的回调函数
+		 * @param {Object} conext 回调函数内部的作用域
+		 * @return {Object} object 被遍历的对象
+		 *&#x2F;
+		each : function (object, callback, context) {
+			var name,
+			i = 0,
+			length = object.length;
+			if (length === undefined) {
+				for (name in object) {
+					if (callback.call(context || object[name], object[name], name) === false) {
+						break;
+					}
+				}
+			} else {
+				for (var value = object[0]; i &lt; length &amp;&amp; callback.call(context || object[name], value, i) !== false; value = object[++i]) {}
+			}
+			return object;
+		},
+		&#x2F;**
+		 * 声明一个命名空间
+		 *  
+		 *  Simple.namespace(&quot;Simple.dd&quot;);
+		 *  Simple.dd.Drag=function(){}
+		 *  
+		 * @param {string} arguments
+		 * @return {object} o 根据给出的字符串创建的对象
+		 *&#x2F;
+		namespace : function () {
+			var a = arguments,
+			o = this,
+			i = 0,
+			j,
+			d,
+			arg;
+			for (; i &lt; a.length; i++) {
+				arg = a[i];
+				if (arg.indexOf(&quot;.&quot;)) {
+					d = arg.split(&quot;.&quot;);
+					for (j = (d[0] == &#x27;Simple&#x27;) ? 1 : 0; j &lt; d.length; j++) {
+						o[d[j]] = o[d[j]] || {};
+						o = o[d[j]];
+					}
+				} else {
+					o[arg] = o[arg] || {};
+				}
+			}
+			return o;
+		},
+		&#x2F;**
+		 * 在控制台输出信息
+		 * @param {string} msg 需要输出的内容
+		 *&#x2F;
+		log : function (msg) {
+			if (window.console &amp;&amp; console.log) {
+				console.log.call(this, msg);
+			}
+		},
+		&#x2F;**
+		 * 替换字符串的辅助函数
+		 * @param {Object} template
+		 * @param {Object} map
+		 * @param {Object} beforeReplace
+		 * @return 替换后的字符串
+		 *&#x2F;
+		replace : function (template, map, beforeReplace) {
+			return template.replace(&#x2F;\$\{([^\s\:\}]+)(?:\:([^\s\:\}]+))?\}&#x2F;g, function (match, key) {
+				var value = map[key];
+				return beforeReplace(value, key).toString();
+			});
+		},
+		&#x2F;**
+		 * 获取当前页面的可视宽高
+		 * @param el {Object} 需要后去宽高的HTML对象
+		 * @param isDoc {Boolean} 是否获取整个高度(加上滚动条部分)
+		 * @return {Object} Object.h 高度
+		 * @return {Object} Object.w 宽度
+		 *&#x2F;
+		getSize : function (el, isDoc) {
+			if (!(el instanceof jQuery)) {
+				el = $(el);
+			}
+			if (el.is(&#x27;body&#x27;)) {
+				if (isDoc) {
+					return this.getDoc();
+				} else {
+					return this.getClient();
+				}
+			} else {
+				return {
+					h : el.outerHeight(),
+					w : el.outerWidth()
+				}
+			}
+		},
+		getRegion : function (el) {
+			return S.mixin(el.offset(), {
+				&#x27;right&#x27; : el.offset().left + el.width(),
+				&#x27;bottom&#x27; : el.offset().top + el.height(),
+				&#x27;width&#x27; : el.width(),
+				&#x27;height&#x27; : el.height()
+			});
+		},
+		getScrollTop : function () {
+			return document.documentElement.scrollTop || document.body.scrollTop;
+		},
+		
+		getScrollLeft : function () {
+			return document.documentElement.scrollLeft || document.body.scrollLeft;
+		},
+		&#x2F;**
+		 * 获取当前页面的宽高(加上滚动条部分)
+		 * @return {Object} Object.h 高度
+		 * @return {Object} Object.w 宽度
+		 *&#x2F;
+		getDoc : function () {
+			return {
+				h : Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight),
+				w : Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)
+			}
+		},
+		&#x2F;**
+		 * 获取当前页面的可视宽高
+		 * @return {Object} Object.h 高度
+		 * @return {Object} Object.w 宽度
+		 *&#x2F;
+		getClient : function () {
+			return {
+				h : document.documentElement.clientHeight,
+				w : document.documentElement.clientWidth
+			}
+		},
+		&#x2F;**
+		 * 将Simple下的插件桥接到jQuery
+		 * @param methodName {String} 插件名称
+		 * @param widget {Object} 对应的插件
+		 *&#x2F;
+		bridgeTojQuery : function (methodName, widget) {
+			var methodArray = methodName.split(&quot;,&quot;);
+			$.each(methodArray, function (i, n) {
+				$.fn[n] = function (config) {
+					return this.each(function () {
+						if (config == &quot;destroy&quot;) {
+							if (jQuery.data(this, &quot;widget-&quot; + n)) {
+								jQuery.data(this, &quot;widget-&quot; + n).destroy();
+								$(this).removeData(&quot;widget-&quot; + n);
+								return;
+							} else {
+								return true;
+							}
+						}
+						config = config || {};
+						config = S.mixin(config, {
+								node : this
+							});
+						&#x2F;&#x2F;不要重复绑定
+						if ($.data(this, &quot;widget-&quot; + n)) {
+							return;
+						}
+						var widgetInc = new widget(config);
+						$.data(this, &quot;widget-&quot; + n, widgetInc);
+					});
+				}
+			});
+		}
+	});
+	
+	S.mixin({
+		isFitHorizontal : function (el, leftOffset) {
+			var leftVal = parseInt(leftOffset) || $(el).offset().left,
+			scrollLeft = this.getScrollLeft(),
+			bodyWidth = this.getClient().w;
+			elWidth = $(el).width();
+			return (leftVal + elWidth &lt;= bodyWidth + scrollLeft &amp;&amp; leftVal - scrollLeft &gt;= 0);
+		},
+		isFitVertical : function (el, topOffset) {
+			var topVal = parseInt(topOffset) || $(el).offset().top;
+			scrollTop = this.getScrollTop(),
+			bodyHeight = this.getClient().h,
+			elHeight = $(el).height();
+			return (topVal + elHeight &lt;= bodyHeight + scrollTop &amp;&amp; topVal - scrollTop &gt;= 0);
+		},
+		
+		position : (function () {
+			
+			return {
+				&#x2F;**
+				 * 设置某个对象相对参考对象的位置
+				 * @param config {Object}
+				 * @param config.node {Object} 需要设置位置的对象
+				 * @param config.context {Object} 相对对象
+				 * @param config.position {String} 可选参数(&quot;cc cc&quot;)
+				 * @param config.offset {String|Function} &#x27;0,5&#x27;
+				 *&#x2F;
+				at : function (config) {
+					
+					var setPosition = function () {
+						
+						var node = $(config.node),
+						referNode = $(config.context),
+						nodeOffset,
+						referNodeOffset,
+						nodeWidth = node.outerWidth(),
+						nodeHeight = node.outerHeight(),
+						referNodeWidth = referNode.outerWidth(),
+						referNodeHeight = referNode.outerHeight(),
+						points = config.position || &#x27;cc cc&#x27;,
+						t = 0,
+						l = 0,
+						offset = config.offset || &#x27;0 0&#x27;;
+						if (referNode.is(&#x27;body&#x27;)) {
+							var size = S.getSize(document.body);
+							referNodeWidth = size.w;
+							referNodeHeight = size.h;
+						}
+						
+						if (node.css(&#x27;position&#x27;) === &#x27;static&#x27;) {
+							node.css(&#x27;position&#x27;, &#x27;absolute&#x27;);
+						}
+						
+						nodeOffset = node.offset();
+						referNodeOffset = referNode.offset();
+						
+						if (typeof points === &#x27;string&#x27;) {
+							switch (points) {
+							case &#x27;cc cc&#x27;:
+								l = referNodeOffset.left + (referNodeWidth - nodeWidth) &#x2F; 2;
+								t = referNodeOffset.top + (referNodeHeight - nodeHeight) &#x2F; 2;
+								break;
+							case &#x27;lt lb&#x27;:
+								l = referNodeOffset.left;
+								t = referNodeOffset.top + referNodeHeight;
+								break;
+							case &#x27;lb lt&#x27;:
+								l = referNodeOffset.left;
+								t = referNodeOffset.top - nodeHeight;
+								break;
+							case &#x27;rt rb&#x27;:
+								l = referNodeWidth + referNodeOffset.left - nodeWidth;
+								t = referNodeHeight + referNodeOffset.top;
+								break;
+							case &#x27;rb rt&#x27;:
+								l = referNodeWidth + referNodeOffset.left - nodeWidth;
+								t = referNodeOffset.top - nodeHeight
+									break;
+							case &#x27;lt rt&#x27;:
+								l = referNodeWidth + referNodeOffset.left;
+								t = referNodeOffset.top;
+								break;
+							case &#x27;lc lc&#x27;:
+								l = referNodeOffset.left;
+								t = referNodeOffset.top + (referNodeHeight - nodeHeight) &#x2F; 2;
+								break;
+							case &#x27;lt lt&#x27;:
+								l = referNodeOffset.left;
+								t = referNodeOffset.top;
+								break;
+							}
+						}
+						
+						if (typeof offset === &#x27;function&#x27;) {
+							offset = offset();
+						}
+						
+						offset = offset.split(&#x27; &#x27;);
+						
+						l = l + parseInt(offset[0]);
+						t = t + parseInt(offset[1]);
+						
+						node.css({
+							top : t,
+							left : l
+						});
+						
+					}
+					
+					setPosition();
+					$(window).resize(setPosition);
+					
+				},
+				&#x2F;**
+				 * 让某个元素 相对body局中
+				 * @param node {Object} 需要获取位置的对象
+				 *&#x2F;
+				atBody : function (node) {
+					var node = $(node),
+					pos = node.css(&quot;position&quot;),
+					doc = S.getSize(document.body);
+					if (pos == &quot;fixed&quot;) {
+						node.css({
+							top : (doc.h - node.height()) &#x2F; 2,
+							left : (doc.w - node.width()) &#x2F; 2
+						});
+					} else
+						if (pos == &quot;absolute&quot;) {
+							node.css({
+								top : (doc.h - node.height()) &#x2F; 2 + Math.max(document.documentElement.scrollTop, document.body.scrollTop),
+								left : (doc.w - node.width()) &#x2F; 2
+							});
+						}
+				}
+			}
+		})()
+		
+	});
+	return S;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="foot">
+		The API build by YUIDOC
+		Simple UI is released under MIT License and implements open technologies such as:HTML5,CSS3,JavaScript.
+		<p>
+		如果你想为SimpleUI贡献代码，请点击这里<a target="_blank" href="http://github.com/simpleui">SimpleUI At Github</a>
+		</p>
+        <div class="blog-info">
+         WordPress和<a href="http://simpleui.org" target="_blank">SimpleUI</a>强力驱动--蓝面小生--2012
+		 <script src="http://s9.cnzz.com/stat.php?id=4424795&web_id=4424795&show=pic1" language="JavaScript"></script>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

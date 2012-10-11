@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            #test1{margin:50px;}
+            .simple-btn-wrap{
+            	margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="test1" class="simple-btn-wrap">
+        </div>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/button','ui/menu'], function(Button,Menu){
+                var b = new Button({
+                   container:'#test1',
+                   disabled:true,
+                   handle:function(){
+                       console.log('button1');
+                   }
+                });
+                b.on('disabledChange',function(){
+                    console.log(this)
+                    console.log(this.disable);
+                })
+                //b.set('disable',true);
+                b.set('disabled',true);
+                b.set('focus',true);
+
+                new Button({
+                   container:'#test1'
+                });
+                new Button({
+                   container:'#test1'
+                });
+                new Button({
+                   container:'#test1'
+                });
+                
+                var menu = new Simple.Menu({
+                    style:{
+                        'display':'none'
+                    },
+                items:[{
+            title:'Menu Title',
+            items:[{
+                
+                label:'i menu',
+                click:function(){
+                    console.log('click');
+                }
+               
+            },{
+                
+                label:'i menu',
+                childs:[{
+                    items:[{
+                        label:'menu',
+                        helper:'CTRL+P'
+                    }]
+                }]
+                
+            },{
+                
+                label:'i menu'
+                
+            },{
+               
+                label:'i menu'
+               
+            }]
+               
+        },{
+            title:'Menu Title',
+            items:[{
+                checked:false,
+                label:'i menu',
+                helper:'CTRL+P',
+                icon:'test',
+                event:'click'
+            }]
+        }]
+                });
+                var cbtn = new Simple.ComboButton({
+                    dropdown:menu,
+                    handle:function(){
+                        console.log('click')
+                    }
+                });
+				cbtn.render(document.body)
+                //cbtn.disable()
+                
+                 var dbtn = new Simple.DropDownButton({
+                    dropdown:menu
+                });
+               // dbtn.disable()
+               // 
+               //new Simple.RadioButton();
+            });
+        </script>
+    </body>
+</html>

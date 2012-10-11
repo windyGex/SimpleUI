@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ui\pagination.js</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    
+	<link href="http://simpleui.org/wp-content/themes/simpleui/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+<div class="navbar navbar-fixed-top">
+     
+        <div class="container navbar-inner">
+            <h1 class="nav-title">
+                <a href="http://simpleui.org/">Simple <span class="nav-title-em">UI</span></a>
+				<p>Simple UI library for the web & make web build quickly</p>
+            </h1>
+           
+           <!-- <div class="navbar-col" title="切换显示咧">
+                <a class="navbar-col2-demo ib" title="两栏" rel="two" href="javascript:;">
+                    
+                </a>
+                <a class="navbar-col3-demo ib" title="三栏" rel="three" href="javascript:;">
+                    
+                </a>
+            </div> -->
+            <div class="navbar-search">
+                <form action="http://simpleui.org/" method="get" id="searchForm">
+                        <input type="text" placeholder="请输入搜索的关键字" name="s"/><button type="submit"></button>
+                </form>
+                      
+            </div>
+        </div>
+      
+</div>
+<div class="nav-menu-container">
+ <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+</ul> </div> 
+	<div class="container">
+    <div id="bd" class="yui3-g">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Simple.Attribute.html">Simple.Attribute</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.AutoComplete.html">Simple.AutoComplete</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Button.html">Simple.Button</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ButtonGroup.html">Simple.ButtonGroup</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ComboButton.html">Simple.ComboButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ContextMenu.html">Simple.ContextMenu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePicker.html">Simple.DatePicker</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePickerBase.html">Simple.DatePickerBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Dialog.html">Simple.Dialog</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Drag.html">Simple.Drag</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DropDownButton.html">Simple.DropDownButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.EventTarget.html">Simple.EventTarget</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Menu.html">Simple.Menu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.MenuItem.html">Simple.MenuItem</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Modal.html">Simple.Modal</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Pagination.html">Simple.Pagination</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Resize.html">Simple.Resize</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Selectable.html">Simple.Selectable</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Tip.html">Simple.Tip</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/attribute.html">attribute</a></li>
+            
+                <li><a href="..&#x2F;modules/declare.html">declare</a></li>
+            
+                <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button.html">ui.button</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button-group.html">ui.button-group</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.date-picker.html">ui.date-picker</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.dialog.html">ui.dialog</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.drag.html">ui.drag</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.menu.html">ui.menu</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.modal.html">ui.modal</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.pagination.html">ui.pagination</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.resize.html">ui.resize</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.selectable.html">ui.selectable</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.tool-tip.html">ui.tool-tip</a></li>
+            
+                <li><a href="..&#x2F;modules/widget.html">widget</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: ui\pagination.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+define([&#x27;simple&#x27;, &#x27;widget&#x27;, &#x27;declare&#x27;, &#x27;css!css&#x2F;pagination&#x27;], function(S, Widget, declare){
+
+    var $ = S.$, Pagination;
+    &#x2F;**
+     * 提供分页功能的组件
+     * @class Simple.Pagination
+     * @extends Simple.Widget
+     * @module ui.pagination
+     *&#x2F;
+    Pagination = declare(&#x27;Pagination&#x27;, Widget, {
+        &#x2F;**
+         * 分页条目的总数量
+         * @property totalCount
+         * @type Int
+         * @default 100
+         *&#x2F;
+        totalCount: 100,
+        &#x2F;**
+         * 分页尺寸大小
+         * @property pageSize
+         * @type Int
+         * @default 10
+         *&#x2F;
+        pageSize: 10,
+        &#x2F;**
+         * 分页显示的数量
+         * @property pageShowCount
+         * @type Int
+         * @default 9
+         *&#x2F;
+        pageShowCount: 9,
+        &#x2F;**
+         * 当前页
+         * @property currentPage
+         * @type Int
+         * @default 1
+         *&#x2F;
+        currentPage: 1,
+        &#x2F;**
+         * 分页的样式
+         * @property pageStyle
+         * @type String
+         * @default &#x27;default&#x27;
+         *&#x2F;
+        pageStyle: &#x27;default&#x27;,
+        &#x2F;**
+         * 分页的模版
+         * @property template
+         * @type String
+         * @default &#x27;&lt;div class=&quot;simple-pagination&quot;&gt;&lt;&#x2F;div&gt;&#x27;
+         *&#x2F;
+        template: &#x27;&lt;div class=&quot;simple-pagination&quot;&gt;&lt;&#x2F;div&gt;&#x27;,
+        &#x2F;**
+         * 初始化分页组件的属性
+         * @method initAttrs
+         *&#x2F;
+        initAttrs: function(){
+            this.totalPage = Math.ceil(this.totalCount &#x2F; this.pageSize);
+        },
+        &#x2F;**
+         * 渲染分页
+         * @method renderUI
+         *&#x2F;
+        renderUI: function(){
+            this.set(&#x27;currentPage&#x27;, this.currentPage);
+            this._renderPage(this.currentPage, this.get(&#x27;totalPage&#x27;));
+        },
+        &#x2F;**
+         * 为分页组件绑定事件
+         * @method bindUI
+         *&#x2F;
+        bindUI: function(){
+            this.el.on(&#x27;click&#x27;, $.proxy(this._onclick, this));
+            this.on(&#x27;currentPageChange&#x27;, function(currentPage){
+                this._renderPage(currentPage, this.get(&#x27;totalPage&#x27;));
+            });
+            
+        },
+        &#x2F;**
+         * 分页的点击事件
+         * @method _onclick
+         * @param e {Event} jQuery包装的Event
+         * @protected
+         *&#x2F;
+        _onclick: function(e){
+            var target = e.target, inx;
+            if (&#x2F;disable&#x2F;.test(target.className)) {
+                return false;
+            }
+            if (target.tagName.toLowerCase() == &#x27;a&#x27;) {
+                inx = parseInt(target.getAttribute(&#x27;data-page&#x27;), 10);
+                this.set(&#x27;currentPage&#x27;, inx);
+            }
+        },
+        &#x2F;**
+         * 根据分页总数量来重新渲染分页
+         * @method _setterTotalCount
+         * @param totalCount {Int} 分页条目的总数量
+         * @protected
+         * @return totalCount
+         *&#x2F;
+        _setterTotalCount: function(totalCount){
+            if (totalCount) {
+                this.totalPage = Math.ceil(totalCount &#x2F; this.pageSize);
+                this.set(&#x27;currentPage&#x27;, this.currentPage);
+            }
+            
+            return totalCount;
+        },
+        &#x2F;**
+         * 根据分页尺寸大小来重新渲染分页
+         * @method _setterPageSize
+         * @param pageSize {Int} 分页尺寸大小
+         * @protected
+         * @return pageSize
+         *&#x2F;
+        _setterPageSize: function(pageSize){
+            if (pageSize) {
+                this.totalPage = Math.ceil(this.totalCount &#x2F; this.pageSize);
+                this.set(&#x27;currentPage&#x27;, this.currentPage);
+            }
+            
+            return pageSize;
+        },
+        &#x2F;**
+         * 根据当前页来重新渲染分页
+         * @method _setterCurrentPage
+         * @param currentPage {Int} 当前页
+         * @protected
+         * @return currentPage
+         *&#x2F;
+        _setterCurrentPage: function(currentPage){
+            if (currentPage &gt; this.get(&#x27;totalPage&#x27;)) {
+                currentPage = this.get(&#x27;totalPage&#x27;);
+            }
+            else 
+                if (currentPage &lt; 1) {
+                    currentPage = 1;
+                }
+            
+            return currentPage;
+        },
+        &#x2F;**
+         * 根据当前页和总页数来渲染分页
+         * @method _renderPage
+         * @private
+         * @param {Int} currentPage 当前页
+         * @param {Int} totalPage 总页数
+         *&#x2F;
+        _renderPage: function(currentPage, totalPage){
+        
+            var pageHtml = Pagination.style[this.pageStyle].call(this, currentPage, totalPage);
+            
+            this.el.html(pageHtml);
+            
+        },
+        &#x2F;**
+         * 根据给定页数的HTML
+         * @method _getItemHtml
+         * @private
+         * @param {Int} index 当前页
+         *&#x2F;
+        _getItemHtml: function(index){
+            return index == this.get(&#x27;currentPage&#x27;) ? &#x27;&lt;span class=&quot;current&quot;&gt;&#x27; + index + &#x27;&lt;&#x2F;span&gt;&#x27; : &#x27;&lt;a data-page=&quot;&#x27; + index + &#x27;&quot; class=&quot;simple-pagination-item&quot;&gt;&#x27; + index + &#x27;&lt;&#x2F;a&gt;&#x27;;
+        }
+        
+        
+    });
+    Pagination.style = {
+        &#x27;default&#x27;: function(currentPage, totalPage){
+            var pageHtml = &#x27;&#x27;, pageShowCount = this.pageShowCount,            &#x2F;&#x2F; 减3的原因是因为需要去除第一页，最后一页，和当前页
+            realPageShowCount = pageShowCount - 3,            &#x2F;&#x2F; 得到在当前页周围的显示分页数量
+            halfCount = parseInt(realPageShowCount &#x2F; 2, 10),            &#x2F;&#x2F; 起始渲染分页的位置
+            start, end;
+            &#x2F;&#x2F; prev按钮渲染
+            if (currentPage &lt;= 1) {
+                pageHtml += &#x27;&lt;a class=&quot;prev disabled prev-disabled&quot; href=&quot;javascript:void(0)&quot;&gt;&amp;lt;prev&lt;&#x2F;a&gt;&#x27;;
+            }
+            else {
+                pageHtml += &#x27;&lt;a class=&quot;prev&quot; href=&quot;javascript:void(0)&quot; data-page=&quot;&#x27; + (currentPage - 1) + &#x27;&quot;&gt;&amp;lt;prev&lt;&#x2F;a&gt;&#x27;;
+            }
+            &#x2F;&#x2F; 如果要显示首页
+            &#x2F;&#x2F; 如果要显示末页
+            &#x2F;&#x2F; 如果总页数小于允许显示的页数，则全部显示
+            if (totalPage &lt;= pageShowCount) {
+                for (var i = 1; i &lt;= totalPage; i++) {
+                    pageHtml += this._getItemHtml(i);
+                }
+            }
+            &#x2F;&#x2F; 如果总页数大于允许显示的页数
+            else {
+                &#x2F;&#x2F; 如果是当前页是第一页
+                pageHtml += this._getItemHtml(1);
+                &#x2F;&#x2F; 开始渲染的位置以及结束渲染的位置
+                start = currentPage - halfCount;
+                end = currentPage + realPageShowCount - halfCount;
+                
+                &#x2F;&#x2F; 如果开始渲染的位置计算的结果要小于首页，则从第二页开始渲染，因为首页已经被渲染
+                &#x2F;&#x2F; 这个时候需要重新定位end位置~
+                if (start &lt;= 1) {
+                    start = 2;
+                    end = start + realPageShowCount;
+                }
+                
+                &#x2F;&#x2F; 如果第一页和开始渲染的位置之间有间隔，则使用省略号代替
+                if (start &gt; 2) {
+                    pageHtml += &#x27;&lt;span class=&quot;ellipsis&quot;&gt;...&lt;&#x2F;span&gt;&#x27;;
+                }
+                
+                &#x2F;&#x2F; 如果结束渲染的位置计算结果大于最大页数-1，重新定位
+                if (end &gt;= totalPage - 1) {
+                    end = totalPage - 1;
+                    start = totalPage - realPageShowCount - 1;
+                }
+                
+                &#x2F;&#x2F; 开始渲染中间的页数
+                for (var i = start; i &lt;= end; i++) {
+                    pageHtml += this._getItemHtml(i);
+                }
+                
+                &#x2F;&#x2F; 如果渲染结束的位置距离尾页还有间隔，用省略号代替
+                if (end &lt; totalPage - 1) {
+                    pageHtml += &#x27;&lt;span class=&quot;ellipsis&quot;&gt;...&lt;&#x2F;span&gt;&#x27;;
+                }
+                &#x2F;&#x2F; 如果当前页就是尾页
+                pageHtml += this._getItemHtml(totalPage);
+            }
+            
+            &#x2F;&#x2F; next 按钮渲染
+            if (currentPage &gt;= totalPage) {
+            
+                pageHtml += &#x27;&lt;a class=&quot;next disabled next-disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Next &amp;gt;&lt;&#x2F;a&gt;&#x27;;
+            }
+            else {
+                pageHtml += &#x27;&lt;a class=&quot;next&quot; href=&quot;javascript:void(0)&quot; data-page=&quot;&#x27; + (currentPage + 1) + &#x27;&quot;&gt;Next &amp;gt;&lt;&#x2F;a&gt;&#x27;;
+            }
+            
+            pageHtml += &#x27;&lt;&#x2F;div&gt;&#x27;;
+            
+            return pageHtml;
+        },
+        &#x27;simple&#x27;: function(currentPage, totalPage){
+            var pageHtml = &#x27;&lt;a data-page=&quot;&#x27; + (currentPage - 1) + &#x27;&quot; class=&quot;prev&quot;&gt;上一页&lt;&#x2F;a&gt;&lt;span&gt;&#x27; +
+            this.currentPage +
+            &#x27;&lt;&#x2F;span&gt;&#x2F;&lt;span&gt;&#x27; +
+            this.totalPage +
+            &#x27;&lt;&#x2F;span&gt;&lt;a data-page=&quot;&#x27; +
+            (currentPage + 1) +
+            &#x27;&quot; class=&quot;next&quot;&gt;下一页&lt;&#x2F;a&gt;&#x27;;
+            
+            return pageHtml;
+            
+        }
+    }
+    
+    
+    return Pagination;
+    
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="foot">
+		The API build by YUIDOC
+		Simple UI is released under MIT License and implements open technologies such as:HTML5,CSS3,JavaScript.
+		<p>
+		如果你想为SimpleUI贡献代码，请点击这里<a target="_blank" href="http://github.com/simpleui">SimpleUI At Github</a>
+		</p>
+        <div class="blog-info">
+         WordPress和<a href="http://simpleui.org" target="_blank">SimpleUI</a>强力驱动--蓝面小生--2012
+		 <script src="http://s9.cnzz.com/stat.php?id=4424795&web_id=4424795&show=pic1" language="JavaScript"></script>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

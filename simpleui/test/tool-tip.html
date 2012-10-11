@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            #test1{width:350px;height:100px;font-size:14px;text-indent:20px;}
+			#test1 span{color:red;}
+			
+        </style>
+    </head>
+    <body>
+        <div id="test1" class="simple-btn-wrap" data-title="/simpleui/test.html">
+            <span>sdfsfsfsdf</spam>
+        </div>
+	<div  class="simple-btn-wrap" data-title="/simpleui/.html">
+            <span>sdfsfsfsdf</spam>
+        </div>
+       <input type="date"/>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/tool-tip'], function(){
+              
+				
+			
+			
+			/*$('div').tooltip({
+				allowTipHover:true
+			});*/
+			
+			
+			var t = new Simple.TipBase({
+				
+				node:'#test1',
+				content:'<div style="padding:10px 40px;">test</div>'
+				
+			});
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+            });
+        </script>
+    </body>
+</html>

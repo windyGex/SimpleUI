@@ -1,0 +1,38 @@
+
+.simple-autocomplete {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+    border: 1px solid #ddd;
+    z-index:100;
+    background:#fff;
+}
+
+.simple-autocomplete-item {
+    line-height: 22px;
+    border-radius: 3px;
+}
+
+.simple-autocomplete-hover {
+    background: #eee;
+}
+
+.simple-autocomplete-selected {
+    background: #999;
+    color: #fff;
+}
+
+.simple-autocomplete-item {
+    padding: 0 10px;
+}
+
+.simple-autocomplete-loading {
+    background: url(../images/ajax-loader.gif) right center no-repeat;
+}
+
+.orange {
+    color: #FF5500;
+}
+
+.simple-autocomplete-selected .orange {
+    color: #fff;
+}

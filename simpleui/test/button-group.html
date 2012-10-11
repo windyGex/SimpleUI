@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        <div id="test1" class="simple-btn-wrap">
+        </div>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/button-group'], function(Button){
+                new Button({
+                    items: {
+                        'index1': function(){
+                            console.log('index1');
+                        },
+                        'index2': function(){
+                            console.log('index2');
+                        }
+                    }
+                });
+                
+                var btn = new Button({
+                    container: '#test1',
+                    focusIndex: 1,
+                    items: [{
+                        handle: function(){
+                            console.log('button1')
+                        },
+                        label: 'button1'
+                    }, {
+                        handle: function(){
+                            console.log('button2')
+                        },
+                        label: 'button2'
+                    }, {
+                        handle: function(){
+                            console.log('button3')
+                        },
+                        icon: 'test',
+                        label: 'button3'
+                    }]
+                })
+                
+                btn.disable(1);
+                
+                btn.setFocus(2);
+                
+                btn.disable(2);
+                console.log(btn.getDisabled());
+                btn.enable(2);
+                console.log(btn.getDisabled());
+                
+                //btn.destroy();
+                
+                //btn.destroy()
+            });
+        </script>
+    </body>
+</html>

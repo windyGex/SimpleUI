@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            #test1{margin:50px;border:1px solid #ccc;position:absolute;padding:10px;}
+        </style>
+    </head>
+    <body>
+        <span>sdfsdfsdfsfsdf</span>
+        <div id="test1" class="simple-btn-wrap">
+        	<div class="cc">sfsdfsdf</div>
+			<div class="dd">sfsdfsdf</div>
+        </div>
+        <div id="test2"></div>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/pagination'], function(Page){
+               
+               var page2 = new Page({
+				    container:'#test1'
+			   });
+
+               var page = new Page({
+                    container:'#test2',
+                    pageStyle:'simple'
+               });
+              
+              page.on('currentPageChange',function(currentPage){
+                    page2.set('currentPage',currentPage);
+               }); 
+               page2.on('currentPageChange',function(currentPage){
+                    page.set('currentPage',currentPage);
+               }); 
+
+            });
+        </script>
+    </body>
+</html>

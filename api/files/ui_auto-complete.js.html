@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ui\auto-complete.js</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    
+	<link href="http://simpleui.org/wp-content/themes/simpleui/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+<div class="navbar navbar-fixed-top">
+     
+        <div class="container navbar-inner">
+            <h1 class="nav-title">
+                <a href="http://simpleui.org/">Simple <span class="nav-title-em">UI</span></a>
+				<p>Simple UI library for the web & make web build quickly</p>
+            </h1>
+           
+           <!-- <div class="navbar-col" title="切换显示咧">
+                <a class="navbar-col2-demo ib" title="两栏" rel="two" href="javascript:;">
+                    
+                </a>
+                <a class="navbar-col3-demo ib" title="三栏" rel="three" href="javascript:;">
+                    
+                </a>
+            </div> -->
+            <div class="navbar-search">
+                <form action="http://simpleui.org/" method="get" id="searchForm">
+                        <input type="text" placeholder="请输入搜索的关键字" name="s"/><button type="submit"></button>
+                </form>
+                      
+            </div>
+        </div>
+      
+</div>
+<div class="nav-menu-container">
+ <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+</ul> </div> 
+	<div class="container">
+    <div id="bd" class="yui3-g">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Simple.Attribute.html">Simple.Attribute</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.AutoComplete.html">Simple.AutoComplete</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Button.html">Simple.Button</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ButtonGroup.html">Simple.ButtonGroup</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ComboButton.html">Simple.ComboButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ContextMenu.html">Simple.ContextMenu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePicker.html">Simple.DatePicker</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePickerBase.html">Simple.DatePickerBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Dialog.html">Simple.Dialog</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Drag.html">Simple.Drag</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DropDownButton.html">Simple.DropDownButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.EventTarget.html">Simple.EventTarget</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Menu.html">Simple.Menu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.MenuItem.html">Simple.MenuItem</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Modal.html">Simple.Modal</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Pagination.html">Simple.Pagination</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Resize.html">Simple.Resize</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Selectable.html">Simple.Selectable</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Tip.html">Simple.Tip</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/attribute.html">attribute</a></li>
+            
+                <li><a href="..&#x2F;modules/declare.html">declare</a></li>
+            
+                <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button.html">ui.button</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button-group.html">ui.button-group</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.date-picker.html">ui.date-picker</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.dialog.html">ui.dialog</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.drag.html">ui.drag</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.menu.html">ui.menu</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.modal.html">ui.modal</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.pagination.html">ui.pagination</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.resize.html">ui.resize</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.selectable.html">ui.selectable</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.tool-tip.html">ui.tool-tip</a></li>
+            
+                <li><a href="..&#x2F;modules/widget.html">widget</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: ui\auto-complete.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+define([&#x27;simple&#x27;, &#x27;declare&#x27;, &#x27;widget&#x27;, &#x27;css!css&#x2F;auto-complete&#x27;], function(S, declare, Widget){
+
+    var $ = S.$, AutoComplete, &#x2F;&#x2F;存储远程获取的数据
+	_cacheData = {};
+    
+    &#x2F;**
+	 * 自动完成组件，自动完成组件继承与widget，拥有和widget一样的生命周期。
+	 * 同样，AutoComplete被设计为可扩展的，很方面可以基于此定制特定的自动完成组件
+	 * 
+	 *	require([&#x27;ui&#x2F;auto-complete&#x27;],function(AutoComplete){
+	 *		new AutoComplete({
+	 *			node:&#x27;#test&#x27;,
+	 *			source:[&#x27;java&#x27;,&#x27;javascript&#x27;]
+	 *		});
+	 *		&#x2F;&#x2F;或者
+	 *		$(&#x27;#test&#x27;).autocomplete({
+	 *			source:[&#x27;java&#x27;,&#x27;javascript&#x27;]
+	 *		});
+	 *
+	 *	});
+	 *
+     * @module ui.auto-complete
+	 * @extends Simple.Widget
+	 * @class Simple.AutoComplete
+     *&#x2F;
+    AutoComplete = declare(&#x27;AutoComplete&#x27;, Widget, {
+        &#x2F;**
+         * 需要提供自动完成功能的dom元素
+         * @property node
+         * @type String | HTMLElement
+         * @default &quot;&quot;
+         *&#x2F;
+        node: &#x27;&#x27;,
+        &#x2F;**
+         * 生成自动完成功能提供模版
+         * @property template
+         * @type String
+         * @readOnly
+         * @default &quot;&lt;div class=&quot;simple-autocomplete&quot;&gt;&lt;div widgetpoint=&quot;autoCompleteList&quot;&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&quot;
+         *&#x2F;
+        template: &#x27;&lt;div class=&quot;simple-autocomplete&quot;&gt;&lt;div widgetpoint=&quot;autoCompleteList&quot;&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&#x27;,
+        
+        &#x2F;**
+         * 自动完成功能的数据源，可以为本地数据，也可以为远程数据，甚至可以自定义一个函数来提供需要的数据
+         * @property source
+         * @type String | Function | Array
+         * @default &quot;&quot;
+         *&#x2F;
+        source: &#x27;&#x27;,
+        &#x2F;**
+         * 在获取远程数据时为了避免输入过快造成请求过多而设置的延时
+         * @property delay
+         * @type int
+         * @default &quot;0&quot;
+         *&#x2F;
+        delay: 200,
+        &#x2F;**
+         * 在获取远程数据时为node设置的请求状态
+         * @property loadingClass
+         * @readOnly
+         * @type String
+         * @default &quot;simple-autocomplete-loading&quot;
+         *&#x2F;
+        loadingClass: &#x27;simple-autocomplete-loading&#x27;,
+        &#x2F;**
+         * 鼠标经过自动完成的提示时出现的状态
+         * @property hoverClass
+         * @readOnly
+         * @type String
+         * @default &quot;simple-autocomplete-hover&quot;
+         *&#x2F;
+        hoverClass: &#x27;simple-autocomplete-hover&#x27;,
+        
+        &#x2F;**
+         * 在选中自动完成的数据项时触发的函数
+         * @event select
+         * @param {String} value 选中的值
+         *&#x2F;
+         &#x2F;**
+         * 在选中自动完成的数据项时触发的函数
+         * @event change
+         * @param {String} value 改变的值
+         *&#x2F;
+        listeners:{
+            &#x27;select&#x27;:$.noop,
+            &#x27;change&#x27;:$.noop
+        },
+        &#x2F;**
+         * 在请求远程数据时将数据缓存下来，大幅提升性能
+         * @private
+         * @property _cacheData
+         * @readOnly
+         * @type Object
+         * @default &quot;{}&quot;
+         *&#x2F;
+        _cacheData: {},
+        &#x2F;**
+         * 初始化自动完成组件需要的一些属性
+         * @method initAttrs
+         * @protected
+         *&#x2F;
+        initAttrs: function(){
+            if (this.source instanceof Array) {
+                this._localSource = true;
+            }
+        },
+        &#x2F;**
+         * 初始化自动完成组件需要的事件
+         * @method initBaseEvents
+         * @protected
+         *&#x2F;
+        initBaseEvents: function(){
+        
+            this.node.on(&#x27;keyup.autocomplete&#x27;, $.proxy(this._onNodeKeyDown, this));
+			
+			this.node.on(&#x27;click&#x27;,function(e){
+				return false;
+			});
+			
+			$(document).on(&#x27;click&#x27;,$.proxy(this.hide, this));
+        },
+        &#x2F;**
+         * 在生成dom后为数据项绑定事件
+         * @method bindUI
+         * @protected
+         *&#x2F;
+        bindUI: function(){
+            this.el.delegate(&#x27;[rel=autocompleteItem]&#x27;, &#x27;mouseover&#x27;, $.proxy(this._onItemMouseOver, this));
+            this.el.delegate(&#x27;[rel=autocompleteItem]&#x27;, &#x27;mouseout&#x27;, $.proxy(this._onItemMouseOut, this));
+            this.el.delegate(&#x27;[rel=autocompleteItem]&#x27;, &#x27;click&#x27;, $.proxy(this._onItemClick, this));
+        },
+        &#x2F;**
+         * 数据项悬浮事件的操作
+         * @method _onItemMouseOver
+         * @param e {Event} jQuery事件传入包装的event
+         * @private
+         *&#x2F;
+        _onItemMouseOver: function(e){
+            var target = $(e.currentTarget);
+            target.addClass(this.hoverClass).siblings().removeClass(this.hoverClass);
+        },
+        &#x2F;**
+         * 数据项鼠标移出事件的操作
+         * @method _onItemMouseOut
+         * @param e {Event} jQuery事件传入包装的event
+         * @private
+         *&#x2F;
+        _onItemMouseOut: function(e){
+            var target = $(e.currentTarget);
+            target.removeClass(this.hoverClass);
+        },
+        &#x2F;**
+         * 数据项点击事件的操作
+         * @method _onItemClick
+         * @param e {Event} jQuery事件传入包装的event
+         * @private
+         *&#x2F;
+        _onItemClick: function(e){
+            var target = $(e.currentTarget);
+            this.selectItem(target);
+			&#x2F;&#x2F;this.onSelect.call(this.node, this.lastSelectedValue);
+			this.trigger(&#x27;select&#x27;,this.lastSelectedValue);
+            this.finish();
+			return false;
+        },
+        &#x2F;**
+         * node点击事件的操作
+         * @method _onNodeKeyDown
+         * @param e {Event} jQuery事件传入包装的event
+         * @private
+         *&#x2F;
+        _onNodeKeyDown: function(e){
+            this._lastKeyDown = e.keyCode;
+            switch (this._lastKeyDown) {
+                &#x2F;&#x2F;pageup
+                case 38:
+                    this.active &amp;&amp; this._prev();
+                    break;
+                &#x2F;&#x2F;pagedown
+                case 40:
+                    if (this.active) {
+                        this._next();
+                    }
+                    else {
+                        this.activeAutoComplete();
+                    }
+                    break;
+                &#x2F;&#x2F;enter
+                case 9:
+                case 13:
+                    this.active &amp;&amp; this.selectCurrent();
+                    break;
+                &#x2F;&#x2F;esc
+                case 27:
+                    this.active &amp;&amp; this.finish();
+                    break;
+                default:
+                    this.activeAutoComplete();
+            }
+        },
+        &#x2F;**
+         * 激活自动提示,在这个方法里判断是否需要延时操作
+         * @method activeAutoComplete
+         * @protected
+         *&#x2F;
+        activeAutoComplete: function(){
+        
+            var self = this;
+            
+            if (this._activeTimeout) {
+                clearTimeout(this._activeTimeout);
+            }
+            &#x2F;&#x2F;如果是本地数据源
+            if (this.delay &amp;&amp; !this._localSource) {
+            
+                this._activeTimeout = setTimeout(function(){
+                    self._activeNow();
+                }, this.delay);
+                
+            }
+            else {
+            
+                this._activeNow();
+            }
+            
+        },
+        &#x2F;**
+         * 判断输入的值是否符合激动自动提示的条件
+         * @method _activeNow
+         * @private
+         *&#x2F;
+        _activeNow: function(){
+        
+            var value = $.trim(this.node.val());
+            &#x2F;&#x2F;为空值
+            if (!value.length) {
+                this.finish();
+                &#x2F;&#x2F;最后一次访问的值
+                this._lastProcessVal = null;
+                return;
+            }
+            if (value != this._lastProcessVal) {
+                this._lastProcessVal = value;
+                this._fetch(value);
+            }
+            
+        },
+        &#x2F;**
+         * 根据输入的文字获取自动提示的数据
+         * @method _fetch
+         * @param value {String} 输入的input的值
+         * @private
+         *&#x2F;
+        _fetch: function(value){
+            var currentData, self = this;
+            &#x2F;&#x2F;尝试读取缓存数据
+            if (this._cacheData[value]) {
+                this.set(&#x27;currentData&#x27;, this._cacheData[value]);
+                return;
+            }
+            if (this._localSource) {
+                if (this.source.length) {
+                    currentData = this._filter(this.source, value);
+                    self.parse(currentData);
+                }
+            }
+            else {
+            
+                &#x2F;&#x2F;发送请求,改变input状态
+                this.node.addClass(this.loadingClass);
+                &#x2F;&#x2F;尝试远程获取数据
+                if (typeof this.source === &#x27;string&#x27;) {
+                
+                    var postData = {}, name = this.node.attr(&#x27;name&#x27;);
+                    postData[name] = value;
+                    $.get(this.source).then(function(result){
+                        self.parse(result);
+                    });
+                    
+                }
+                else 
+                    if (typeof this.source === &#x27;function&#x27;) {
+                    
+                        this.source(value, function(result){
+                            self.parse(result);
+                        });
+                        
+                    }
+                
+            }
+            
+        },
+        &#x2F;**
+         * 解析获取自动提示的数据
+         * @method parse
+         * @param result {Array} 获取的数据
+         * @protected
+         *&#x2F;
+        parse: function(result){
+            var currentData = this.getData(result),
+				hasResult = this.getDataLength(currentData)
+            
+            if (hasResult) {
+                this.active = true;
+                
+                this.set(&#x27;currentData&#x27;, currentData);
+                
+                this._setCacheData(this._lastProcessVal, currentData);
+            }
+            else {
+            
+                this.finish();
+            }
+            
+            this.node.removeClass(this.loadingClass);
+            
+        },
+        &#x2F;**
+         * 通过复写此函数得到需要的真实的数据
+         * @method getData
+         * @param result {Array} 获取的数据
+         * @return result
+         *&#x2F;
+        getData: function(result){
+            return result;
+        },
+		&#x2F;**
+         * 通过复写此函数得到数据的真实长度以便决定是否启用自动完成
+         * @method getDataLength
+         * @param result {Array} 获取的数据
+         * @return result.length
+         *&#x2F;
+		getDataLength:function(result){
+			return result.length;
+		},
+        &#x2F;**
+         * 根据关键字与值过滤最后需要的数据
+         * @method _filter
+         * @param data {Array} 获取的数据
+         * @param value {String} 输入的数据
+         * @private
+         * @return result
+         *&#x2F;
+        _filter: function(data, value){
+        
+            var newArr = [];
+            S.each(data, function(n, i){
+                var reg = new RegExp(value, &quot;gi&quot;);
+                if (n.label) {
+                    if (reg.test(n.label) || reg.test(n.value)) {
+                        newArr.push(n);
+                    }
+                }
+                else {
+                    if (reg.test(n)) {
+                        newArr.push(n);
+                    }
+                }
+            });
+            return newArr;
+        },
+        &#x2F;**
+         * 使用此方法结束本次自动提示
+         * @method finish
+         *&#x2F;
+        finish: function(){
+            this.active = false;
+            this.currentIndex = null;
+            this.hide();
+        },
+        
+        &#x2F;**
+         * 此方法用来渲染当前的自动完成的数据
+         * @method _setterCurrentData
+         * @param currentData {Array} 获取的最后的数据
+         * @return currentData
+         * @private
+         *&#x2F;
+        _setterCurrentData: function(currentData){
+        
+            this.show();
+            
+            this.autoCompleteList.empty();
+            
+            if (typeof this.formatGroup === &#x27;function&#x27;) {
+            
+                this.autoCompleteList.append(this.formatGroup(this._lastProcessVal, currentData));
+                
+            }
+            else {
+            
+                S.each(currentData, function(item, index){
+                
+                    if (typeof this.formatItem === &#x27;function&#x27;) {
+                        this.autoCompleteList.append(this.formatItem(this._lastProcessVal, item, index));
+                    }
+                    else {
+                        var label;
+                        if (item.label) {
+                            label = item.label.replace(new RegExp(this._lastProcessVal, &#x27;g&#x27;), &quot;&lt;b class=&#x27;orange&#x27;&gt;&quot; + this._lastProcessVal + &quot;&lt;&#x2F;b&gt;&quot;);
+                            
+                        }
+                        else {
+                            label = item.replace(new RegExp(this._lastProcessVal, &#x27;g&#x27;), &quot;&lt;b class=&#x27;orange&#x27;&gt;&quot; + this._lastProcessVal + &quot;&lt;&#x2F;b&gt;&quot;);
+                        }
+                        this.autoCompleteList.append(&#x27;&lt;div  class=&quot;simple-autocomplete-item&quot; rel=&quot;autocompleteItem&quot; data-value=&#x27; + this.getValue(item) + &#x27;&gt;&#x27; + label + &#x27;&lt;&#x2F;div&gt;&#x27;);
+                    }
+                    
+                }, this);
+            }
+            
+            this.setPosition(this.el, this.node, &#x27;lt lb&#x27;);
+            
+            
+            
+            return currentData;
+            
+        },
+        &#x2F;**
+         * 此方法用来缓存远程获取的数据
+         * @method _setCacheData
+         * @param value {String} 自动提示的键值
+         * @param data {Array} 远程获取的数据
+         * @private
+         *&#x2F;
+        _setCacheData: function(value, data){
+            if (this._cacheData.length &amp;&amp; this._cacheData.length &gt; 10) {
+                this._cacheData = {};
+                this._cacheData.length = 0;
+            }
+            this._cacheData[value] = data;
+            this._cacheData.length++;
+        },
+        
+        _next: function(){
+        
+            this.focus(1);
+        },
+        _prev: function(){
+        
+            this.focus(-1);
+        },
+        &#x2F;**
+         * 此方法用来聚焦选中的数据项
+         * @method focus
+         * @param index {Int} 索引值
+         *&#x2F;
+        focus: function(index){
+        
+            if (this.currentIndex == null || typeof this.currentIndex == &#x27;undefined&#x27;) {
+                index = this.currentIndex = 0;
+                
+            }
+            else {
+            
+                index = this.currentIndex + index;
+            }
+            this.selectItem(index);
+            
+        },
+        &#x2F;**
+         * 此方法用来选中的数据项,在这个过程中将会触发onSelect函数与onChange函数
+         * @method focus
+         * @param index {Int} 索引值
+         * @protected
+         *&#x2F;
+        selectItem: function(index){
+			var autoCompleteItem,val;
+			if(index instanceof $){
+				autoCompleteItem = index;
+			}else{
+				var items = $(&#x27;[rel=&quot;autocompleteItem&quot;]&#x27;, this.el);
+				index = index &lt; 0 ? items.length - 1 : index;
+				index = index == items.length ? 0 : index;
+				this.currentIndex = index;
+				items.removeClass(&quot;simple-autocomplete-selected&quot;);
+				autoCompleteItem = items.eq(index);
+				autoCompleteItem.addClass(&quot;simple-autocomplete-selected&quot;);
+			}
+            val = autoCompleteItem.attr(&#x27;data-value&#x27;);
+            this.node.val(val);
+            if (this.lastSelectedValue &amp;&amp; this.lastSelectedValue != val) {
+               &#x2F;&#x2F; this.onChange.call(this.node, val);
+                this.trigger(&#x27;change&#x27;,val);
+            }
+            this.lastSelectedValue = val;
+        },
+        &#x2F;**
+         * 获取每个数据项的值，复写此方法可以定制相关的自动完成功能
+         * @method getValue
+         * @param item {Item} 每条数据项
+         * @return value
+         *&#x2F;
+        getValue: function(item){
+            return item.value || item;
+            
+        },
+        &#x2F;**
+         * 选中当前数据项
+         * @method selectCurrent
+         *&#x2F;
+        selectCurrent: function(){
+            this.selectItem(this.currentIndex);
+            &#x2F;&#x2F;this.onSelect.apply(this.node, [this.lastSelectedValue]);
+            this.trigger(&#x27;select&#x27;,this.lastSelectedValue);
+            this.finish();
+        },
+        &#x2F;**
+         * 销毁自动完成组件
+         * @method destroy
+         *&#x2F;
+        destroy:function(){
+            this.el.undelegate();
+            this.currentIndex = null;
+            this._cacheData = null;
+            this.inherit(arguments);
+        }
+        
+    });
+    
+    S.bridgeTojQuery(&#x27;autocomplete&#x27;, AutoComplete);
+    
+    return AutoComplete;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="foot">
+		The API build by YUIDOC
+		Simple UI is released under MIT License and implements open technologies such as:HTML5,CSS3,JavaScript.
+		<p>
+		如果你想为SimpleUI贡献代码，请点击这里<a target="_blank" href="http://github.com/simpleui">SimpleUI At Github</a>
+		</p>
+        <div class="blog-info">
+         WordPress和<a href="http://simpleui.org" target="_blank">SimpleUI</a>强力驱动--蓝面小生--2012
+		 <script src="http://s9.cnzz.com/stat.php?id=4424795&web_id=4424795&show=pic1" language="JavaScript"></script>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

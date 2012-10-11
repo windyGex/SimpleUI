@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            #test1{margin:50px;border:1px solid #ccc;position:absolute;}
+        </style>
+    </head>
+    <body>
+        <span>sdfsdfsdfsfsdf</span>
+        <div id="test1" class="simple-btn-wrap">
+        	test
+        </div>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/resize'], function(Resize){
+               
+               new Resize({
+				node:'#test1'
+			   })
+
+
+            });
+        </script>
+    </body>
+</html>

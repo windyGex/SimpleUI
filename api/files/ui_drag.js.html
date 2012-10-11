@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ui\drag.js</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    
+	<link href="http://simpleui.org/wp-content/themes/simpleui/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+<div class="navbar navbar-fixed-top">
+     
+        <div class="container navbar-inner">
+            <h1 class="nav-title">
+                <a href="http://simpleui.org/">Simple <span class="nav-title-em">UI</span></a>
+				<p>Simple UI library for the web & make web build quickly</p>
+            </h1>
+           
+           <!-- <div class="navbar-col" title="切换显示咧">
+                <a class="navbar-col2-demo ib" title="两栏" rel="two" href="javascript:;">
+                    
+                </a>
+                <a class="navbar-col3-demo ib" title="三栏" rel="three" href="javascript:;">
+                    
+                </a>
+            </div> -->
+            <div class="navbar-search">
+                <form action="http://simpleui.org/" method="get" id="searchForm">
+                        <input type="text" placeholder="请输入搜索的关键字" name="s"/><button type="submit"></button>
+                </form>
+                      
+            </div>
+        </div>
+      
+</div>
+<div class="nav-menu-container">
+ <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+</ul> </div> 
+	<div class="container">
+    <div id="bd" class="yui3-g">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Simple.Attribute.html">Simple.Attribute</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.AutoComplete.html">Simple.AutoComplete</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Button.html">Simple.Button</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ButtonGroup.html">Simple.ButtonGroup</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ComboButton.html">Simple.ComboButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ContextMenu.html">Simple.ContextMenu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePicker.html">Simple.DatePicker</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePickerBase.html">Simple.DatePickerBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Dialog.html">Simple.Dialog</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Drag.html">Simple.Drag</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DropDownButton.html">Simple.DropDownButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.EventTarget.html">Simple.EventTarget</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Menu.html">Simple.Menu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.MenuItem.html">Simple.MenuItem</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Modal.html">Simple.Modal</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Pagination.html">Simple.Pagination</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Resize.html">Simple.Resize</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Selectable.html">Simple.Selectable</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Tip.html">Simple.Tip</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/attribute.html">attribute</a></li>
+            
+                <li><a href="..&#x2F;modules/declare.html">declare</a></li>
+            
+                <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button.html">ui.button</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button-group.html">ui.button-group</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.date-picker.html">ui.date-picker</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.dialog.html">ui.dialog</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.drag.html">ui.drag</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.menu.html">ui.menu</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.modal.html">ui.modal</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.pagination.html">ui.pagination</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.resize.html">ui.resize</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.selectable.html">ui.selectable</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.tool-tip.html">ui.tool-tip</a></li>
+            
+                <li><a href="..&#x2F;modules/widget.html">widget</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: ui\drag.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+define([&#x27;simple&#x27;, &#x27;attribute&#x27;, &#x27;declare&#x27;], function(S, Attribute, declare){
+
+    var $ = S.$, Drag;
+    
+    &#x2F;&#x2F;拖动的时候不要选中元素
+    $.fn.unselect = function(prevent){
+        prevent = (prevent == null) ? true : prevent;
+        if (prevent) {
+            return this.each(function(){
+                if ($.browser.msie || $.browser.safari) 
+                    $(this).bind(&#x27;selectstart&#x27;, function(){
+                        return false;
+                    });
+                else 
+                    if ($.browser.mozilla) {
+                        $(this).css(&#x27;MozUserSelect&#x27;, &#x27;none&#x27;);
+                        $(&#x27;body&#x27;).trigger(&#x27;focus&#x27;);
+                    }
+                    else 
+                        if ($.browser.opera) 
+                            $(this).bind(&#x27;mousedown&#x27;, function(){
+                                return false;
+                            });
+                        else 
+                            $(this).attr(&#x27;unselectable&#x27;, &#x27;on&#x27;);
+            });
+        }
+        else {
+            return this.each(function(){
+                if ($.browser.msie || $.browser.safari) 
+                    $(this).unbind(&#x27;selectstart&#x27;);
+                else 
+                    if ($.browser.mozilla) 
+                        $(this).css(&#x27;MozUserSelect&#x27;, &#x27;inherit&#x27;);
+                    else 
+                        if ($.browser.opera) 
+                            $(this).unbind(&#x27;mousedown&#x27;);
+                        else 
+                            $(this).removeAttr(&#x27;unselectable&#x27;, &#x27;on&#x27;);
+            });
+        }
+    }
+    
+    &#x2F;&#x2F;辅助获取正确的left，top值
+    &#x2F;**
+     * 获取对象的绝对位置
+     * @method getRealPos
+     * @param {Object} element 需要获取位置的对象
+     * @return {Object} 返回对象的top, left 值
+     *&#x2F;
+    var getRealPos = function(element){
+        var position = element.css(&quot;position&quot;), top, left, parentOffset, offset = element.offset(), right, bottom;
+        if (position == &quot;static&quot;) {
+            element.css(&quot;position&quot;, &quot;relative&quot;);
+            top = 0;
+            left = 0;
+        }
+        else 
+            if (position == &quot;absolute&quot;) {
+                var parent = element.parent()
+                while (parent.css(&quot;position&quot;) == &quot;static&quot; &amp;&amp; !parent.is(&quot;body&quot;)) {
+                    parent = parent.parent();
+                }
+                parentOffset = parent.offset();
+                top = offset.top - parentOffset.top;
+                left = offset.left - parentOffset.left;
+            }
+            else 
+                if (position == &quot;fixed&quot;) {
+                    top = parseInt(element.css(&quot;top&quot;));
+                    left = parseInt(element.css(&quot;left&quot;));
+                    if (isNaN(top)) {
+                        top = offset.top - Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+                    }
+                    if (isNaN(left)) {
+                        left = offset.left;
+                    }
+                }
+                else 
+                    if (position == &quot;relative&quot;) {
+                        top = parseFloat(element.css(&quot;top&quot;));
+                        left = parseFloat(element.css(&quot;left&quot;));
+                        right = parseFloat(element.css(&quot;right&quot;));
+                        bottom = parseFloat(element.css(&quot;bottom&quot;));
+                        if (isNaN(top)) {
+                            if (!isNaN(bottom)) {
+                                top = -bottom
+                            }
+                            else {
+                                top = 0;
+                            }
+                        }
+                        if (isNaN(left)) {
+                            if (!isNaN(right)) {
+                                left = -right
+                            }
+                            else {
+                                left = 0;
+                            }
+                        }
+                    }
+        
+        return {
+            left: left,
+            top: top
+        }
+    },    &#x2F;**
+     * 获取元素的 left top right bottom
+     * @method getCoordinates
+     * @param {Object} element 需要获取位置的对象
+     * @return {Object} 返回对象的left top right bottom值
+     *&#x2F;
+    getCoordinates = function(element){
+        var coor;
+        element = $(element);
+        if (element.length &lt; 1) {
+            return;
+        }
+        var offset = element.offset(), 
+        right = element.outerWidth() + offset.left, bottom = element.outerHeight() + offset.top;
+        
+        coor = S.mixin({
+            right: right,
+            bottom: bottom
+        }, offset);
+        
+        return coor;
+    }, getWinScroll = function(){
+        return {
+            x: Math.max(document.documentElement.scrollLeft, document.body.scrollLeft),
+            y: Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+        }
+    }
+    &#x2F;**
+     * Drag模块为web应用增加类似桌面应用程序般的功能和易用性。Drag本身可以让一个Dom元素可移动，
+     * 并且可以设置拖动手柄来启用拖动，也可以设置拖动的范围。Drag模块本身包括了一个放置模块，通过抛出的事件使得交互变得更加简单
+     * 
+     *     require([&#x27;ui&#x2F;drag&#x27;],function(Drag){
+     *         new Drag({
+     *             node:&#x27;#drag-dom&#x27;
+     *         });
+     *     });
+     *     
+     * @module ui.drag
+     * @class Simple.Drag
+     * @extends Simple.Attribute
+     *&#x2F;
+    Drag = declare(&#x27;Drag&#x27;, Attribute, {
+    
+        &#x2F;**
+         * 设定需要被拖动的dom元素
+         * @property node
+         * @type String | HTMLElement
+         * @default null
+         *&#x2F;
+        node: null,
+        &#x2F;**
+         * 设定拖动该node时触发拖动的元素
+         * @property handle
+         * @type String
+         * @default null
+         *&#x2F;
+        handle: null,
+        &#x2F;**
+         * 限定拖动的范围
+         * @property container
+         * @type String | HTMLElement
+         * @default document.body
+         *&#x2F;
+        container: document.body,
+        &#x2F;**
+         * 拖动的时候的代理，如果为字符串则会复制原先的dom元素
+         * @property proxy
+         * @type String | Function
+         * @default null
+         *&#x2F;
+        proxy: null,
+        &#x2F;**
+         * 延迟多少像素触发拖动
+         * @property delay
+         * @type Int
+         * @default 2
+         *&#x2F;
+        delay: 2,
+        &#x2F;**
+         * 有拖动代理的情况下，该代理相对于鼠标的位置
+         *     
+         *     atCursor:{
+         *         top:-10,
+         *         left:-10
+         *     }
+         *     
+         * @property atCursor
+         * @type Object
+         * @default null
+         *&#x2F;
+        atCursor: null,
+        &#x2F;**
+         * 当拖动的页面存在有iframe的时候，是否修复从iframe拖动的时候出现闪烁的情况
+         * @property iframeFix
+         * @type Boolean
+         * @default false
+         *&#x2F;
+        iframeFix: false,
+        &#x2F;**
+         * 设定拖动的方向，可选值有both,x,y
+         * @property direction
+         * @type String
+         * @default both
+         *&#x2F;
+        direction: &#x27;both&#x27;,
+        &#x2F;**
+         * 设定拖动的步进
+         * 
+         *     grid:[10,10]
+         *     
+         * @property grid
+         * @type Array
+         * @default false
+         *&#x2F;
+        grid: false,
+        &#x2F;**
+         * 设定拖动完毕后是否返回原先的位置
+         * @property revert
+         * @type Boolean
+         * @default false
+         *&#x2F;
+        revert: false,
+        &#x2F;**
+         * 设定拖动时候出发drop事件的元素
+         * @property dropElements
+         * @type String
+         * @default false
+         *&#x2F;
+        dropElements: false,
+        &#x2F;**
+         * 初始化拖动的事件
+         * @method init
+         * @protected
+         *&#x2F;
+        init: function(){
+            if (!this.node) {
+                return false;
+            }
+            this.node = $(this.node);
+            this.currentPosition = this.node.css(&#x27;position&#x27;);
+            var handle, self = this;
+            this.dropElements = $(this.dropElements);
+            handle = this.get(&#x27;handle&#x27;);
+            handle.on(&#x27;mousedown.drag&#x27;, function(e){
+                if (e.target.tagName.toLowerCase() === &#x27;input&#x27;) {
+                    return false;
+                }
+                self._movestart.apply(self, [e]);
+            });
+            &#x2F;&#x2F;handle.trigger(&#x27;mousedown.drag&#x27;);
+        },
+        &#x2F;**
+         * 销毁拖动事件
+         * @method destroy
+         *&#x2F;
+        destroy: function(){
+            this.get(&#x27;handle&#x27;).off(&#x27;mousedown.drag&#x27;);
+        },
+        &#x2F;**
+         * 鼠标按下的时候的事件处理
+         * @method _movestart
+         * @param e {jQuery Event} jQuery包装后的event对象
+         * @private
+         *&#x2F;
+        &#x2F;**
+         * 拖动开始的时候触发的事件，如果返回false，则阻止拖动
+         * @event dragStart
+         * @param {jQuery Event} event 
+         * @param {Object} context
+         *&#x2F;
+        _movestart: function(e){
+            e.stopPropagation();
+            var node = this.node;
+            this.lastX = e.pageX;
+            this.lastY = e.pageY;
+            this.lastNodeX = getRealPos(node).left;
+            this.lastNodeY = getRealPos(node).top;
+            this.offset = node.offset();
+            this.nodeWidth = node.outerWidth();
+            this.nodeHeight = node.outerHeight();
+            if (this.trigger(&#x27;dragStart&#x27;, {
+                event: e,
+                context: this
+            }) ===
+            false) {
+                return false;
+            }
+            
+            $(document).mousemove($.proxy(this._moving, this));
+            $(document).mouseup($.proxy(this._movestop, this));
+            this._setLimitRegion();
+            &#x2F;&#x2F;this._setIframeFix();
+            node.hasClass(&quot;draggable&quot;) &amp;&amp; node.addClass(&quot;draggable&quot;);
+            this.overed = null;
+            $(document.body).unselect();
+        },
+		&#x2F;**
+         * 鼠标移动的时候的事件处理
+         * @method _moving
+         * @param e {jQuery Event} jQuery包装后的event对象
+         * @private
+         *&#x2F;
+		&#x2F;**
+         * 拖动的时候触发的事件
+         * @event drag
+         * @param {jQuery Event} event 
+         * @param {Object} context 实例化后Drag的对象
+         *&#x2F;
+        _moving: function(e){
+            var node = this.node, updateEl;
+            this.moveX = e.pageX;
+            this.moveY = e.pageY;
+            this.changeX = this.moveX - this.lastX;
+            this.changeY = this.moveY - this.lastY;
+            
+            if (Math.abs(this.changeX) &gt; this.delay &amp;&amp; Math.abs(this.changeY) &gt; this.delay) {
+                this.draggable = true;
+                $(document.body).css(&#x27;cursor&#x27;, &#x27;move&#x27;);
+                if (this.grid) {
+                    this.changeY = Math.round(this.changeY &#x2F; this.grid[1]) * this.grid[1]
+                    this.changeX = Math.round(this.changeX &#x2F; this.grid[0]) * this.grid[0]
+                }
+                
+               if (this.dragLimitRegion) {
+                    if (this.offset.left + this.changeX &lt; this.dragLimitRegion.left) {
+                        this.changeX = this.dragLimitRegion.left - this.offset.left;
+                    }
+                    if (this.offset.left + this.changeX + this.nodeWidth &gt; this.dragLimitRegion.right) {
+                        this.changeX = this.dragLimitRegion.right - this.offset.left - this.nodeWidth;
+                    }
+                    if (this.offset.top + this.changeY &lt; this.dragLimitRegion.top) {
+                        this.changeY = this.dragLimitRegion.top - this.offset.top;
+                    }
+                    if (this.offset.top + this.changeY + this.nodeHeight &gt; this.dragLimitRegion.bottom) {
+                        this.changeY = this.dragLimitRegion.bottom - this.offset.top - this.nodeHeight;
+                    }
+                } 
+                
+                this.left = this.lastNodeX + this.changeX;
+                this.top = this.lastNodeY + this.changeY;
+                
+                
+                if (this.proxy) {
+                    this._setProxy();
+                    updateEl = this.proxyEl;
+                    this.updatePosition(updateEl, true);
+                }
+                else {
+                    updateEl = node;
+                    this.updatePosition(updateEl, false);
+                }
+                
+                this.trigger(&#x27;drag&#x27;, {
+                    event: e,
+                    context: this
+                });
+                
+                this.dropElements &amp;&amp; this.checkDroppables();
+            }
+        },
+		&#x2F;**
+         * 鼠标弹起的时候的事件处理
+         * @method _movestop
+         * @param e {jQuery Event} jQuery包装后的event对象
+         * @private
+         *&#x2F;
+		&#x2F;**
+         * 拖动停止的时候触发的事件
+         * @event dragStop
+         * @param {jQuery Event} event 
+         * @param {Object} context 实例化后Drag的对象
+         *&#x2F;
+        _movestop: function(e){
+            var updateEl;
+            if (this.draggable) {
+                this.dropElements &amp;&amp; this.checkDroppables(true);
+            }
+            if (this.proxy) {
+                if (!this.revert) {
+                    updateEl = this.node;
+                    this.updatePosition(updateEl);
+                }
+                updateEl = this.proxyEl;
+            }
+            else {
+                updateEl = this.node;
+            }
+            if (this.revert) {
+                this.node.animate({
+                    left: this.lastNodeX,
+                    top: this.lastNodeY
+                });
+            }
+            
+            this.trigger(&#x27;dragStop&#x27;, {
+                event: e,
+                context: this
+            });
+            $(document).unbind(&#x27;mousemove&#x27;).unbind(&#x27;mouseup&#x27;);
+            this.draggable = false;
+            $(document.body).css({
+                &#x27;cursor&#x27;: &#x27;default&#x27;
+            }).unselect(false);
+            if (this.proxyEl) {
+                this.proxyEl.remove();
+                this.proxyEl = null;
+            }
+        },
+		&#x2F;**
+         * 设置拖动的范围
+         * @method _setLimitRegion
+         * @protected
+         *&#x2F;
+        _setLimitRegion: function(){
+            var region = {};
+            if (this.container) {
+                if (this.container == document.body) {
+                    var DOC = document.documentElement;
+                    region.left = 0;
+                    region.top = 0;
+                    region.right = Math.max(DOC.clientWidth, DOC.scrollWidth);
+                    region.bottom = Math.max(DOC.clientHeight, DOC.scrollHeight);
+                }
+                else {
+                    var container = $(this.container);
+                    region = getCoordinates(container);
+                }
+            }
+            else {
+                region = null;
+            }
+            this.dragLimitRegion = region;
+        },
+		&#x2F;**
+         * 设置拖动的代理
+         * @method _setProxy
+         * @protected
+         *&#x2F;
+        _setProxy: function(){
+            if (this.proxyEl) {
+                return;
+            }
+            var proxy = this.proxy;
+            if (typeof proxy == &quot;string&quot;) {
+                this.proxyEl = this.node.clone().css({
+                    &quot;position&quot;: &quot;absolute&quot;,
+                    top: this.lastNodeY,
+                    left: this.lastNodeX
+                });
+            }
+            else 
+                if (typeof proxy == &quot;function&quot;) {
+                    this.proxyEl = this.proxy.call(this.node);
+                    this.proxyEl.css(&quot;position&quot;, &quot;absolute&quot;);
+                }
+            this.proxyEl.appendTo(document.body);
+        },
+		&#x2F;**
+         * 更新拖动的元素的位置
+         * @method updatePosition
+         * @param el {jQuery Object} 拖动的元素
+         * @param proxy {Boolean} 是否有拖动代理
+         * @protected
+         *&#x2F;
+        updatePosition: function(el, proxy){
+            var top = this.top, left = this.left;
+            if (proxy) {
+                top = this.offset.top + this.changeY;
+                left = this.offset.left + this.changeX;
+                if (this.atCursor) {
+                    top = this.moveY + this.atCursor.top;
+                    left = this.moveX + this.atCursor.left;
+                }
+            }
+            if (this.direction == &quot;both&quot;) {
+                el.css({
+                    top: top,
+                    left: left
+                });
+            }
+            else 
+                if (this.direction == &quot;x&quot;) {
+                    el.css({
+                        left: left
+                    });
+                }
+                else {
+                    el.css({
+                        top: top
+                    });
+                }
+        },
+		&#x2F;**
+         * 检测是否放置了元素
+         * @method checkDroppables
+         * @param isDrop {Boolean} 是否有放置
+         * @protected
+         *&#x2F;
+		&#x2F;**
+         * 拖动离开放置元素时触发的事件
+         * @event dragLeave
+         * @param {jQuery Object} el 放置的元素
+         * @param {Object} context 实例化后Drag的对象
+         *&#x2F;
+		&#x2F;**
+         * 拖动进入放置元素时触发的事件
+         * @event dragEnter
+         * @param {jQuery Object} el 放置的元素
+         * @param {Object} context 实例化后Drag的对象
+         *&#x2F;
+		&#x2F;**
+         * 拖动放置元素时触发的事件
+         * @event drop
+         * @param {jQuery Object} el 放置的元素
+         * @param {Object} context 实例化后Drag的对象
+         *&#x2F;
+        checkDroppables: function(isDrop){
+            var self = this;
+            var overed = this.dropElements.filter(function(i, el){
+                el = $(el)
+                if (self.proxy) {
+                    return self.isInteract(el, self.proxyEl)
+                }
+                else {
+                    return self.isInteract(el, self.node);
+                }
+            }).last();
+            if (this.overed != overed[0]) {
+                if (this.overed) {
+                    &#x2F;&#x2F; this.ondragleave.apply(this.node, [$(this.overed), this]);
+                    this.trigger(&#x27;dragLeave&#x27;, {
+                        el: this.overed,
+                        context: this
+                    });
+                }
+                if (overed[0]) {
+                    this.trigger(&#x27;dragEnter&#x27;, {
+                        el: overed,
+                        context: this
+                    });
+                    &#x2F;&#x2F; this.ondragenter.apply(this.node, [overed, this]);
+                }
+                this.overed = overed[0];
+            }
+            else {
+                if (overed[0]) {
+                    if (isDrop) {
+                        &#x2F;&#x2F; this.ondragdrop.apply(this.node, [overed, this]);
+                        this.trigger(&#x27;drop&#x27;, {
+                            el: overed,
+                            context: this
+                        });
+                    }
+                }
+            }
+        },
+        getDroppableCoordinates: function(el){
+            if (el) {
+                var position = getCoordinates(el);
+                if (el.css(&quot;position&quot;) == &quot;fixed&quot;) {
+                    var scroll = getWinScroll();
+                    position.top += scroll.y;
+                    position.bottom += scroll.y;
+                    position.left += scroll.x;
+                    position.right += scroll.x;
+                }
+                return position;
+            }
+        },
+        isInteract: function(nodeA, nodeB){
+            var a = this.getDroppableCoordinates(nodeA), b = this.getDroppableCoordinates(nodeB);
+            &#x2F;&#x2F;A top&gt; B bottom
+            &#x2F;&#x2F;A bottom &lt; B top
+            &#x2F;&#x2F;A right &lt; B left
+            &#x2F;&#x2F;A left &gt;B right
+            if (a.top &gt; b.bottom || a.bottom &lt; b.top || a.right &lt; b.left || a.left &gt; b.right) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        },
+        _getterHandle: function(handle){
+            if (handle) {
+                return this.node.find(handle);
+            }
+            else {
+                return this.node;
+            }
+        }
+    });
+    
+    S.bridgeTojQuery(&quot;draggable,drag&quot;, S.Drag);
+    
+    return Drag;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="foot">
+		The API build by YUIDOC
+		Simple UI is released under MIT License and implements open technologies such as:HTML5,CSS3,JavaScript.
+		<p>
+		如果你想为SimpleUI贡献代码，请点击这里<a target="_blank" href="http://github.com/simpleui">SimpleUI At Github</a>
+		</p>
+        <div class="blog-info">
+         WordPress和<a href="http://simpleui.org" target="_blank">SimpleUI</a>强力驱动--蓝面小生--2012
+		 <script src="http://s9.cnzz.com/stat.php?id=4424795&web_id=4424795&show=pic1" language="JavaScript"></script>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

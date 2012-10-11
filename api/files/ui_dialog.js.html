@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ui\dialog.js</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    
+	<link href="http://simpleui.org/wp-content/themes/simpleui/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+<div class="navbar navbar-fixed-top">
+     
+        <div class="container navbar-inner">
+            <h1 class="nav-title">
+                <a href="http://simpleui.org/">Simple <span class="nav-title-em">UI</span></a>
+				<p>Simple UI library for the web & make web build quickly</p>
+            </h1>
+           
+           <!-- <div class="navbar-col" title="切换显示咧">
+                <a class="navbar-col2-demo ib" title="两栏" rel="two" href="javascript:;">
+                    
+                </a>
+                <a class="navbar-col3-demo ib" title="三栏" rel="three" href="javascript:;">
+                    
+                </a>
+            </div> -->
+            <div class="navbar-search">
+                <form action="http://simpleui.org/" method="get" id="searchForm">
+                        <input type="text" placeholder="请输入搜索的关键字" name="s"/><button type="submit"></button>
+                </form>
+                      
+            </div>
+        </div>
+      
+</div>
+<div class="nav-menu-container">
+ <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+</ul> </div> 
+	<div class="container">
+    <div id="bd" class="yui3-g">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Simple.Attribute.html">Simple.Attribute</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.AutoComplete.html">Simple.AutoComplete</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Button.html">Simple.Button</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ButtonGroup.html">Simple.ButtonGroup</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ComboButton.html">Simple.ComboButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ContextMenu.html">Simple.ContextMenu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePicker.html">Simple.DatePicker</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePickerBase.html">Simple.DatePickerBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Dialog.html">Simple.Dialog</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Drag.html">Simple.Drag</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DropDownButton.html">Simple.DropDownButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.EventTarget.html">Simple.EventTarget</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Menu.html">Simple.Menu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.MenuItem.html">Simple.MenuItem</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Modal.html">Simple.Modal</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Pagination.html">Simple.Pagination</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Resize.html">Simple.Resize</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Selectable.html">Simple.Selectable</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Tip.html">Simple.Tip</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/attribute.html">attribute</a></li>
+            
+                <li><a href="..&#x2F;modules/declare.html">declare</a></li>
+            
+                <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button.html">ui.button</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button-group.html">ui.button-group</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.date-picker.html">ui.date-picker</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.dialog.html">ui.dialog</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.drag.html">ui.drag</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.menu.html">ui.menu</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.modal.html">ui.modal</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.pagination.html">ui.pagination</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.resize.html">ui.resize</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.selectable.html">ui.selectable</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.tool-tip.html">ui.tool-tip</a></li>
+            
+                <li><a href="..&#x2F;modules/widget.html">widget</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: ui\dialog.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+define([&#x27;simple&#x27;, &#x27;declare&#x27;, &#x27;widget&#x27;, &#x27;ui&#x2F;modal&#x27;, &#x27;ui&#x2F;drag&#x27;, &#x27;ui&#x2F;button-group&#x27;, &#x27;css!css&#x2F;dialog&#x27;], function(S, declare, Widget, Modal, Drag, Button){
+
+    var $ = S.$, Dialog, _maxIndex = 1000, hasModal = false;
+    &#x2F;**
+     * 对话框组件，提供可定制的遮罩对话框，支持多窗口,拖动等特性
+     * @module ui.dialog
+     * @extends Simple.Widget
+     * @require ui.drag
+     * @require ui.button-group
+     * @class Simple.Dialog
+     *&#x2F;
+    Dialog = declare(&#x27;Dialog&#x27;, Widget, {
+        &#x2F;**
+         * dialog 渲染的位置
+         * @property container
+         * @type String | HTMLElement
+         * @default document.body
+         *&#x2F;
+        container: document.body,
+        &#x2F;**
+         * 从dom中加载已有的元素到对话框中
+         * @property node
+         * @type String | HTMLElement
+         * @default null
+         *&#x2F;
+        node: null,
+        &#x2F;**
+         * dialog的标题,为false则不渲染标题
+         *
+         *     new Simple.Dialog({
+         *         title:false,
+         *         node:&#x27;#test&#x27;
+         *     });
+         * @property title
+         * @type String
+         * @default simple-dialog
+         *&#x2F;
+        title: &#x27;simple-dialog&#x27;,
+        &#x2F;**
+         * dialog的附加类
+         * @property className
+         * @type String
+         * @default &#x27;simple-dialog&#x27;
+         *&#x2F;
+        className: &#x27;simple-dialog&#x27;,
+        &#x2F;**
+         * 是否显示遮罩
+         * @property modal
+         * @type Boolean
+         * @default true
+         *&#x2F;
+        modal: true,
+        &#x2F;**
+         * 渲染显示的buttons,为false不渲染该按钮
+         * @property buttons
+         * @type Array | Object
+         * @default false
+         *&#x2F;
+        buttons: false,
+        &#x2F;**
+         * 渲染工具栏上面的按钮,为false则不渲染该按钮
+         * @property handleTool
+         * @type Array | Boolean
+         * @default [&#x27;close&#x27;]
+         *&#x2F;
+        handleTool: [&#x27;close&#x27;],
+        &#x2F;**
+         * 最大化时指定的容器包裹
+         * @property maxContainer
+         * @type String | HTMLElement
+         * @default body
+         *&#x2F;
+        maxContainer: &#x27;body&#x27;,
+        &#x2F;**
+         * dialog的宽度
+         * @property width
+         * @type Int
+         * @default &#x27;&#x27;
+         *&#x2F;
+        width: &#x27;&#x27;,
+        &#x2F;**
+         * dialog的高度
+         * @property height
+         * @type Int
+         * @default &#x27;&#x27;
+         *&#x2F;
+        height: &#x27;&#x27;,
+        &#x2F;**
+         * 设置dialog初始出现的位置
+         * @property position
+         * @type String | Array
+         * @see
+         * @default &#x27;cc cc&#x27;
+         *&#x2F;
+        position: &#x27;cc cc&#x27;,
+        &#x2F;**
+         * 设置dialog是否可以拖动
+         * @property draggable
+         * @type Boolean
+         * @default true
+         *&#x2F;
+        draggable: true,
+        &#x2F;**
+         * dialog最小化时执行的事件
+         * @event min
+         *&#x2F;
+        &#x2F;**
+         * dialog最大化时执行的事件
+         * @event max
+         *&#x2F;
+        &#x2F;**
+         * dialog关闭时执行的事件
+         * @event close
+         *&#x2F;
+        listeners:{
+            min:$.noop,
+            max:$.noop,
+            close:$.noop
+        },
+        &#x2F;**
+         * 生成dialog的模版
+         * @property template
+         * @type String
+         * @default template
+         *&#x2F;
+        template: &#x27;&lt;div&gt;&#x27; +
+        &#x27;&lt;div class=&quot;simple-dialog-arrow&quot; widgetpoint=&quot;dialogArrow&quot;&gt;&lt;&#x2F;div&gt;&#x27; +
+        &#x27;&lt;div class=&quot;simple-dialog-head handle&quot; widgetpoint=&quot;dialogHead&quot;&gt;&#x27; +
+        &#x27;&lt;h2 class=&quot;simple-dialog-title&quot; widgetpoint=&quot;dialogTitle&quot;&gt;&lt;&#x2F;h2&gt;&#x27; +
+        &#x27;&lt;&#x2F;div&gt;&#x27; +
+        &#x27;&lt;div class=&quot;simple-dialog-cc&quot;&gt;&#x27; +
+        &#x27;&lt;div class=&quot;simple-dialog-content&quot; widgetpoint=&quot;dialogContent&quot;&gt;&#x27; +
+        &#x27;&lt;&#x2F;div&gt;&#x27; +
+        &#x27;&lt;div widgetpoint=&quot;dialogFoot&quot;&gt;&#x27; +
+        &#x27;&lt;&#x2F;div&gt;&#x27; +
+        &#x27;&lt;&#x2F;div&gt;&#x27; +
+        &#x27;&lt;&#x2F;div&gt;&#x27;,
+        &#x2F;**
+         * 是否启用堆栈对话框
+         * @property stack
+         * @type Boolean
+         * @default true
+         *&#x2F;
+        stack: true,
+        &#x2F;**
+         * 渲染dialog生成
+         * @method renderUI
+         *&#x2F;
+        renderUI: function(){
+            &#x2F;&#x2F;this.dialog = this.el;
+            var dialogContent;
+            
+            if (this.modal || (!this.modal &amp;&amp; hasModal)) {
+                &#x2F;&#x2F;if($(document.body)
+                this._modalInc = $(document.body).modal();
+                this._modalInc.data(&#x27;widget-modal&#x27;).show();
+                hasModal = true;
+            }
+            if (this.node.length) {
+                dialogContent = this.node.clone(true);
+                this.content = dialogContent;
+            }
+            
+            this._renderUI();
+            &#x2F;&#x2F;this.setFocus();
+        },
+        
+        _renderUI: function(){
+        
+            this.set(&#x27;content&#x27;, this.content);
+            this.set(&#x27;title&#x27;, this.title);
+            this.set(&#x27;handleTool&#x27;, this.handleTool);
+            this.set(&#x27;buttons&#x27;, this.buttons);
+            this.dialogContent.width(this.width).height(this.height);
+            if (typeof this.position === &#x27;string&#x27;) {
+                this.moveTo(&#x27;body&#x27;, this.position);
+            }
+            else {
+                this.el.css({
+                    top: position[1],
+                    left: position[0]
+                });
+            }
+            if (this.draggable) {
+                this.el.drag({
+                    handle: &#x27;[widgetpoint=&quot;dialogHead&quot;]&#x27;
+                });
+            }
+            if (this.stack) {
+                this.el.css(&#x27;z-index&#x27;, _maxIndex++);
+                this.constructor._stackDialog.length = this.constructor._stackDialog.dialog.push(this.el);
+            }
+        },
+        &#x2F;**
+         * 渲染对话框的内容
+         * @method _setterContent
+         * @param content {String} 对话框的内容
+         * @private
+         * @return content
+         *&#x2F;
+        _setterContent: function(content){
+        
+            this.dialogContent &amp;&amp; this.dialogContent.html(content);
+            
+            return content;
+        },
+        &#x2F;**
+         * 渲染对话框的标题
+         * @method _setterTitle
+         * @param title {String} 对话框的标题
+         * @private
+         * @return title
+         *&#x2F;
+        _setterTitle: function(title){
+            if (this.dialogTitle) {
+                if (title) {
+                    this.dialogTitle.html(title);
+                }
+                else {
+                    this.dialogTitle.remove();
+                }
+            }
+            return title;
+        },
+        &#x2F;**
+         * 渲染对话框的工具栏
+         * @method _setterHandleTool
+         * @param tools {Array} 对话框的工具栏
+         * @private
+         * @return tools
+         *&#x2F;
+        _setterHandleTool: function(tools){
+            if (tools.length) {
+                S.each(tools, function(n, i){
+                    var tool = $(&quot;&lt;a&#x2F;&gt;&quot;).addClass(&quot;simple-dialog-&quot; + n).attr(&quot;rel&quot;, &quot;dialog&quot; + n).html(n), self = this;
+                    tool.click(function(){
+                        if (self.trigger(n) === false) {
+                            return false;
+                        }
+                        if (n == &#x27;close&#x27;) {
+                            self.destroy();
+                        }
+                        else {
+                            self[n + &#x27;Dialog&#x27;]();
+                        }
+                    });
+                    this.dialogHead.append(tool);
+                }, this);
+            }
+            
+            return tools;
+        },
+        &#x2F;**
+         * 渲染对话框的按钮
+         * @method _setterButtons
+         * @param buttons {Array | Object} 对话框的按钮
+         * @private
+         * @return buttons
+         *&#x2F;
+        _setterButtons: function(buttons){
+            if (buttons) {
+                var btnContainer = $(&quot;&lt;div&gt;&quot;).addClass(&quot;simple-dialog-btn-wrap&quot;);
+                this.dialogFoot.empty().append(btnContainer);
+                this.buttonInc = new Button({
+                    container: btnContainer,
+                    items: buttons
+                });
+            }
+            return buttons;
+        },
+        &#x2F;**
+         * 返回对话框按钮的实例
+         * @method _getterButtons
+         * @private
+         * @return buttonInc
+         *&#x2F;
+        _getterButtons: function(){
+            return this.buttonInc;
+        },
+        &#x2F;**
+         * 为对话框绑定事件
+         * @method bindUI
+         * @protected
+         *&#x2F;
+        bindUI: function(){
+            if (this.stack) {
+                this.dialogHead.on(&#x27;mousedown&#x27;, $.proxy(this.setFocus, this));
+            }
+            &#x2F;&#x2F;this.el.on(&#x27;keyup&#x27;,&#x27;Ctrl+c&#x27;,$.proxy(this.destroy,this));
+        },
+        &#x2F;**
+         * 将对话框移动到某个位置
+         * @param {jQuery Object} context 对话框的参考dom元素
+         * @param {String} position 对话框相对context的位置
+         * @param {String} offset 对话框相对context的偏移量
+         *&#x2F;
+        moveTo: function(context, position, offset){
+            this.setPosition(this.el, context, position, offset);
+        },
+        minDialog: $.noop,
+        maxDialog: $.noop,
+        &#x2F;**
+         * 将对话框隐藏
+         * @method hide
+         *&#x2F;
+        hide: function(){
+            this.inherit(arguments);
+            if (this.modal) {
+                this._modalInc.data(&#x27;widget-modal&#x27;).hide();
+            }
+        },
+        &#x2F;**
+         * 聚焦到该对话框，只在启用多窗口时有效
+         * @method setFocus
+         *&#x2F;
+        setFocus: function(){
+            if (this.stack) {
+                var maxIndex = this._getMaxIndex();
+                if (this.el.css(&#x27;z-index&#x27;) == maxIndex) {
+                    return false;
+                }
+                this.el.css(&#x27;z-index&#x27;, maxIndex + 1);
+                this.constructor._stackDialog.focus = this.el;
+            }
+        },
+        &#x2F;**
+         * 获取当前聚焦的窗口，只在启用多窗口时有效
+         * @method getFocus
+         * @return jQuery Object
+         *&#x2F;
+        getFocus: function(){
+            if (this.stack) {
+                return this.constructor._stackDialog.focus;
+            }
+        },
+        &#x2F;**
+         * 获取当前所有对话框最大的z-index值
+         * @method _getMaxIndex
+         * @private
+         * @return z-index
+         *&#x2F;
+        _getMaxIndex: function(){
+            var zIndexList = [], maxIndex;
+            S.each(this.constructor._stackDialog.dialog, function(dialog){
+                zIndexList.push(dialog.css(&#x27;z-index&#x27;));
+            });
+            maxIndex = Math.max.apply(this, zIndexList);
+            return maxIndex;
+        },
+        &#x2F;**
+         * 销毁该对话框
+         * @method destroy
+         *&#x2F;
+        destroy: function(){
+            this.inherit(arguments);
+            this.buttonInc &amp;&amp; this.buttonInc.destroy();
+            if (this.stack) {
+                this.constructor._stackDialog.length--;
+                if (!this.constructor._stackDialog.length) {
+                    this._modalInc &amp;&amp; this._modalInc.data(&#x27;widget-modal&#x27;).hide();
+                    this.constructor._stackDialog.dialog = [];
+                    this.constructor._stackDialog.focus = null;
+                }
+            }
+        }
+    });
+    
+    S.Dialog._stackDialog = {
+        length: 0,
+        dialog: [],
+        focus: null,
+        modal: null
+    }
+    
+    S.bridgeTojQuery(&quot;dialog&quot;, Dialog);
+    
+    &#x2F;**
+     * 弹出一个远程获取数据的窗口
+     * @method Simple.ajaxDialog
+     * @param {Object} config
+     * @see Simple.Dialog
+     * @static
+     * @return Simple.Dialog的实例
+     *&#x2F;
+    S.ajaxDialog = $.ajaxDialog = function(config){
+    
+        var _ajaxDialogCache = {}, dialog, options;
+        
+        config = S.mixin({
+            url: &#x27;&#x27;,
+            data: [],
+            onLoad: $.noop,
+            loadingMessage: &#x27;loading...&#x27;
+        }, config);
+        
+        options = S.mixin(config, {
+            node: &#x27;&lt;div class=&quot;simple-dialog-load&quot;&gt;&#x27; + config.loadingMessage + &#x27;&lt;&#x2F;div&gt;&#x27;
+        });
+        
+        dialog = new Dialog(options);
+        
+        dialog.el.addClass(&#x27;simple-dialog-ajax&#x27;);
+        
+        getHtmlByAjax(config.url, config.data, function(html){
+            dialog.set(&#x27;content&#x27;, html);
+            dialog.moveTo(&#x27;body&#x27;, config.position);
+            config.onLoad.call(dialog);
+        });
+        
+        function getHtmlByAjax(url, data, callback){
+            var html = _ajaxDialogCache[url];
+            if (html) {
+                callback(html);
+            }
+            else {
+                $.ajax({
+                    url: url,
+                    dataType: &quot;html&quot;,
+                    &#x2F;&#x2F; async:true,
+                    data: data,
+                    success: function(r){
+                        _ajaxDialogCache[url] = r;
+                        callback(r);
+                    },
+                    error: function(){
+                        throw new Error(&#x27;不能找到对应的HTML!&#x27;, url);
+                    }
+                });
+            }
+        }
+        
+        return dialog;
+    }
+    
+    var uuid=0;
+    &#x2F;**
+     * 弹出一个嵌套iframe的窗口
+     * @method Simple.iframeDialog
+     * @param {Object} config
+     * @see Simple.Dialog
+     * @static
+     * @return Simple.Dialog的实例
+     *&#x2F;
+    Simple.iframeDialog = $.iframeDialog = function(config){
+    
+        var options, dialog,id=(uuid++);
+        
+        config = S.mixin({
+            url: &#x27;&#x27;,
+            onload: $.noop,
+            loadingMessage: &#x27;loading...&#x27;
+        }, config);
+        
+        options = S.mixin(config, {
+            node: &#x27;&lt;div class=&quot;simple-dialog-load&quot;&gt;&#x27; + config.loadingMessage + &#x27;&lt;&#x2F;div&gt;&#x27; +
+            &#x27;&lt;iframe class=&quot;simple-content-iframe&quot; src=&quot;&#x27; +
+            config.url +
+            &#x27;&quot; frameBorder=&quot;0&quot; name=&quot;SimpleDialogFrame&#x27;+id+&#x27;&quot; style=&quot;display:none&quot;&gt;&lt;&#x2F;iframe&gt;&#x27;
+        });
+        
+        dialog = new Dialog(options);
+        
+        window[&quot;SimpleDialogFrame&quot;+id].onload = function(){
+                dialog.dialogContent.find(&quot;.simple-dialog-load&quot;).remove();
+                dialog.dialogContent.find(&quot;iframe&quot;).fadeIn();
+                dialog.moveTo(&#x27;body&#x27;, config.position);
+                config.onload.call(this);
+        }
+        
+        window[&quot;SimpleDialogFrame&quot;] = null;
+        
+        return dialog;
+        
+    }
+    &#x2F;**
+     * 弹出一个警告的窗口
+     * @method Simple.alertDialog
+     * @param {Object} config
+     * @see Simple.Dialog
+     * @static
+     * @return Simple.Dialog的实例
+     *&#x2F;
+    Simple.alertDialog = $.alertDialog = function(config){
+    
+        config = $.extend({}, config, {
+            node: &#x27;&lt;div class=&quot;simple-dialog-alert&quot;&gt;&lt;i class=&quot;simple-ico simple-ico-alert&quot;&gt;&lt;&#x2F;i&gt;&#x27; + config.node + &#x27;&lt;&#x2F;div&gt;&#x27;,
+            buttons: [{
+                label: &#x27;确定&#x27;,
+                handle: function(){
+                    (config.onsure || $.noop).call(dialog);
+                    dialog.destroy();
+                }
+            }],
+            title: &#x27;System Alert&#x27;
+        });
+        var dialog = new Dialog(config);
+        
+        return dialog;
+        
+    }
+    
+    &#x2F;**
+     * 弹出一个确认的窗口
+     * @method Simple.confirmDialog
+     * @param {Object} config
+     * @see Simple.Dialog
+     * @static
+     * @return Simple.Dialog的实例
+     *&#x2F;
+    Simple.confirmDialog = $.confirmDialog = function(config){
+    
+        config = $.extend({}, config, {
+            node: &#x27;&lt;div class=&quot;simple-dialog-confirm&quot;&gt;&lt;i class=&quot;simple-ico simple-ico-alert&quot;&gt;&lt;&#x2F;i&gt;&#x27; + config.node + &#x27;&lt;&#x2F;div&gt;&#x27;,
+            buttons: [{
+                label: &#x27;确定&#x27;,
+                handle: function(){
+                    (config.onsure || $.noop).call(dialog);
+                    dialog.destroy();
+                }
+            }, {
+                label: &#x27;取消&#x27;,
+                handle: function(){
+                    (config.oncancel || $.noop).call(dialog);
+                    dialog.destroy();
+                }
+            }],
+            title: &#x27;System Confirm&#x27;
+        });
+        
+        var dialog = new Dialog(config);
+        
+        return dialog;
+        
+    }
+    
+    return Dialog;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="foot">
+		The API build by YUIDOC
+		Simple UI is released under MIT License and implements open technologies such as:HTML5,CSS3,JavaScript.
+		<p>
+		如果你想为SimpleUI贡献代码，请点击这里<a target="_blank" href="http://github.com/simpleui">SimpleUI At Github</a>
+		</p>
+        <div class="blog-info">
+         WordPress和<a href="http://simpleui.org" target="_blank">SimpleUI</a>强力驱动--蓝面小生--2012
+		 <script src="http://s9.cnzz.com/stat.php?id=4424795&web_id=4424795&show=pic1" language="JavaScript"></script>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

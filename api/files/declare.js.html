@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>declare.js</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    
+	<link href="http://simpleui.org/wp-content/themes/simpleui/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+<div class="navbar navbar-fixed-top">
+     
+        <div class="container navbar-inner">
+            <h1 class="nav-title">
+                <a href="http://simpleui.org/">Simple <span class="nav-title-em">UI</span></a>
+				<p>Simple UI library for the web & make web build quickly</p>
+            </h1>
+           
+           <!-- <div class="navbar-col" title="切换显示咧">
+                <a class="navbar-col2-demo ib" title="两栏" rel="two" href="javascript:;">
+                    
+                </a>
+                <a class="navbar-col3-demo ib" title="三栏" rel="three" href="javascript:;">
+                    
+                </a>
+            </div> -->
+            <div class="navbar-search">
+                <form action="http://simpleui.org/" method="get" id="searchForm">
+                        <input type="text" placeholder="请输入搜索的关键字" name="s"/><button type="submit"></button>
+                </form>
+                      
+            </div>
+        </div>
+      
+</div>
+<div class="nav-menu-container">
+ <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+</ul> </div> 
+	<div class="container">
+    <div id="bd" class="yui3-g">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Simple.Attribute.html">Simple.Attribute</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.AutoComplete.html">Simple.AutoComplete</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Button.html">Simple.Button</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ButtonGroup.html">Simple.ButtonGroup</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ComboButton.html">Simple.ComboButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.ContextMenu.html">Simple.ContextMenu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePicker.html">Simple.DatePicker</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DatePickerBase.html">Simple.DatePickerBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Dialog.html">Simple.Dialog</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Drag.html">Simple.Drag</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.DropDownButton.html">Simple.DropDownButton</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.EventTarget.html">Simple.EventTarget</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Menu.html">Simple.Menu</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.MenuItem.html">Simple.MenuItem</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Modal.html">Simple.Modal</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Pagination.html">Simple.Pagination</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Resize.html">Simple.Resize</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Selectable.html">Simple.Selectable</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Tip.html">Simple.Tip</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
+            
+                <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/attribute.html">attribute</a></li>
+            
+                <li><a href="..&#x2F;modules/declare.html">declare</a></li>
+            
+                <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button.html">ui.button</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.button-group.html">ui.button-group</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.date-picker.html">ui.date-picker</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.dialog.html">ui.dialog</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.drag.html">ui.drag</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.menu.html">ui.menu</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.modal.html">ui.modal</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.pagination.html">ui.pagination</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.resize.html">ui.resize</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.selectable.html">ui.selectable</a></li>
+            
+                <li><a href="..&#x2F;modules/ui.tool-tip.html">ui.tool-tip</a></li>
+            
+                <li><a href="..&#x2F;modules/widget.html">widget</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: declare.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+
+define([&#x27;simple&#x27;], function(S){
+    &#x2F;&#x2F;declare
+    var _crackName = function(name){
+        var index = name.lastIndexOf(&quot;.&quot;), clsName, o, args;
+        if (index != -1) {
+            args = name.substring(0, index);
+            o = S.namespace(args);
+            clsName = name.substring(index + 1, name.length);
+        }
+        else {
+            clsName = name;
+            o = S;
+        }
+        return {
+            clsName: clsName,
+            namespace: o
+        };
+    };
+    
+    &#x2F;**
+     * 定义一个基础类，并且遍历指定的对象，拷贝到类的原型链上，并且调用原型链上的init的方法进行初始化。
+     * 如果指定父类，则该类会继承于这个父类，并且可以使用inherit来便捷调用父级方法.
+     * 
+     *     Simple.declare(&#x27;Animal&#x27;,{
+     *         getName:function(){
+     *             return &#x27;animal&#x27;;
+     *         }
+     *     });
+     *     Simple.declare(&#x27;Bird&#x27;,Simple.Animal,{
+     *         getName:function(){
+     *             var superResult = this.inherit(arguments);
+     *             return superResult + &#x27; bird&#x27;;
+     *         }
+     *     });
+     *     console.log(new Simple.Bird().getName());&#x2F;&#x2F;will console animal bird
+     *     
+     * @method Simple.declare
+     * @module declare
+     * @static
+     * @param {String} subCls
+     * @param {Function} superCls
+     * @param {Object} props
+     * @return 定义后的构造函数
+     *&#x2F;
+    var declare = function(subCls, superCls, props){
+        &#x2F;&#x2F;参数判断
+        if (!props) {
+            props = superCls;
+            superCls = null;
+        }
+        
+        var clsInfo = _crackName(subCls);
+        
+        &#x2F;&#x2F;生成构造函数
+        subCls = clsInfo.namespace[clsInfo.clsName] = function(config){
+            S.mixin(this, config);
+			
+            &#x2F;&#x2F;如果存在父类,父类构造函数先执行
+            &#x2F;&#x2F;循环执行父级的构造函数
+            if (subCls.base) {
+                for (var i = 0; i &lt; subCls.base.length; i++) {
+                    subCls.base[i].apply(this, arguments);
+                }
+            }
+            
+            if (this.preamble) {
+                this.preamble(arguments);
+            }
+
+            props.init &amp;&amp; props.init.apply(this, arguments);
+            
+            if (this.afterInit) {
+                this.afterInit(arguments);
+            }
+			
+			
+			
+        }
+        &#x2F;&#x2F;继承
+        if (superCls) {
+            S.extend(subCls, superCls);
+            subCls.base = [];
+            if (superCls.base) {
+                S.each(superCls.base, function(item){
+                    subCls.base.push(item);
+                });
+            }
+            subCls.base.push(subCls.superclass.init);
+        }
+        
+        &#x2F;&#x2F;copy props to subCls&#x27;s prototype
+        &#x2F;&#x2F;store superCls method&#x27;s name
+        S.each(props, function(value, prop){
+			
+			
+			subCls.prototype[prop] = value;
+				
+			if(superCls &amp;&amp; typeof value === &#x27;function&#x27;){
+            &#x2F;*if (typeof value === &#x27;function&#x27; &amp;&amp; method !== &#x27;init&#x27;) {
+                subCls.prototype[method].superName = method;
+            }*&#x2F;
+			&#x2F;&#x2F;thx John Resig
+			&#x2F;&#x2F;add quick invoke method
+			subCls.prototype[ prop ] = (function() {
+				var inherit = function() {
+						return superCls.prototype[ prop ].apply( this, arguments );
+					},
+					inheritApply = function( args ) {
+						return superCls.prototype[ prop ].apply( this, args );
+					};
+				return function() {
+					var _inherit = this.inherit,
+						_inheritApply = this.inheritApply,
+						returnValue;
+
+					this.inherit = inherit;
+					this.inheritApply = inheritApply;
+
+					returnValue = value.apply( this, arguments );
+
+					this.inherit = _inherit;
+					this.inheritApply = _inheritApply;
+
+					return returnValue;
+				};
+			})();
+			
+			}
+			
+        });
+        &#x2F;&#x2F;add quick invoke method
+        &#x2F;*if (superCls) {
+            subCls.prototype.inherit = function(args){
+                if (args.callee.superName) {
+                   return subCls.superclass[args.callee.superName].call(this);
+				   &#x2F;&#x2F;return superCls.prototype[args.callee.superName].call(this);
+                }
+            }
+        }*&#x2F;
+		
+        subCls.plugins = {};
+        subCls.plug = function(name, props){
+            subCls.plugins[name] = props;
+        };
+        subCls.unplug = function(name){
+            if (!name) {
+                subCls.plugins = {};
+            }
+            else {
+                subCls.plugins[name] = null;
+                delete subCls.plugins[name];
+            }
+        };
+		
+        return subCls;
+		
+    }
+    
+    S.declare = declare;
+	
+    return declare;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="foot">
+		The API build by YUIDOC
+		Simple UI is released under MIT License and implements open technologies such as:HTML5,CSS3,JavaScript.
+		<p>
+		如果你想为SimpleUI贡献代码，请点击这里<a target="_blank" href="http://github.com/simpleui">SimpleUI At Github</a>
+		</p>
+        <div class="blog-info">
+         WordPress和<a href="http://simpleui.org" target="_blank">SimpleUI</a>强力驱动--蓝面小生--2012
+		 <script src="http://s9.cnzz.com/stat.php?id=4424795&web_id=4424795&show=pic1" language="JavaScript"></script>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

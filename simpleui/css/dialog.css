@@ -1,0 +1,114 @@
+/*modal*/
+.simple-selectFix{
+	width:100%;
+	height:100%;
+	opacity: 0;
+	position: absolute;
+	z-index:-1;	
+	filter:alpha(opacity=0);
+	top:0;
+	left:0;
+}
+.simple-mark{
+	width:100%;
+	height:100%;
+}
+/*dialog*/
+.simple-dialog {
+    position: fixed;
+    _position: absolute;
+    box-shadow: 0 0 8px rgba(100, 100, 100, 0.5);
+    z-index: 1000;
+	border:2px solid #565964;
+    background:#fff;
+}
+.simple-content-iframe{
+    width:100%;
+    height:100%;
+    display:block;
+}
+.tip-dialog{
+	position: absolute;
+}
+
+.simple-dialog-title {
+    color: #333;
+    text-indent: 10px;
+    font-size: 12px;
+	background:#f5f5f5;
+	line-height:30px;
+	padding-right:60px;
+}
+
+.simple-dialog-cc {
+    background: #fff;
+}
+.simple-dialog-close {
+    background-image: url(../images/dialog-close.png);
+}
+.simple-dialog-close {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+    background-position: 0 0;
+    top: 8px;
+    right: 10px;
+	line-height:100px;
+}
+
+.simple-dialog-close:hover {
+    background-image: url(../images/dialog-close-hover.png);
+}
+.simple-dialog-btn-wrap {
+    text-align: center;
+	padding:8px 10px 10px 10px;
+	border-top:1px solid #eee;
+	background:#fbfbfb;
+}
+.simple-dialog-btn-wrap .simple-btn{
+    margin-right:10px;
+}
+
+.simple-dialog-alert,.simple-dialog-confirm{
+	width:320px;
+	font-size:14px;
+	padding:40px 20px;
+	padding-left:90px;
+	position: relative;
+}
+.simple-ico-alert{
+	width:32px;
+	position:absolute;
+	top:35px;
+	left:40px;
+	height:32px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAABHVBMVEX////w9vvx9vvw9frw9Pnp8fnp8Pfo8Pjo7/fo8Pnm7/jm7va61O660uq3zua3zeOwzeqwzeuux+GtxuCtxd+Mt+KLtN6IrdR8rd+Gqs95qtt6qtt3qdx6qNd5p9d4o9F3o9B1n8t2nslynclinNZZldFalM5YkctdjsFMj9NWi8FKicdLichJhMFEe7UufMsue8kse8oresord8UpdcIocrwfc8gnbrcZbsQZb8UYbcMYbcIYbMElarImarAlaa8kabEXa8AXar8lZqkXab0WabwaaLYWaLoaZ7QkZagWZ7kVZrchZKgVZbYUZLQUY7IUYbETYK8TX64SXqwSXasRXKgSXKkRW6YRWqUUWaIQWKMQWaQPV6EQWKH///9X1U/pAAAAX3RSTlP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AJOaXywAAAAJcEhZcwAADnQAAA50AWsks9YAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDYvMjcvMTJtD+nuAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAASZJREFUOI2F01dTwkAYheGlJDEzVKUqFnpRitLsDUWavWL7/z/Db8OQPYENPlc5M+9FJtllv/9g8OyJFautVrUY88gCZ3j3wLQXds4Gwdq+RS1oDRKHcxIYZI4kMiJYO5ZanQaBCxuBSeCoX5qyup4Vq+4wgsiVoDOmw4wYQeNa0BhTYDZ44L0BOUXJ4fZSsD5YYIOCneEC2xQ0b0Fe0/K4mxR07wC9pIa7S0HvHjCCu0dB+wHwAHebgvIj4AHuMgWbT4AHuLco8D0DHuD28U99/iLwAOaJ8S+ib8ISYyrMqBG4Tl9NJVUtiXXmmhyY5XcbK9Mjl/yQSopDW/iSKOCxT3/OSVsvTqjzY9EJzV49d3z0bRrF3bLL609V+uNxv5Ly29xuqT/6oSf8TDIC3gAAAABJRU5ErkJggg==") no-repeat scroll 0 0 transparent;
+}
+
+.simple-tip-dialog{
+	position: absolute;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.12);
+}
+
+.simple-tip-dialog .simple-dialog-arrow{
+	background:url(../images/popup-title.png) no-repeat;
+	background-position: 0 0;
+    height: 4px;
+    top: -5px;
+    width: 8px;
+	position:absolute;
+	left:10px;
+}
+.simple-tip-dialog .simple-dialog-arrow-bottom{
+	background-position:0 -4px;
+	top:auto;
+	bottom:-4px;
+}
+.simple-tool-tip{
+	background:#000;
+	opacity:0.8;
+	color:#fff;
+	padding:4px 12px;
+	border-radius:4px;
+}

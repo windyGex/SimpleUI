@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            .simple-btn-wrap{width:350px;height:100px;font-size:14px;text-indent:20px;}
+			body{
+			    height:1000px;
+			}
+            .simple-btn-wrap{
+                border:1px solid #999;
+                background:#fff;
+            }
+            .dragContainer{
+                width:500px;
+                height:300px;
+                margin:100px;
+                border:1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dragContainer"></div>
+        <div id="test1" class="simple-btn-wrap">
+                   限制范围的拖动
+        </div>
+        <div id="test2" class="simple-btn-wrap">
+            
+        </div>
+        <div id="test3" class="simple-btn-wrap">
+            <h2>sdfsdf</h2>
+        </div>
+        <div id="test4" class="simple-btn-wrap">
+            
+        </div>
+        <div id="test5" class="simple-btn-wrap">
+            
+        </div>
+	
+       <input type="date"/>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/drag'], function(Drag){
+              
+				
+				$('#test1').drag({
+                    container:'.dragContainer'
+                });
+                $('#test2').drag({
+                    proxy:'clone'
+                });
+				$('#test3').drag({
+                    handle:'h2'
+                });
+				
+				$('#test4').drag({
+                     proxy:'clone',
+                     atCursor:{
+                         top:-10,
+                         left:-10
+                     }
+                });
+                
+                $('#test5').drag({
+                    grid:[50,50]
+                })
+				
+            });
+        </script>
+    </body>
+</html>

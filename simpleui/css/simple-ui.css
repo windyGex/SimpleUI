@@ -1,0 +1,35 @@
+/*base for widget.css*/
+.simple-shown{
+    display:block;
+   
+}
+.simple-hidden{
+    display: none;
+}
+/*modal.css*/
+.simple-modal{
+    position:fixed;
+    _position:absolute;
+    background:#000;
+    opacity:0.2;
+    filter:alpha(opacity=20);
+}
+/*selectable.css*/
+.simple-selectable-proxy{
+    border:1px solid #0783d2;
+    background:#96d5fd;
+    opacity:0.8;
+    position:absolute;
+    filter:alpha(opacity=80);
+}
+.simple-input-text{
+    border:1px solid #ccc;
+    border-radius:2px;
+    padding:2px 3px;
+    line-height:22px;
+    width:150px;
+}
+.simple-input-text:focus{
+   border:2px solid #565964;
+   padding:1px 2px;
+}

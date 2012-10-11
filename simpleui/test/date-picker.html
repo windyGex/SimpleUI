@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+        
+        </style>
+    </head>
+    <body>
+        <span>日期渲染</span>
+        <!--<div class="simple-date-picker">
+            <div class="simple-date-control">
+                <span widgetpoint="dateYear" class="simple-date-year">2012</span>
+                <span widgetpoint="dateMonth" class="simple-date-month">九月</span>
+            </div>
+            <ul class="simple-date-week">
+                <li>一</li>
+                <li>二</li>
+                <li>三</li>
+                <li>四</li>
+                <li>五</li>
+                <li>六</li>
+                <li>日</li>
+            </ul>
+            <ul id="test1" class="simple-date-content" widgetponit="dateContent">
+            	
+            </ul>
+        </div> -->
+        <input type="text" rel="datepicker"/> <input type="text" rel="datepicker"/>
+         <input type="text" rel="datepicker"/>
+          <input type="text" rel="datepicker"/>
+           <input type="text" rel="datepicker"/>
+        <script src="../core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: '../',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/date-picker'], function(DatePicker){
+               
+				
+				new Simple.DatePickerBase({
+				
+					container:document.body,
+					node:'<span></span>'
+				})
+				
+				
+				$('input').datepicker();
+            
+
+                  
+            });
+        </script>
+    </body>
+</html>

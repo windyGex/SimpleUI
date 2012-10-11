@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <style type="text/css">
+            #test1 {
+                margin: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <span>sdfsdfsdfsfsdf</span>
+        <div id="test1" class="simple-btn-wrap">
+        </div>
+        <script src="http://simpleui.org/simpleui/core.js">
+        </script>
+        <script>
+            require.config({
+                baseUrl: 'http://simpleui.org/simpleui/',
+                paths: {
+                    'css': 'plugins/css',
+                    'text': 'plugins/text'
+                }
+            });
+            require(['ui/menu'], function(Menu){
+                var menu = new ContextMenu({
+                    node: 'span',
+                    container: document.body,
+                    items: [{
+                        title: 'Menu Title',
+                        items: [{
+                        
+                            label: 'i menu',
+                            helper: 'CTRL+P',
+                            icon: 'test',
+                            event: 'click',
+                            checked: true,
+                            childs: [{
+                                items: [{
+                                
+                                    label: 'i menu',
+                                    helper: 'CTRL+P',
+                                    icon: 'test',
+                                    event: 'click',
+                                    childs: [{
+                                        items: [{
+                                        
+                                            label: 'i menu',
+                                            helper: 'CTRL+P',
+                                            icon: 'test',
+                                            event: 'click',
+                                            childs: [{
+                                            
+                                            
+                                                label: 'i menu',
+                                                helper: 'CTRL+P',
+                                                icon: 'test',
+                                                event: 'click'
+                                            
+                                            }]
+                                        }, {
+                                        
+                                            label: 'i menu',
+                                            helper: 'CTRL+P',
+                                            icon: 'test',
+                                            event: 'click'
+                                        }, {
+                                        
+                                            label: 'i menu',
+                                            helper: 'CTRL+P',
+                                            icon: 'test',
+                                            event: 'click'
+                                        }, {
+                                        
+                                            label: 'i menu',
+                                            helper: 'CTRL+P',
+                                            icon: 'test',
+                                            event: 'click'
+                                        }]
+                                    }]
+                                }, {
+                                
+                                    label: 'i menu',
+                                    helper: 'CTRL+P',
+                                    icon: 'test',
+                                    event: 'click'
+                                }, {
+                                
+                                    label: 'i menu',
+                                    helper: 'CTRL+P',
+                                    icon: 'test',
+                                    event: 'click'
+                                }, {
+                                
+                                    label: 'i menu',
+                                    helper: 'CTRL+P',
+                                    icon: 'test',
+                                    event: 'click'
+                                }]
+                            }]
+                        }]
+                    }, {
+                        items: [{
+                            checked: false,
+                            label: 'i menu',
+                            helper: 'CTRL+P',
+                            icon: 'test',
+                            event: 'click'
+                        }, {
+                            checked: false,
+                            label: 'i menu',
+                            helper: 'CTRL+P',
+                            icon: 'test',
+                            event: 'click'
+                        }, {
+                            checked: false,
+                            label: 'i menu',
+                            helper: 'CTRL+P',
+                            icon: 'test',
+                            event: 'click'
+                        }, {
+                            checked: false,
+                            label: 'i menu',
+                            helper: 'CTRL+P',
+                            icon: 'test',
+                            event: 'click'
+                        }, {
+                            checked: false,
+                            label: 'i menu',
+                            helper: 'CTRL+P',
+                            icon: 'test',
+                            event: 'click'
+                        }]
+                    }]
+                });
+                
+                menu.addChild([{
+                    'label': 'menu',
+                    url: 'http://www.baidu.com'
+                }, {
+                    'label': 'menu2'
+                }, {
+                    'label': 'menu2'
+                }, {
+                    'label': 'menu2'
+                }, {
+                    'label': 'menu2'
+                }])
+                //menu.set('disabled',true); 
+                //  menu.set('disabled',true);
+                //menu.set('helper','CTRL+P');
+            });
+        </script>
+    </body>
+</html>

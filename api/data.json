@@ -1,0 +1,5725 @@
+{
+    "project": {},
+    "files": {
+        "plugins\\css.js": {
+            "name": "plugins\\css.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\Copy of date-picker.js": {
+            "name": "ui\\Copy of date-picker.js",
+            "modules": {
+                "ui.date-picker": 1
+            },
+            "classes": {
+                "Simple.DatePickerBase": 1,
+                "Simple.DatePicker": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\auto-complete.js": {
+            "name": "ui\\auto-complete.js",
+            "modules": {
+                "ui.auto-complete": 1
+            },
+            "classes": {
+                "Simple.AutoComplete": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\button-group.js": {
+            "name": "ui\\button-group.js",
+            "modules": {
+                "ui.button-group": 1
+            },
+            "classes": {
+                "Simple.ButtonGroup": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\button.js": {
+            "name": "ui\\button.js",
+            "modules": {
+                "ui.button": 1
+            },
+            "classes": {
+                "Simple.Button": 1,
+                "Simple.ComboButton": 1,
+                "Simple.DropDownButton": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\date-picker.js": {
+            "name": "ui\\date-picker.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\dialog.js": {
+            "name": "ui\\dialog.js",
+            "modules": {
+                "ui.dialog": 1
+            },
+            "classes": {
+                "Simple.Dialog": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\drag.js": {
+            "name": "ui\\drag.js",
+            "modules": {
+                "ui.drag": 1
+            },
+            "classes": {
+                "Simple.Drag": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\menu(冲突2012-10-09 16-20-03).js": {
+            "name": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "modules": {
+                "ui.menu": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\menu.js": {
+            "name": "ui\\menu.js",
+            "modules": {},
+            "classes": {
+                "Simple.MenuItem": 1,
+                "Simple.Menu": 1,
+                "Simple.ContextMenu": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\modal.js": {
+            "name": "ui\\modal.js",
+            "modules": {
+                "ui.modal": 1
+            },
+            "classes": {
+                "Simple.Modal": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\pagination.js": {
+            "name": "ui\\pagination.js",
+            "modules": {
+                "ui.pagination": 1
+            },
+            "classes": {
+                "Simple.Pagination": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\resizable.js": {
+            "name": "ui\\resizable.js",
+            "modules": {
+                "ui.resize": 1
+            },
+            "classes": {
+                "Simple.Resize": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\selectable.js": {
+            "name": "ui\\selectable.js",
+            "modules": {
+                "ui.selectable": 1
+            },
+            "classes": {
+                "Simple.Selectable": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "ui\\tool-tip.js": {
+            "name": "ui\\tool-tip.js",
+            "modules": {
+                "ui.tool-tip": 1
+            },
+            "classes": {
+                "Simple.TipBase": 1,
+                "Simple.Tip": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "attribute.js": {
+            "name": "attribute.js",
+            "modules": {
+                "attribute": 1
+            },
+            "classes": {
+                "Simple.Attribute": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "declare.js": {
+            "name": "declare.js",
+            "modules": {
+                "declare": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "event.js": {
+            "name": "event.js",
+            "modules": {
+                "event": 1
+            },
+            "classes": {
+                "Simple.EventTarget": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "simple.js": {
+            "name": "simple.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "widget.js": {
+            "name": "widget.js",
+            "modules": {
+                "widget": 1
+            },
+            "classes": {
+                "Simple.Widget": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "ui.date-picker": {
+            "name": "ui.date-picker",
+            "submodules": {},
+            "classes": {
+                "Simple.DatePickerBase": 1,
+                "Simple.DatePicker": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\Copy of date-picker.js",
+            "line": 185,
+            "description": "日期选择基础类,提供最基本的日历渲染功能"
+        },
+        "ui.auto-complete": {
+            "name": "ui.auto-complete",
+            "submodules": {},
+            "classes": {
+                "Simple.AutoComplete": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\auto-complete.js",
+            "line": 6,
+            "description": "自动完成组件，自动完成组件继承与widget，拥有和widget一样的生命周期。\n同样，AutoComplete被设计为可扩展的，很方面可以基于此定制特定的自动完成组件\n\n\trequire(['ui/auto-complete'],function(AutoComplete){\n\t\tnew AutoComplete({\n\t\t\tnode:'#test',\n\t\t\tsource:['java','javascript']\n\t\t});\n\t\t//或者\n\t\t$('#test').autocomplete({\n\t\t\tsource:['java','javascript']\n\t\t});\n\n\t});",
+            "extends": "Simple.Widget"
+        },
+        "ui.button-group": {
+            "name": "ui.button-group",
+            "submodules": {},
+            "classes": {
+                "Simple.ButtonGroup": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\button-group.js",
+            "line": 5,
+            "description": "Button组按钮组件，提供一系列可定制的按钮\n\n\trequire(['ui/button-group'],function(ButtonGroup){\n\t\tnew ButtonGroup({\n\t\t\titems:[]\n\t\t});\n\t});",
+            "extends": "Widget"
+        },
+        "ui.button": {
+            "name": "ui.button",
+            "submodules": {},
+            "classes": {
+                "Simple.Button": 1,
+                "Simple.ComboButton": 1,
+                "Simple.DropDownButton": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\button.js",
+            "line": 314,
+            "description": "Button按钮组件，提供可定制的按钮\n\n\trequire(['ui/button'],function(Button){\n\t\tnew Button({\n\t\t\tlabel:'button',\n\t\t\thandle:function(){\n              alert('click');\n         }\n\t\t});\n\t});",
+            "extends": "Simple.Widget"
+        },
+        "ui.dialog": {
+            "name": "ui.dialog",
+            "submodules": {},
+            "classes": {
+                "Simple.Dialog": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\dialog.js",
+            "line": 4,
+            "description": "对话框组件，提供可定制的遮罩对话框，支持多窗口,拖动等特性",
+            "extends": "Simple.Widget",
+            "require": "ui.button-group"
+        },
+        "ui.drag": {
+            "name": "ui.drag",
+            "submodules": {},
+            "classes": {
+                "Simple.Drag": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\drag.js",
+            "line": 134,
+            "description": "Drag模块为web应用增加类似桌面应用程序般的功能和易用性。Drag本身可以让一个Dom元素可移动，\n并且可以设置拖动手柄来启用拖动，也可以设置拖动的范围。Drag模块本身包括了一个放置模块，通过抛出的事件使得交互变得更加简单\n\n    require(['ui/drag'],function(Drag){\n        new Drag({\n            node:'#drag-dom'\n        });\n    });",
+            "extends": "Simple.Attribute"
+        },
+        "ui.menu": {
+            "name": "ui.menu",
+            "submodules": {},
+            "classes": {
+                "Simple.MenuItem": 1,
+                "Simple.Menu": 1,
+                "Simple.ContextMenu": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\menu.js",
+            "line": 455,
+            "description": "Menu用于模拟点击桌面图标出现的菜单条目，继承于Widget类，同样Menu可以选择延迟渲染还是声明即渲染.\n\n    require(['ui/menu'],function(){\n        new Menu({\n            items:[{label:'simple-menu'}]\n        });\n    });",
+            "extends": "Simple.Widget"
+        },
+        "ui.modal": {
+            "name": "ui.modal",
+            "submodules": {},
+            "classes": {
+                "Simple.Modal": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\modal.js",
+            "line": 5,
+            "description": "渲染一个遮罩遮住某个dom元素"
+        },
+        "ui.pagination": {
+            "name": "ui.pagination",
+            "submodules": {},
+            "classes": {
+                "Simple.Pagination": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\pagination.js",
+            "line": 4,
+            "description": "提供分页功能的组件"
+        },
+        "ui.resize": {
+            "name": "ui.resize",
+            "submodules": {},
+            "classes": {
+                "Simple.Resize": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\resizable.js",
+            "line": 5,
+            "description": "让一个dom元素可以被重设尺寸。\n    \n    require(['ui/resize'],function(){\n        $('#test').resizable();\n    });"
+        },
+        "ui.selectable": {
+            "name": "ui.selectable",
+            "submodules": {},
+            "classes": {
+                "Simple.Selectable": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\selectable.js",
+            "line": 5,
+            "description": "让一个dom元素可以被框选\n    \n    require(['ui/selectable'],function(){\n        $('#test').selectable({\n            selectNode:'li'\n        });\n    });"
+        },
+        "ui.tool-tip": {
+            "name": "ui.tool-tip",
+            "submodules": {},
+            "classes": {
+                "Simple.TipBase": 1,
+                "Simple.Tip": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "ui\\tool-tip.js",
+            "line": 209,
+            "description": "提示功能的基类,该类可以直接被实例化，通常用于新功能提示等"
+        },
+        "attribute": {
+            "name": "attribute",
+            "submodules": {},
+            "classes": {
+                "Simple.Attribute": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "attribute.js",
+            "line": 7,
+            "description": "SimpleUI的属性类，该类被设计为用于混合的基类，用于为类的属性提供get，set支持。\n\n    require(['attribute'],function(Attribute){\n    \n        var Animal = Simple.declare('Animal',Attribute,{\n            \n            _getterId:function(id){\n                if(id){\n                    return id;\n                }else{\n                    return 'animal';\n                }\n            },\n            \n            _setterId:function(id){\n            \n                return id+'_animal';\n            }\n        });\n        \n        var animal = new Animal();\n        \n        animal.get('id');//will console animal\n        animal.id //will console undefined\n        animal.set('id','test');//the id is test_animal\n        \n    });"
+        },
+        "declare": {
+            "name": "declare",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "declare.js",
+            "line": 21,
+            "description": "定义一个基础类，并且遍历指定的对象，拷贝到类的原型链上，并且调用原型链上的init的方法进行初始化。\n如果指定父类，则该类会继承于这个父类，并且可以使用inherit来便捷调用父级方法.\n\n    Simple.declare('Animal',{\n        getName:function(){\n            return 'animal';\n        }\n    });\n    Simple.declare('Bird',Simple.Animal,{\n        getName:function(){\n            var superResult = this.inherit(arguments);\n            return superResult + ' bird';\n        }\n    });\n    console.log(new Simple.Bird().getName());//will console animal bird",
+            "itemtype": "method",
+            "static": 1,
+            "params": [
+                {
+                    "name": "subCls",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "superCls",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "props",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "定义后的构造函数"
+            }
+        },
+        "event": {
+            "name": "event",
+            "submodules": {},
+            "classes": {
+                "Simple.EventTarget": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "event.js",
+            "line": 121,
+            "description": "为SimpleUI提供基本的事件支持，简化事件操作流程，提升响应速度，\n并且针对SimpleUI的组件特性加入了对node节点的disabled嗅探\n\n * 当该节点的的样式类中包含`disable`，则不会对该操作进行响应\n * 支持二级命名空间事件命名\n * 支持面向切面的事件编程,该类被设计为用于继承的基类。"
+        },
+        "widget": {
+            "name": "widget",
+            "submodules": {},
+            "classes": {
+                "Simple.Widget": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "widget.js",
+            "line": 6,
+            "description": "继承自Attribute类，为所有的SimpleUI的UI组件提供基类支持，拥有`init`,`render`,`destroy`生命周期. 这个基类提供了很多可以复写的方法，可以方便的实现自定义行为，从而降低工作量.\n>该类被设计为用于继承的基类，通常不会被直接实例化",
+            "extends": "Simple.Attribute"
+        }
+    },
+    "classes": {
+        "Simple.DatePickerBase": {
+            "name": "Simple.DatePickerBase",
+            "shortname": "Simple.DatePickerBase",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.date-picker",
+            "file": "ui\\Copy of date-picker.js",
+            "line": 6,
+            "description": "日期选择基础类,提供最基本的日历渲染功能",
+            "extends": "Simple.Widget"
+        },
+        "Simple.DatePicker": {
+            "name": "Simple.DatePicker",
+            "shortname": "Simple.DatePicker",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.date-picker",
+            "namespace": "",
+            "file": "ui\\Copy of date-picker.js",
+            "line": 185,
+            "description": "日期选择管理器类，beta版本，since SimpleUI 2.0\n\n    require(['ui/date-picker'],function(){\n        $('input').datepicker();\n    });",
+            "extends": "Simple.Widget"
+        },
+        "Simple.AutoComplete": {
+            "name": "Simple.AutoComplete",
+            "shortname": "Simple.AutoComplete",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.auto-complete",
+            "namespace": "",
+            "file": "ui\\auto-complete.js",
+            "line": 6,
+            "description": "自动完成组件，自动完成组件继承与widget，拥有和widget一样的生命周期。\n同样，AutoComplete被设计为可扩展的，很方面可以基于此定制特定的自动完成组件\n\n\trequire(['ui/auto-complete'],function(AutoComplete){\n\t\tnew AutoComplete({\n\t\t\tnode:'#test',\n\t\t\tsource:['java','javascript']\n\t\t});\n\t\t//或者\n\t\t$('#test').autocomplete({\n\t\t\tsource:['java','javascript']\n\t\t});\n\n\t});",
+            "extends": "Simple.Widget"
+        },
+        "Simple.ButtonGroup": {
+            "name": "Simple.ButtonGroup",
+            "shortname": "Simple.ButtonGroup",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.button-group",
+            "namespace": "",
+            "file": "ui\\button-group.js",
+            "line": 5,
+            "description": "Button组按钮组件，提供一系列可定制的按钮\n\n\trequire(['ui/button-group'],function(ButtonGroup){\n\t\tnew ButtonGroup({\n\t\t\titems:[]\n\t\t});\n\t});",
+            "extends": "Widget"
+        },
+        "Simple.Button": {
+            "name": "Simple.Button",
+            "shortname": "Simple.Button",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.button",
+            "namespace": "",
+            "file": "ui\\button.js",
+            "line": 4,
+            "description": "Button按钮组件，提供可定制的按钮\n\n\trequire(['ui/button'],function(Button){\n\t\tnew Button({\n\t\t\tlabel:'button',\n\t\t\thandle:function(){\n              alert('click');\n         }\n\t\t});\n\t});",
+            "extends": "Simple.Widget"
+        },
+        "Simple.ComboButton": {
+            "name": "Simple.ComboButton",
+            "shortname": "Simple.ComboButton",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.button",
+            "namespace": "",
+            "file": "ui\\button.js",
+            "line": 226,
+            "description": "提供可分离的按钮组件",
+            "extends": "Simple.Button"
+        },
+        "Simple.DropDownButton": {
+            "name": "Simple.DropDownButton",
+            "shortname": "Simple.DropDownButton",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.button",
+            "namespace": "",
+            "file": "ui\\button.js",
+            "line": 314,
+            "description": "提供可分离的按钮组件",
+            "extends": "Simple.Button"
+        },
+        "Simple.Dialog": {
+            "name": "Simple.Dialog",
+            "shortname": "Simple.Dialog",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.dialog",
+            "namespace": "",
+            "file": "ui\\dialog.js",
+            "line": 4,
+            "description": "对话框组件，提供可定制的遮罩对话框，支持多窗口,拖动等特性",
+            "extends": "Simple.Widget",
+            "require": "ui.button-group"
+        },
+        "Simple.Drag": {
+            "name": "Simple.Drag",
+            "shortname": "Simple.Drag",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.drag",
+            "namespace": "",
+            "file": "ui\\drag.js",
+            "line": 134,
+            "description": "Drag模块为web应用增加类似桌面应用程序般的功能和易用性。Drag本身可以让一个Dom元素可移动，\n并且可以设置拖动手柄来启用拖动，也可以设置拖动的范围。Drag模块本身包括了一个放置模块，通过抛出的事件使得交互变得更加简单\n\n    require(['ui/drag'],function(Drag){\n        new Drag({\n            node:'#drag-dom'\n        });\n    });"
+        },
+        "Simple.MenuItem": {
+            "name": "Simple.MenuItem",
+            "shortname": "Simple.MenuItem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.menu",
+            "namespace": "",
+            "file": "ui\\menu.js",
+            "line": 5,
+            "description": "渲染每个菜单项",
+            "extends": "Simple.Widget",
+            "access": "protected",
+            "tagname": ""
+        },
+        "Simple.Menu": {
+            "name": "Simple.Menu",
+            "shortname": "Simple.Menu",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.menu",
+            "namespace": "",
+            "file": "ui\\menu.js",
+            "line": 185,
+            "description": "Menu用于模拟点击桌面图标出现的菜单条目，继承于Widget类，同样Menu可以选择延迟渲染还是声明即渲染.\n\n    require(['ui/menu'],function(){\n        new Menu({\n            items:[{label:'simple-menu'}]\n        });\n    });"
+        },
+        "Simple.ContextMenu": {
+            "name": "Simple.ContextMenu",
+            "shortname": "Simple.ContextMenu",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.menu",
+            "namespace": "",
+            "file": "ui\\menu.js",
+            "line": 455,
+            "description": "ContextMenu用于模拟右击桌面图标出现的上下文菜单，继承自Simple.Menu\n    \n    require(['ui/menu'],function(){\n        new Simple.ContextMenu({\n           node:'#context-menu',\n           items:[{label:'simple-menu'}]\n        });\n    });",
+            "extends": "Simple.Menu"
+        },
+        "Simple.Modal": {
+            "name": "Simple.Modal",
+            "shortname": "Simple.Modal",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.modal",
+            "namespace": "",
+            "file": "ui\\modal.js",
+            "line": 5,
+            "description": "渲染一个遮罩遮住某个dom元素",
+            "extends": "Simple.Widget"
+        },
+        "Simple.Pagination": {
+            "name": "Simple.Pagination",
+            "shortname": "Simple.Pagination",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.pagination",
+            "namespace": "",
+            "file": "ui\\pagination.js",
+            "line": 4,
+            "description": "提供分页功能的组件",
+            "extends": "Simple.Widget"
+        },
+        "Simple.Resize": {
+            "name": "Simple.Resize",
+            "shortname": "Simple.Resize",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.resize",
+            "namespace": "",
+            "file": "ui\\resizable.js",
+            "line": 5,
+            "description": "让一个dom元素可以被重设尺寸。\n    \n    require(['ui/resize'],function(){\n        $('#test').resizable();\n    });"
+        },
+        "Simple.Selectable": {
+            "name": "Simple.Selectable",
+            "shortname": "Simple.Selectable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.selectable",
+            "namespace": "",
+            "file": "ui\\selectable.js",
+            "line": 5,
+            "description": "让一个dom元素可以被框选\n    \n    require(['ui/selectable'],function(){\n        $('#test').selectable({\n            selectNode:'li'\n        });\n    });"
+        },
+        "Simple.TipBase": {
+            "name": "Simple.TipBase",
+            "shortname": "Simple.TipBase",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.tool-tip",
+            "namespace": "",
+            "file": "ui\\tool-tip.js",
+            "line": 5,
+            "description": "提示功能的基类,该类可以直接被实例化，通常用于新功能提示等",
+            "extends": "Simple.Dialog"
+        },
+        "Simple.Tip": {
+            "name": "Simple.Tip",
+            "shortname": "Simple.Tip",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ui.tool-tip",
+            "namespace": "",
+            "file": "ui\\tool-tip.js",
+            "line": 209,
+            "description": "提示功能的类，会共享一个dom元素。",
+            "extends": "Simple.Widget"
+        },
+        "Simple.Attribute": {
+            "name": "Simple.Attribute",
+            "shortname": "Simple.Attribute",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "attribute",
+            "namespace": "",
+            "file": "attribute.js",
+            "line": 7,
+            "description": "SimpleUI的属性类，该类被设计为用于混合的基类，用于为类的属性提供get，set支持。\n\n    require(['attribute'],function(Attribute){\n    \n        var Animal = Simple.declare('Animal',Attribute,{\n            \n            _getterId:function(id){\n                if(id){\n                    return id;\n                }else{\n                    return 'animal';\n                }\n            },\n            \n            _setterId:function(id){\n            \n                return id+'_animal';\n            }\n        });\n        \n        var animal = new Animal();\n        \n        animal.get('id');//will console animal\n        animal.id //will console undefined\n        animal.set('id','test');//the id is test_animal\n        \n    });",
+            "extends": "Simple.EventTarget"
+        },
+        "Simple.EventTarget": {
+            "name": "Simple.EventTarget",
+            "shortname": "Simple.EventTarget",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "event",
+            "namespace": "",
+            "file": "event.js",
+            "line": 121,
+            "description": "为SimpleUI提供基本的事件支持，简化事件操作流程，提升响应速度，\n并且针对SimpleUI的组件特性加入了对node节点的disabled嗅探\n\n * 当该节点的的样式类中包含`disable`，则不会对该操作进行响应\n * 支持二级命名空间事件命名\n * 支持面向切面的事件编程,该类被设计为用于继承的基类。"
+        },
+        "Simple.Widget": {
+            "name": "Simple.Widget",
+            "shortname": "Simple.Widget",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "widget",
+            "namespace": "",
+            "file": "widget.js",
+            "line": 6,
+            "description": "继承自Attribute类，为所有的SimpleUI的UI组件提供基类支持，拥有`init`,`render`,`destroy`生命周期. 这个基类提供了很多可以复写的方法，可以方便的实现自定义行为，从而降低工作量.\n>该类被设计为用于继承的基类，通常不会被直接实例化",
+            "extends": "Simple.Attribute"
+        }
+    },
+    "classitems": [
+        {
+            "file": "plugins\\css.js",
+            "line": 5,
+            "description": "通过该函数加载相应的资源",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "加载的模块名",
+                    "type": "String"
+                },
+                {
+                    "name": "require",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "load",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "config",
+                    "description": "相应的插件配置，如果没有该插件配置，则默认使用全局配置",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.DatePickerBase"
+        },
+        {
+            "file": "ui\\Copy of date-picker.js",
+            "line": 13,
+            "description": "为生成的el添加的类",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "default": "'simple-date-picker'",
+            "class": "Simple.DatePickerBase",
+            "module": "ui.date-picker"
+        },
+        {
+            "file": "ui\\Copy of date-picker.js",
+            "line": 20,
+            "description": "为生成的el相对定位的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.DatePickerBase",
+            "module": "ui.date-picker"
+        },
+        {
+            "file": "ui\\Copy of date-picker.js",
+            "line": 27,
+            "description": "为生成的el指定父级容器",
+            "itemtype": "property",
+            "name": "container",
+            "type": "HTMLElement",
+            "default": "document.body",
+            "class": "Simple.DatePickerBase",
+            "module": "ui.date-picker"
+        },
+        {
+            "file": "ui\\Copy of date-picker.js",
+            "line": 34,
+            "description": "生成EL的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.DatePickerBase",
+            "module": "ui.date-picker"
+        },
+        {
+            "file": "ui\\Copy of date-picker.js",
+            "line": 195,
+            "description": "提供日历功能的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.DatePicker",
+            "module": "ui.date-picker"
+        },
+        {
+            "file": "ui\\Copy of date-picker.js",
+            "line": 204,
+            "description": "选中一天后触发的事件",
+            "itemtype": "property",
+            "name": "onSelect",
+            "type": "Function",
+            "default": "empty Function",
+            "class": "Simple.DatePicker",
+            "module": "ui.date-picker"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 27,
+            "description": "需要提供自动完成功能的dom元素",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String | HTMLElement",
+            "default": "\"\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 34,
+            "description": "生成自动完成功能提供模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "readonly": "",
+            "default": "\"<div class=\"simple-autocomplete\"><div widgetpoint=\"autoCompleteList\"></div></div>\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 43,
+            "description": "自动完成功能的数据源，可以为本地数据，也可以为远程数据，甚至可以自定义一个函数来提供需要的数据",
+            "itemtype": "property",
+            "name": "source",
+            "type": "String | Function | Array",
+            "default": "\"\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 50,
+            "description": "在获取远程数据时为了避免输入过快造成请求过多而设置的延时",
+            "itemtype": "property",
+            "name": "delay",
+            "type": "int",
+            "default": "\"0\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 57,
+            "description": "在获取远程数据时为node设置的请求状态",
+            "itemtype": "property",
+            "name": "loadingClass",
+            "readonly": "",
+            "type": "String",
+            "default": "\"simple-autocomplete-loading\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 65,
+            "description": "鼠标经过自动完成的提示时出现的状态",
+            "itemtype": "property",
+            "name": "hoverClass",
+            "readonly": "",
+            "type": "String",
+            "default": "\"simple-autocomplete-hover\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 74,
+            "description": "在选中自动完成的数据项时触发的函数",
+            "itemtype": "event",
+            "name": "select",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "选中的值",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 79,
+            "description": "在选中自动完成的数据项时触发的函数",
+            "itemtype": "event",
+            "name": "change",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "改变的值",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 88,
+            "description": "在请求远程数据时将数据缓存下来，大幅提升性能",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "property",
+            "name": "_cacheData",
+            "readonly": "",
+            "type": "Object",
+            "default": "\"{}\"",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 97,
+            "description": "初始化自动完成组件需要的一些属性",
+            "itemtype": "method",
+            "name": "initAttrs",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 107,
+            "description": "初始化自动完成组件需要的事件",
+            "itemtype": "method",
+            "name": "initBaseEvents",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 122,
+            "description": "在生成dom后为数据项绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 132,
+            "description": "数据项悬浮事件的操作",
+            "itemtype": "method",
+            "name": "_onItemMouseOver",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery事件传入包装的event",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 142,
+            "description": "数据项鼠标移出事件的操作",
+            "itemtype": "method",
+            "name": "_onItemMouseOut",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery事件传入包装的event",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 152,
+            "description": "数据项点击事件的操作",
+            "itemtype": "method",
+            "name": "_onItemClick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery事件传入包装的event",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 166,
+            "description": "node点击事件的操作",
+            "itemtype": "method",
+            "name": "_onNodeKeyDown",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery事件传入包装的event",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 201,
+            "description": "激活自动提示,在这个方法里判断是否需要延时操作",
+            "itemtype": "method",
+            "name": "activeAutoComplete",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 227,
+            "description": "判断输入的值是否符合激动自动提示的条件",
+            "itemtype": "method",
+            "name": "_activeNow",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 248,
+            "description": "根据输入的文字获取自动提示的数据",
+            "itemtype": "method",
+            "name": "_fetch",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "输入的input的值",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 293,
+            "description": "解析获取自动提示的数据",
+            "itemtype": "method",
+            "name": "parse",
+            "params": [
+                {
+                    "name": "result",
+                    "description": "获取的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 318,
+            "description": "通过复写此函数得到需要的真实的数据",
+            "itemtype": "method",
+            "name": "getData",
+            "params": [
+                {
+                    "name": "result",
+                    "description": "获取的数据",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "result"
+            },
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 327,
+            "description": "通过复写此函数得到数据的真实长度以便决定是否启用自动完成",
+            "itemtype": "method",
+            "name": "getDataLength",
+            "params": [
+                {
+                    "name": "result",
+                    "description": "获取的数据",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "result.length"
+            },
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 336,
+            "description": "根据关键字与值过滤最后需要的数据",
+            "itemtype": "method",
+            "name": "_filter",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "获取的数据",
+                    "type": "Array"
+                },
+                {
+                    "name": "value",
+                    "description": "输入的数据",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "result"
+            },
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 362,
+            "description": "使用此方法结束本次自动提示",
+            "itemtype": "method",
+            "name": "finish",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 372,
+            "description": "此方法用来渲染当前的自动完成的数据",
+            "itemtype": "method",
+            "name": "_setterCurrentData",
+            "params": [
+                {
+                    "name": "currentData",
+                    "description": "获取的最后的数据",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "currentData"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 419,
+            "description": "此方法用来缓存远程获取的数据",
+            "itemtype": "method",
+            "name": "_setCacheData",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "自动提示的键值",
+                    "type": "String"
+                },
+                {
+                    "name": "data",
+                    "description": "远程获取的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 443,
+            "description": "此方法用来聚焦选中的数据项",
+            "itemtype": "method",
+            "name": "focus",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "索引值",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 461,
+            "description": "此方法用来选中的数据项,在这个过程中将会触发onSelect函数与onChange函数",
+            "itemtype": "method",
+            "name": "focus",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "索引值",
+                    "type": "Int"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 488,
+            "description": "获取每个数据项的值，复写此方法可以定制相关的自动完成功能",
+            "itemtype": "method",
+            "name": "getValue",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "每条数据项",
+                    "type": "Item"
+                }
+            ],
+            "return": {
+                "description": "value"
+            },
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 498,
+            "description": "选中当前数据项",
+            "itemtype": "method",
+            "name": "selectCurrent",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\auto-complete.js",
+            "line": 508,
+            "description": "销毁自动完成组件",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.AutoComplete",
+            "module": "ui.auto-complete"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 18,
+            "description": "设置按钮的焦点的索引",
+            "itemtype": "property",
+            "name": "focusIndex",
+            "type": "Int",
+            "default": "0",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 25,
+            "description": "设置提供按钮的数据",
+            "itemtype": "property",
+            "name": "items",
+            "type": "Array",
+            "default": "[]",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 32,
+            "description": "按钮组的类名",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "default": "'simple-btn-wrap'",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 39,
+            "description": "按钮悬浮时添加的样式类",
+            "itemtype": "property",
+            "name": "hoverClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-hover'",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 47,
+            "description": "按钮禁止时添加的样式类",
+            "itemtype": "property",
+            "name": "disableClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-disabled'",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 55,
+            "description": "按钮获取焦点时添加的样式类",
+            "itemtype": "property",
+            "name": "disableClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-focus'",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 64,
+            "description": "渲染按钮的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "reayonly": "",
+            "default": "'<a class=\"simple-btn\"><span widgetpoint=\"label\"></span></a>'",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 72,
+            "description": "初始化一些属性",
+            "itemtype": "method",
+            "name": "init",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 81,
+            "description": "渲染按钮的方法",
+            "itemtype": "method",
+            "name": "buildRender",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 95,
+            "description": "渲染按钮通过对象的方式",
+            "itemtype": "method",
+            "name": "_drawBtnsByObject",
+            "params": [
+                {
+                    "name": "buttons",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 113,
+            "description": "渲染按钮通过数组的方式",
+            "itemtype": "method",
+            "name": "_drawBtnsByObject",
+            "params": [
+                {
+                    "name": "buttons",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 134,
+            "description": "启用某个按钮",
+            "itemtype": "method",
+            "name": "enable",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "按钮在数据里的索引",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 158,
+            "description": "禁用某个按钮",
+            "itemtype": "method",
+            "name": "disable",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "按钮在数据里的索引",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 175,
+            "description": "聚焦到某个按钮",
+            "itemtype": "method",
+            "name": "setFocus",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "按钮在数据里的索引",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 185,
+            "description": "获取聚焦的按钮",
+            "itemtype": "method",
+            "name": "getFocus",
+            "return": {
+                "description": "button",
+                "type": "HTMLElement"
+            },
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 193,
+            "description": "获取禁用的按钮",
+            "itemtype": "method",
+            "name": "getDisabled",
+            "return": {
+                "description": "button",
+                "type": "NodeList"
+            },
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button-group.js",
+            "line": 207,
+            "description": "销毁该按钮组",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.ButtonGroup",
+            "module": "ui.button-group"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 22,
+            "description": "是否获取焦点",
+            "itemtype": "property",
+            "name": "focus",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 29,
+            "description": "按钮中的文字",
+            "itemtype": "property",
+            "name": "label",
+            "type": "String",
+            "default": "'simple-btn'",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 36,
+            "description": "图标类",
+            "itemtype": "property",
+            "name": "icon",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 43,
+            "description": "按钮的监听事件",
+            "itemtype": "property",
+            "name": "handle",
+            "type": "Function",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 49,
+            "description": "按钮是否被禁用",
+            "itemtype": "property",
+            "name": "disabled",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 56,
+            "description": "放置按钮容器的地点的类",
+            "itemtype": "property",
+            "name": "containerClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-wrap'",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 64,
+            "description": "按钮悬浮时添加的样式类",
+            "itemtype": "property",
+            "name": "hoverClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-hover'",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 72,
+            "description": "按钮禁止时添加的样式类",
+            "itemtype": "property",
+            "name": "disableClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-disabled'",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 80,
+            "description": "按钮获取焦点时添加的样式类",
+            "itemtype": "property",
+            "name": "disableClass",
+            "type": "String",
+            "reayonly": "",
+            "default": "'simple-btn-focus'",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 88,
+            "description": "渲染按钮的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "reayonly": "",
+            "default": "'<div class=\"simple-btn\"><span widgetpoint=\"labelEl\"></span></div>'",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 96,
+            "description": "渲染该按钮",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 108,
+            "description": "为生成的按钮绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 119,
+            "description": "按钮的点击事件操作",
+            "itemtype": "method",
+            "name": "_onclick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 133,
+            "description": "按钮的悬浮事件操作",
+            "itemtype": "method",
+            "name": "_onmouseover",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 143,
+            "description": "按钮的移出事件操作",
+            "itemtype": "method",
+            "name": "_onmouseout",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 153,
+            "description": "渲染按钮是否禁用",
+            "itemtype": "method",
+            "name": "_setterDisabled",
+            "params": [
+                {
+                    "name": "disabled",
+                    "description": "是否禁用该按钮",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "disabled"
+            },
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 169,
+            "description": "渲染按钮是否获取焦点",
+            "itemtype": "method",
+            "name": "_setterFocus",
+            "params": [
+                {
+                    "name": "focus",
+                    "description": "是否让按钮获取焦点",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "focus"
+            },
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 188,
+            "description": "渲染按钮的文字",
+            "itemtype": "method",
+            "name": "_setterFocus",
+            "params": [
+                {
+                    "name": "label",
+                    "description": "按钮的文字",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "label"
+            },
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 199,
+            "description": "渲染按钮的图标",
+            "itemtype": "method",
+            "name": "_setterIcon",
+            "params": [
+                {
+                    "name": "icon",
+                    "description": "按钮的图标类",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "icon"
+            },
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 216,
+            "description": "销毁该按钮",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Button",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 232,
+            "description": "下拉菜单的实例",
+            "itemtype": "property",
+            "name": "dropdown",
+            "type": "Menu",
+            "default": "null",
+            "class": "Simple.ComboButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 239,
+            "description": "分离按钮的模板",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "comboBtnTemplate",
+            "class": "Simple.ComboButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 251,
+            "description": "为生成的按钮绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "class": "Simple.ComboButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 270,
+            "description": "为按钮的下拉部分绑定操作",
+            "itemtype": "method",
+            "name": "_dropdownClick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "class": "Simple.ComboButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 285,
+            "description": "渲染按钮是否禁用",
+            "itemtype": "method",
+            "name": "_setterDisabled",
+            "params": [
+                {
+                    "name": "disabled",
+                    "description": "是否禁用该按钮",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "disabled"
+            },
+            "class": "Simple.ComboButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 304,
+            "description": "销毁该按钮",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.ComboButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 320,
+            "description": "下拉菜单的实例",
+            "itemtype": "property",
+            "name": "dropdown",
+            "type": "Menu",
+            "default": "null",
+            "class": "Simple.DropDownButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\button.js",
+            "line": 327,
+            "description": "下拉按钮的模板",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "comboBtnTemplate",
+            "class": "Simple.DropDownButton",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 13,
+            "description": "为生成的el添加的类",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "default": "'simple-date-picker'",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 22,
+            "description": "为生成的el相对定位的节点及触发事件的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 30,
+            "description": "指定选中的日期，格式为2012-12-06",
+            "itemtype": "property",
+            "name": "select",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 38,
+            "description": "格式化输出的日期",
+            "itemtype": "property",
+            "name": "format",
+            "type": "String",
+            "default": "'YYYY-MM-DD'",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 46,
+            "description": "开始的日期",
+            "itemtype": "property",
+            "name": "startDate",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 54,
+            "description": "结束的日期",
+            "itemtype": "property",
+            "name": "endDate",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 63,
+            "description": "选中日期触发的事件",
+            "itemtype": "event",
+            "name": "select",
+            "params": [
+                {
+                    "name": "date",
+                    "description": "选中的日期",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 72,
+            "description": "生成el的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 84,
+            "description": "渲染日期控件HTML",
+            "itemtype": "method",
+            "name": "_setterSelected",
+            "params": [
+                {
+                    "name": "selected",
+                    "description": "选中的日期",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 115,
+            "description": "根据format格式解析给出的日期",
+            "itemtype": "method",
+            "name": "_parseDate",
+            "params": [
+                {
+                    "name": "dateString",
+                    "description": "给出的日期",
+                    "type": "String"
+                },
+                {
+                    "name": "format",
+                    "description": "日期格式",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 138,
+            "description": "得到今天的具体日期",
+            "itemtype": "method",
+            "name": "__getToday",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 152,
+            "description": "获取一个月有多少天",
+            "itemtype": "method",
+            "name": "_getTotalDate",
+            "params": [
+                {
+                    "name": "year",
+                    "description": "给出指定的年份",
+                    "type": "String"
+                },
+                {
+                    "name": "month",
+                    "description": "给出指定的月份",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\date-picker.js",
+            "line": 163,
+            "description": "获取一个月第一天是星期几",
+            "itemtype": "method",
+            "name": "__getFirstDay",
+            "params": [
+                {
+                    "name": "year",
+                    "description": "给出指定的年份",
+                    "type": "String"
+                },
+                {
+                    "name": "month",
+                    "description": "给出指定的月份",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Dialog",
+            "module": "ui.button"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 13,
+            "description": "dialog 渲染的位置",
+            "itemtype": "property",
+            "name": "container",
+            "type": "String | HTMLElement",
+            "default": "document.body",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 20,
+            "description": "从dom中加载已有的元素到对话框中",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String | HTMLElement",
+            "default": "null",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 27,
+            "description": "dialog的标题,为false则不渲染标题\n\n    new Simple.Dialog({\n        title:false,\n        node:'#test'\n    });",
+            "itemtype": "property",
+            "name": "title",
+            "type": "String",
+            "default": "simple-dialog",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 39,
+            "description": "dialog的附加类",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "default": "'simple-dialog'",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 46,
+            "description": "是否显示遮罩",
+            "itemtype": "property",
+            "name": "modal",
+            "type": "Boolean",
+            "default": "true",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 53,
+            "description": "渲染显示的buttons,为false不渲染该按钮",
+            "itemtype": "property",
+            "name": "buttons",
+            "type": "Array | Object",
+            "default": "false",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 60,
+            "description": "渲染工具栏上面的按钮,为false则不渲染该按钮",
+            "itemtype": "property",
+            "name": "handleTool",
+            "type": "Array | Boolean",
+            "default": "['close']",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 67,
+            "description": "最大化时指定的容器包裹",
+            "itemtype": "property",
+            "name": "maxContainer",
+            "type": "String | HTMLElement",
+            "default": "body",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 74,
+            "description": "dialog的宽度",
+            "itemtype": "property",
+            "name": "width",
+            "type": "Int",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 81,
+            "description": "dialog的高度",
+            "itemtype": "property",
+            "name": "height",
+            "type": "Int",
+            "default": "''",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 88,
+            "description": "设置dialog初始出现的位置",
+            "itemtype": "property",
+            "name": "position",
+            "type": "String | Array",
+            "see": [
+                ""
+            ],
+            "default": "'cc cc'",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 96,
+            "description": "设置dialog是否可以拖动",
+            "itemtype": "property",
+            "name": "draggable",
+            "type": "Boolean",
+            "default": "true",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 103,
+            "description": "dialog最小化时执行的事件",
+            "itemtype": "event",
+            "name": "min",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 107,
+            "description": "dialog最大化时执行的事件",
+            "itemtype": "event",
+            "name": "max",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 111,
+            "description": "dialog关闭时执行的事件",
+            "itemtype": "event",
+            "name": "close",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 120,
+            "description": "生成dialog的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "template",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 138,
+            "description": "是否启用堆栈对话框",
+            "itemtype": "property",
+            "name": "stack",
+            "type": "Boolean",
+            "default": "true",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 145,
+            "description": "渲染dialog生成",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 194,
+            "description": "渲染对话框的内容",
+            "itemtype": "method",
+            "name": "_setterContent",
+            "params": [
+                {
+                    "name": "content",
+                    "description": "对话框的内容",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "content"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 207,
+            "description": "渲染对话框的标题",
+            "itemtype": "method",
+            "name": "_setterTitle",
+            "params": [
+                {
+                    "name": "title",
+                    "description": "对话框的标题",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "title"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 225,
+            "description": "渲染对话框的工具栏",
+            "itemtype": "method",
+            "name": "_setterHandleTool",
+            "params": [
+                {
+                    "name": "tools",
+                    "description": "对话框的工具栏",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "tools"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 253,
+            "description": "渲染对话框的按钮",
+            "itemtype": "method",
+            "name": "_setterButtons",
+            "params": [
+                {
+                    "name": "buttons",
+                    "description": "对话框的按钮",
+                    "type": "Array | Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "buttons"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 271,
+            "description": "返回对话框按钮的实例",
+            "itemtype": "method",
+            "name": "_getterButtons",
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "buttonInc"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 280,
+            "description": "为对话框绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 291,
+            "description": "将对话框移动到某个位置",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "对话框的参考dom元素",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "position",
+                    "description": "对话框相对context的位置",
+                    "type": "String"
+                },
+                {
+                    "name": "offset",
+                    "description": "对话框相对context的偏移量",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 302,
+            "description": "将对话框隐藏",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 312,
+            "description": "聚焦到该对话框，只在启用多窗口时有效",
+            "itemtype": "method",
+            "name": "setFocus",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 326,
+            "description": "获取当前聚焦的窗口，只在启用多窗口时有效",
+            "itemtype": "method",
+            "name": "getFocus",
+            "return": {
+                "description": "jQuery Object"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 336,
+            "description": "获取当前所有对话框最大的z-index值",
+            "itemtype": "method",
+            "name": "_getMaxIndex",
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "z-index"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 350,
+            "description": "销毁该对话框",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 377,
+            "description": "弹出一个远程获取数据的窗口",
+            "itemtype": "method",
+            "name": "Simple.ajaxDialog",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "see": [
+                "Simple.Dialog"
+            ],
+            "static": 1,
+            "return": {
+                "description": "Simple.Dialog的实例"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 436,
+            "description": "弹出一个嵌套iframe的窗口",
+            "itemtype": "method",
+            "name": "Simple.iframeDialog",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "see": [
+                "Simple.Dialog"
+            ],
+            "static": 1,
+            "return": {
+                "description": "Simple.Dialog的实例"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 475,
+            "description": "弹出一个警告的窗口",
+            "itemtype": "method",
+            "name": "Simple.alertDialog",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "see": [
+                "Simple.Dialog"
+            ],
+            "static": 1,
+            "return": {
+                "description": "Simple.Dialog的实例"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\dialog.js",
+            "line": 502,
+            "description": "弹出一个确认的窗口",
+            "itemtype": "method",
+            "name": "Simple.confirmDialog",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "see": [
+                "Simple.Dialog"
+            ],
+            "static": 1,
+            "return": {
+                "description": "Simple.Dialog的实例"
+            },
+            "class": "Simple.Dialog",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 45,
+            "description": "获取对象的绝对位置",
+            "itemtype": "method",
+            "name": "getRealPos",
+            "params": [
+                {
+                    "name": "element",
+                    "description": "需要获取位置的对象",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "返回对象的top, left 值",
+                "type": "Object"
+            },
+            "class": "Simple.Drag",
+            "module": "ui.dialog"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 150,
+            "description": "设定需要被拖动的dom元素",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String | HTMLElement",
+            "default": "null",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 157,
+            "description": "设定拖动该node时触发拖动的元素",
+            "itemtype": "property",
+            "name": "handle",
+            "type": "String",
+            "default": "null",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 164,
+            "description": "限定拖动的范围",
+            "itemtype": "property",
+            "name": "container",
+            "type": "String | HTMLElement",
+            "default": "document.body",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 171,
+            "description": "拖动的时候的代理，如果为字符串则会复制原先的dom元素",
+            "itemtype": "property",
+            "name": "proxy",
+            "type": "String | Function",
+            "default": "null",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 178,
+            "description": "延迟多少像素触发拖动",
+            "itemtype": "property",
+            "name": "delay",
+            "type": "Int",
+            "default": "2",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 185,
+            "description": "有拖动代理的情况下，该代理相对于鼠标的位置\n    \n    atCursor:{\n        top:-10,\n        left:-10\n    }",
+            "itemtype": "property",
+            "name": "atCursor",
+            "type": "Object",
+            "default": "null",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 198,
+            "description": "当拖动的页面存在有iframe的时候，是否修复从iframe拖动的时候出现闪烁的情况",
+            "itemtype": "property",
+            "name": "iframeFix",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 205,
+            "description": "设定拖动的方向，可选值有both,x,y",
+            "itemtype": "property",
+            "name": "direction",
+            "type": "String",
+            "default": "both",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 212,
+            "description": "设定拖动的步进\n\n    grid:[10,10]",
+            "itemtype": "property",
+            "name": "grid",
+            "type": "Array",
+            "default": "false",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 222,
+            "description": "设定拖动完毕后是否返回原先的位置",
+            "itemtype": "property",
+            "name": "revert",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 229,
+            "description": "设定拖动时候出发drop事件的元素",
+            "itemtype": "property",
+            "name": "dropElements",
+            "type": "String",
+            "default": "false",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 236,
+            "description": "初始化拖动的事件",
+            "itemtype": "method",
+            "name": "init",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 258,
+            "description": "销毁拖动事件",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 265,
+            "description": "鼠标按下的时候的事件处理",
+            "itemtype": "method",
+            "name": "_movestart",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装后的event对象",
+                    "type": "JQuery Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 271,
+            "description": "拖动开始的时候触发的事件，如果返回false，则阻止拖动",
+            "itemtype": "event",
+            "name": "dragStart",
+            "params": [
+                {
+                    "name": "event",
+                    "description": "",
+                    "type": "JQuery Event"
+                },
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 303,
+            "description": "鼠标移动的时候的事件处理",
+            "itemtype": "method",
+            "name": "_moving",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装后的event对象",
+                    "type": "JQuery Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 309,
+            "description": "拖动的时候触发的事件",
+            "itemtype": "event",
+            "name": "drag",
+            "params": [
+                {
+                    "name": "event",
+                    "description": "",
+                    "type": "JQuery Event"
+                },
+                {
+                    "name": "context",
+                    "description": "实例化后Drag的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 367,
+            "description": "鼠标弹起的时候的事件处理",
+            "itemtype": "method",
+            "name": "_movestop",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装后的event对象",
+                    "type": "JQuery Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 373,
+            "description": "拖动停止的时候触发的事件",
+            "itemtype": "event",
+            "name": "dragStop",
+            "params": [
+                {
+                    "name": "event",
+                    "description": "",
+                    "type": "JQuery Event"
+                },
+                {
+                    "name": "context",
+                    "description": "实例化后Drag的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 415,
+            "description": "设置拖动的范围",
+            "itemtype": "method",
+            "name": "_setLimitRegion",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 440,
+            "description": "设置拖动的代理",
+            "itemtype": "method",
+            "name": "_setProxy",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 464,
+            "description": "更新拖动的元素的位置",
+            "itemtype": "method",
+            "name": "updatePosition",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "拖动的元素",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "proxy",
+                    "description": "是否有拖动代理",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 499,
+            "description": "检测是否放置了元素",
+            "itemtype": "method",
+            "name": "checkDroppables",
+            "params": [
+                {
+                    "name": "isDrop",
+                    "description": "是否有放置",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 505,
+            "description": "拖动离开放置元素时触发的事件",
+            "itemtype": "event",
+            "name": "dragLeave",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "放置的元素",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "context",
+                    "description": "实例化后Drag的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 511,
+            "description": "拖动进入放置元素时触发的事件",
+            "itemtype": "event",
+            "name": "dragEnter",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "放置的元素",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "context",
+                    "description": "实例化后Drag的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\drag.js",
+            "line": 517,
+            "description": "拖动放置元素时触发的事件",
+            "itemtype": "event",
+            "name": "drop",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "放置的元素",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "context",
+                    "description": "实例化后Drag的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Drag",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 12,
+            "description": "指定生成的容器的tagName",
+            "itemtype": "property",
+            "name": "tagName",
+            "type": "String",
+            "default": "ul",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 19,
+            "description": "指定每个Item的文字",
+            "itemtype": "property",
+            "name": "label",
+            "type": "String",
+            "default": "simple-menu",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 26,
+            "description": "指定每个Item的图标",
+            "itemtype": "property",
+            "name": "icon",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 32,
+            "description": "该菜单项的帮助信息",
+            "itemtype": "property",
+            "name": "helper",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 38,
+            "description": "跳转的链接地址",
+            "itemtype": "property",
+            "name": "url",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 44,
+            "description": "该菜单项是否被禁用",
+            "itemtype": "property",
+            "name": "disabled",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 51,
+            "description": "该菜单项是否被选中",
+            "itemtype": "property",
+            "name": "checked",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 58,
+            "description": "该菜单项的点击事件",
+            "itemtype": "property",
+            "name": "handle",
+            "type": "Function",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 64,
+            "description": "生成该菜单的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 76,
+            "description": "渲染该菜单项",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 89,
+            "description": "为该菜单项绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 100,
+            "description": "点击事件操作",
+            "itemtype": "method",
+            "name": "_onclick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 109,
+            "description": "悬浮事件操作",
+            "itemtype": "method",
+            "name": "_onmouseover",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 118,
+            "description": "移出事件操作",
+            "itemtype": "method",
+            "name": "_onmouseout",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 127,
+            "description": "渲染菜单项的文字",
+            "itemtype": "method",
+            "name": "_setterFocus",
+            "params": [
+                {
+                    "name": "label",
+                    "description": "文字",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "label"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 138,
+            "description": "渲染菜单是否禁用",
+            "itemtype": "method",
+            "name": "_setterDisabled",
+            "params": [
+                {
+                    "name": "disabled",
+                    "description": "是否禁用该菜单",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "disabled"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 149,
+            "description": "渲染菜单的帮助信息",
+            "itemtype": "method",
+            "name": "_setterHelper",
+            "params": [
+                {
+                    "name": "helper",
+                    "description": "帮助信息",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "helper"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 160,
+            "description": "渲染菜单是否被选中",
+            "itemtype": "method",
+            "name": "_setterChecked",
+            "params": [
+                {
+                    "name": "checked",
+                    "description": "菜单项是否被选中",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "checked"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 171,
+            "description": "渲染菜单的链接",
+            "itemtype": "method",
+            "name": "_setterUrl",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "菜单的链接",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "url"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.drag"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 199,
+            "description": "指定触发菜单显示的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 205,
+            "description": "指定渲染菜单的数据",
+            "itemtype": "property",
+            "name": "items",
+            "type": "Array",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 211,
+            "description": "指定渲染菜单的父级模版",
+            "itemtype": "property",
+            "name": "items",
+            "type": "String",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 218,
+            "description": "私有属性判断是否有父级菜单",
+            "itemtype": "property",
+            "name": "_hasParentMenu",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 225,
+            "description": "初始化一些属性，用来存储需要的数据",
+            "itemtype": "method",
+            "name": "initAttrs",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 237,
+            "description": "渲染该菜單",
+            "itemtype": "method",
+            "name": "renderUI",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 250,
+            "description": "渲染该菜單",
+            "itemtype": "method",
+            "name": "_parseItems",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 273,
+            "description": "通过菜单组渲染该菜单",
+            "itemtype": "method",
+            "name": "_parseItemsByGroup",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 292,
+            "description": "通过单个菜单渲染该菜单",
+            "itemtype": "method",
+            "name": "_parseItemsBySingle",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 320,
+            "description": "通过单个菜单数组渲染该菜单",
+            "itemtype": "method",
+            "name": "_parseItemsByArray",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 327,
+            "description": "为已有的菜单增加数据",
+            "itemtype": "method",
+            "name": "addChild",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 336,
+            "description": "获取菜单中的菜单项",
+            "itemtype": "method",
+            "name": "getItem",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "菜单项的序列",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 344,
+            "description": "为该菜单绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 387,
+            "description": "隐藏该菜单",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 408,
+            "description": "菜单显示相对node位置",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "相对的参考节点",
+                    "type": "JQuery Object"
+                }
+            ],
+            "itemtype": "method",
+            "name": "showAt",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 422,
+            "description": "调整菜单显示的位置",
+            "itemtype": "method",
+            "name": "fixPosition",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 442,
+            "description": "销毁该菜单",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "line": 478,
+            "description": "右键菜单显示的位置",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "相对的参考节点",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "e",
+                    "description": "传入的jQuery包装的Event对象",
+                    "type": "JQuery Event"
+                }
+            ],
+            "itemtype": "method",
+            "name": "showAt",
+            "class": "Simple.ContextMenu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 12,
+            "description": "指定生成的容器的tagName",
+            "itemtype": "property",
+            "name": "tagName",
+            "type": "String",
+            "default": "ul",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 19,
+            "description": "指定每个Item的文字",
+            "itemtype": "property",
+            "name": "label",
+            "type": "String",
+            "default": "simple-menu",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 26,
+            "description": "指定每个Item的图标",
+            "itemtype": "property",
+            "name": "icon",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 32,
+            "description": "该菜单项的帮助信息",
+            "itemtype": "property",
+            "name": "helper",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 38,
+            "description": "跳转的链接地址",
+            "itemtype": "property",
+            "name": "url",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 44,
+            "description": "该菜单项是否被禁用",
+            "itemtype": "property",
+            "name": "disabled",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 51,
+            "description": "该菜单项是否被选中",
+            "itemtype": "property",
+            "name": "checked",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 58,
+            "description": "该菜单项的点击事件",
+            "itemtype": "property",
+            "name": "handle",
+            "type": "Function",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 64,
+            "description": "生成该菜单的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 76,
+            "description": "渲染该菜单项",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 89,
+            "description": "为该菜单项绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 100,
+            "description": "点击事件操作",
+            "itemtype": "method",
+            "name": "_onclick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 109,
+            "description": "悬浮事件操作",
+            "itemtype": "method",
+            "name": "_onmouseover",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 118,
+            "description": "移出事件操作",
+            "itemtype": "method",
+            "name": "_onmouseout",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 127,
+            "description": "渲染菜单项的文字",
+            "itemtype": "method",
+            "name": "_setterFocus",
+            "params": [
+                {
+                    "name": "label",
+                    "description": "文字",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "label"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 138,
+            "description": "渲染菜单是否禁用",
+            "itemtype": "method",
+            "name": "_setterDisabled",
+            "params": [
+                {
+                    "name": "disabled",
+                    "description": "是否禁用该菜单",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "disabled"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 149,
+            "description": "渲染菜单的帮助信息",
+            "itemtype": "method",
+            "name": "_setterHelper",
+            "params": [
+                {
+                    "name": "helper",
+                    "description": "帮助信息",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "helper"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 160,
+            "description": "渲染菜单是否被选中",
+            "itemtype": "method",
+            "name": "_setterChecked",
+            "params": [
+                {
+                    "name": "checked",
+                    "description": "菜单项是否被选中",
+                    "type": "Boolean"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "checked"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 171,
+            "description": "渲染菜单的链接",
+            "itemtype": "method",
+            "name": "_setterUrl",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "菜单的链接",
+                    "type": "String"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "url"
+            },
+            "class": "Simple.MenuItem",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 199,
+            "description": "指定触发菜单显示的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 205,
+            "description": "指定渲染菜单的数据",
+            "itemtype": "property",
+            "name": "items",
+            "type": "Array",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 211,
+            "description": "指定渲染菜单的父级模版",
+            "itemtype": "property",
+            "name": "items",
+            "type": "String",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 218,
+            "description": "私有属性判断是否有父级菜单",
+            "itemtype": "property",
+            "name": "_hasParentMenu",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 225,
+            "description": "初始化一些属性，用来存储需要的数据",
+            "itemtype": "method",
+            "name": "initAttrs",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 238,
+            "description": "渲染该菜單",
+            "itemtype": "method",
+            "name": "renderUI",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 251,
+            "description": "渲染该菜單",
+            "itemtype": "method",
+            "name": "_parseItems",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 274,
+            "description": "通过菜单组渲染该菜单",
+            "itemtype": "method",
+            "name": "_parseItemsByGroup",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 293,
+            "description": "通过单个菜单渲染该菜单",
+            "itemtype": "method",
+            "name": "_parseItemsBySingle",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 321,
+            "description": "为已有的菜单增加数据",
+            "itemtype": "method",
+            "name": "addChild",
+            "params": [
+                {
+                    "name": "items",
+                    "description": "每个菜单项的数据",
+                    "type": "Array"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 330,
+            "description": "获取菜单中的菜单项",
+            "itemtype": "method",
+            "name": "getItem",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "菜单项的序列",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 338,
+            "description": "为该菜单绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 388,
+            "description": "隐藏该菜单",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 409,
+            "description": "菜单显示相对node位置",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "相对的参考节点",
+                    "type": "JQuery Object"
+                }
+            ],
+            "itemtype": "method",
+            "name": "showAt",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 423,
+            "description": "调整菜单显示的位置",
+            "itemtype": "method",
+            "name": "fixPosition",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 443,
+            "description": "销毁该菜单",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Menu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\menu.js",
+            "line": 479,
+            "description": "右键菜单显示的位置",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "相对的参考节点",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "e",
+                    "description": "传入的jQuery包装的Event对象",
+                    "type": "JQuery Event"
+                }
+            ],
+            "itemtype": "method",
+            "name": "showAt",
+            "class": "Simple.ContextMenu",
+            "module": "ui.menu"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 11,
+            "description": "分页条目的总数量",
+            "itemtype": "property",
+            "name": "totalCount",
+            "type": "Int",
+            "default": "100",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 18,
+            "description": "分页尺寸大小",
+            "itemtype": "property",
+            "name": "pageSize",
+            "type": "Int",
+            "default": "10",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 25,
+            "description": "分页显示的数量",
+            "itemtype": "property",
+            "name": "pageShowCount",
+            "type": "Int",
+            "default": "9",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 32,
+            "description": "当前页",
+            "itemtype": "property",
+            "name": "currentPage",
+            "type": "Int",
+            "default": "1",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 39,
+            "description": "分页的样式",
+            "itemtype": "property",
+            "name": "pageStyle",
+            "type": "String",
+            "default": "'default'",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 46,
+            "description": "分页的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "'<div class=\"simple-pagination\"></div>'",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 53,
+            "description": "初始化分页组件的属性",
+            "itemtype": "method",
+            "name": "initAttrs",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 60,
+            "description": "渲染分页",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 68,
+            "description": "为分页组件绑定事件",
+            "itemtype": "method",
+            "name": "bindUI",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 79,
+            "description": "分页的点击事件",
+            "itemtype": "method",
+            "name": "_onclick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 95,
+            "description": "根据分页总数量来重新渲染分页",
+            "itemtype": "method",
+            "name": "_setterTotalCount",
+            "params": [
+                {
+                    "name": "totalCount",
+                    "description": "分页条目的总数量",
+                    "type": "Int"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "totalCount"
+            },
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 110,
+            "description": "根据分页尺寸大小来重新渲染分页",
+            "itemtype": "method",
+            "name": "_setterPageSize",
+            "params": [
+                {
+                    "name": "pageSize",
+                    "description": "分页尺寸大小",
+                    "type": "Int"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "pageSize"
+            },
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 125,
+            "description": "根据当前页来重新渲染分页",
+            "itemtype": "method",
+            "name": "_setterCurrentPage",
+            "params": [
+                {
+                    "name": "currentPage",
+                    "description": "当前页",
+                    "type": "Int"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "return": {
+                "description": "currentPage"
+            },
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 143,
+            "description": "根据当前页和总页数来渲染分页",
+            "itemtype": "method",
+            "name": "_renderPage",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "currentPage",
+                    "description": "当前页",
+                    "type": "Int"
+                },
+                {
+                    "name": "totalPage",
+                    "description": "总页数",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\pagination.js",
+            "line": 157,
+            "description": "根据给定页数的HTML",
+            "itemtype": "method",
+            "name": "_getItemHtml",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "当前页",
+                    "type": "Int"
+                }
+            ],
+            "class": "Simple.Pagination",
+            "module": "ui.pagination"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 16,
+            "description": "设置需要重设尺寸的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String | HTMLElement",
+            "default": "''",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 23,
+            "description": "设置重设尺寸的方向，可选值有:\n\n    \"n\", \"ne\", \"e\", \"se\", \"s\", \"sw\", \"w\", \"nw\"",
+            "itemtype": "property",
+            "name": "direction",
+            "type": "Array",
+            "default": "[\"e\", \"se\", \"s\"]",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 33,
+            "description": "设置重设尺寸的最大宽度",
+            "itemtype": "property",
+            "name": "maxWidth",
+            "type": "Int",
+            "default": "null",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 40,
+            "description": "设置重设尺寸的最小宽度",
+            "itemtype": "property",
+            "name": "minWidth",
+            "type": "Int",
+            "default": "null",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 47,
+            "description": "设置重设尺寸的最小高度",
+            "itemtype": "property",
+            "name": "minHeight",
+            "type": "Int",
+            "default": "null",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 54,
+            "description": "设置重设尺寸的最大高度",
+            "itemtype": "property",
+            "name": "minWidth",
+            "type": "Int",
+            "default": "null",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 62,
+            "description": "初始化重设尺寸的必要条件",
+            "itemtype": "method",
+            "name": "init",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 81,
+            "description": "销毁重设尺寸",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 89,
+            "description": "触发拖动事件",
+            "itemtype": "method",
+            "name": "_triggerEvent",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 105,
+            "description": "创建重设尺寸手柄",
+            "itemtype": "method",
+            "name": "_createHandle",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "需要重设尺寸的节点",
+                    "type": "HTMLElement"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 123,
+            "description": "鼠标按下的事件处理",
+            "itemtype": "method",
+            "name": "_doMouseDown",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery 包装后的Event对象",
+                    "type": "JQuery Event"
+                },
+                {
+                    "name": "node",
+                    "description": "需要重设尺寸的节点",
+                    "type": "HTMLElement"
+                },
+                {
+                    "name": "item",
+                    "description": "重设尺寸的方向",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 147,
+            "description": "鼠标移动的事件处理",
+            "itemtype": "method",
+            "name": "_doMouseMove",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery 包装后的Event对象",
+                    "type": "JQuery Event"
+                },
+                {
+                    "name": "node",
+                    "description": "需要重设尺寸的节点",
+                    "type": "HTMLElement"
+                },
+                {
+                    "name": "item",
+                    "description": "重设尺寸的方向",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\resizable.js",
+            "line": 226,
+            "description": "鼠标弹起的事件处理",
+            "itemtype": "method",
+            "name": "_doMouseUp",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Resize",
+            "module": "ui.resize"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 18,
+            "description": "设置需要框选元素的父级容器",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String | HTMLElement",
+            "default": "''",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 25,
+            "description": "node元素中的子集节点，会被选中,应该是一个jQuery选择器",
+            "itemtype": "property",
+            "name": "selectNode",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 32,
+            "description": "选中的元素加上的类，以表明该元素被选中了",
+            "itemtype": "property",
+            "name": "selectCls",
+            "type": "String",
+            "default": "'simple-selectable'",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 39,
+            "description": "延迟触发selectable事件",
+            "itemtype": "property",
+            "name": "delay",
+            "type": "Int",
+            "default": "3",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 46,
+            "description": "框选开始时触发的事件",
+            "itemtype": "property",
+            "name": "onSelectStart",
+            "type": "Function",
+            "default": "empty Function",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 55,
+            "description": "框选结束时触发的事件",
+            "itemtype": "property",
+            "name": "onSelectEnd",
+            "type": "Function",
+            "default": "empty Function",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\selectable.js",
+            "line": 70,
+            "description": "销毁框选特性",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Selectable",
+            "module": "ui.selectable"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 12,
+            "description": "是否显示遮罩，默认是不应该显示遮罩的",
+            "itemtype": "property",
+            "name": "modal",
+            "type": "Boolean",
+            "access": "protected",
+            "tagname": "",
+            "default": "false",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 20,
+            "description": "不启用堆栈",
+            "itemtype": "property",
+            "name": "stack",
+            "type": "Boolean",
+            "access": "protected",
+            "tagname": "",
+            "default": "false",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 28,
+            "description": "默认不开启关闭按钮",
+            "itemtype": "property",
+            "name": "handleTool",
+            "type": "Array",
+            "default": "false",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 35,
+            "description": "tip出现的参考节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 42,
+            "description": "提示的内容",
+            "itemtype": "property",
+            "name": "content",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 49,
+            "description": "默认不显示提示的标题",
+            "itemtype": "property",
+            "name": "title",
+            "type": "String",
+            "default": "false",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 56,
+            "description": "指定显示在node的位置",
+            "itemtype": "property",
+            "name": "direction",
+            "type": "String",
+            "default": "bottom",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 63,
+            "description": "提示的模版",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 70,
+            "description": "渲染提示组件",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 78,
+            "description": "根据提供的节点与相对节点的方向设置组件的一些基本信息",
+            "itemtype": "method",
+            "name": "setMeta",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "设置信息的节点",
+                    "type": "Object"
+                },
+                {
+                    "name": "direction",
+                    "description": "设置节点的方向",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 88,
+            "description": "根据提供的节点与相对节点的方向设置组件的一些基本信息",
+            "itemtype": "method",
+            "name": "_setMeta",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "triggerNode",
+                    "description": "设置信息的节点",
+                    "type": "Object"
+                },
+                {
+                    "name": "direction",
+                    "description": "设置节点的方向",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 104,
+            "description": "得到节点的位置信息",
+            "itemtype": "method",
+            "name": "_getMetaByDirection",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "direction",
+                    "description": "设置节点的方向",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 147,
+            "description": "设定节点的位置",
+            "itemtype": "method",
+            "name": "_fixPosition",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "triggerNode",
+                    "description": "设置信息的节点",
+                    "type": "Object"
+                },
+                {
+                    "name": "direction",
+                    "description": "设置节点的方向",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.TipBase",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 215,
+            "description": "是否允许悬浮在tip上",
+            "itemtype": "property",
+            "name": "allowTipHover",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 222,
+            "description": "tip的内容",
+            "itemtype": "property",
+            "name": "content",
+            "type": "Function | String",
+            "default": "''",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 229,
+            "description": "显示Tip的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 236,
+            "description": "触发tip的事件，可选值有'hover&click'",
+            "itemtype": "property",
+            "name": "triggerEvent",
+            "type": "String",
+            "default": "'hover'",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 243,
+            "description": "初始化tip组件的事件",
+            "itemtype": "method",
+            "name": "initBaseEvents",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 265,
+            "description": "为该tip组件绑定事件",
+            "itemtype": "method",
+            "name": "_bindUI",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 281,
+            "description": "设置tip的内容",
+            "itemtype": "method",
+            "name": "_setterContent",
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 292,
+            "description": "为el绑定点击事件",
+            "itemtype": "method",
+            "name": "_onClick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 303,
+            "description": "显示tip的方法",
+            "itemtype": "method",
+            "name": "_showToolTip",
+            "params": [
+                {
+                    "name": "triggerNode",
+                    "description": "触发tip的dom元素",
+                    "type": "HTMLElement"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 331,
+            "description": "tip的悬浮事件操作",
+            "itemtype": "method",
+            "name": "_onMouseOver",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 344,
+            "description": "tip的鼠标移出事件操作",
+            "itemtype": "method",
+            "name": "_onMouseOut",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 360,
+            "description": "el悬浮事件操作",
+            "itemtype": "method",
+            "name": "_onElMouseOver",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 371,
+            "description": "el的鼠标移出事件操作",
+            "itemtype": "method",
+            "name": "_onElMouseOut",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "jQuery包装的Event",
+                    "type": "Event"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "ui\\tool-tip.js",
+            "line": 383,
+            "description": "销毁Tip组件",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Tip",
+            "module": "ui.tool-tip"
+        },
+        {
+            "file": "attribute.js",
+            "line": 44,
+            "description": "获取某个key值，该值可以通过自定义的一个方法改变\n例如如果key为Name，那么复写getName方法可以改变取到的值\n\tgetterName:function(value){\n\t\treturn Math.min(value,0);\n}",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "该key所对应的值",
+                "type": "Object"
+            },
+            "class": "Simple.Attribute",
+            "module": "attribute"
+        },
+        {
+            "file": "attribute.js",
+            "line": 62,
+            "description": "设置某个key的值，该值在改变前首先触发beforekeychange自定义事件\n其次该值可以通过定义的一个方法改变值\n最后如果设置成功，会触发keychange 事件",
+            "itemtype": "method",
+            "name": "set",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Attribute",
+            "module": "attribute"
+        },
+        {
+            "file": "attribute.js",
+            "line": 70,
+            "description": "属性改变前的事件",
+            "itemtype": "event",
+            "name": "before+Property+Change",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "需要设置的值",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Attribute",
+            "module": "attribute"
+        },
+        {
+            "file": "attribute.js",
+            "line": 75,
+            "description": "属性改变的事件",
+            "itemtype": "event",
+            "name": "property+Change",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "需要设置的值",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Attribute",
+            "module": "attribute"
+        },
+        {
+            "file": "event.js",
+            "line": 133,
+            "description": "自定义事件\n    \n    listeners:{\n        change:$.noop\n    }\n    \n    this.trigger('change');",
+            "type": "Object",
+            "itemtype": "property",
+            "name": "listeners",
+            "default": "null",
+            "class": "Simple.EventTarget",
+            "module": "event"
+        },
+        {
+            "file": "event.js",
+            "line": 156,
+            "description": "绑定一个事件，并且返回一个对象用于解绑该事件\n\n    var eventBinder = event.on('test',callback);\n    eventBinder.off();",
+            "itemtype": "method",
+            "name": "on",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "事件的名称",
+                    "type": "String"
+                },
+                {
+                    "name": "handle",
+                    "description": "该事件的回调函数",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "用于对这个事件进行解绑操作",
+                "type": "Object"
+            },
+            "class": "Simple.EventTarget",
+            "module": "event"
+        },
+        {
+            "file": "event.js",
+            "line": 210,
+            "description": "解除事件的绑定\n\n    var eventBinder = event.on('test',callback);\n    event.off('test',callback)",
+            "itemtype": "method",
+            "name": "off",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "事件的名称",
+                    "type": "String"
+                },
+                {
+                    "name": "handle",
+                    "description": "该事件的回调函数",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "解绑成功返回true",
+                "type": "Boolean"
+            },
+            "class": "Simple.EventTarget",
+            "module": "event"
+        },
+        {
+            "file": "event.js",
+            "line": 267,
+            "description": "触发一个事件，可以使用该事件的命名空间来触发一组事件\n\n    var eventBinder = event.on('test',callback);\n    event.trigger('test');",
+            "itemtype": "method",
+            "name": "trigger",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "事件的名称",
+                    "type": "String"
+                },
+                {
+                    "name": "args",
+                    "description": "传入该事件回调的参数",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "返回true",
+                "type": "Boolean"
+            },
+            "class": "Simple.EventTarget",
+            "module": "event"
+        },
+        {
+            "file": "event.js",
+            "line": 324,
+            "description": "过滤一个方法，返回一个新的方法",
+            "itemtype": "method",
+            "name": "aspect",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "在过滤这个方法的时候需要执行的方法",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "返回通知的类型方法",
+                "type": "Object"
+            },
+            "class": "Simple.EventTarget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 18,
+            "description": "拷贝一个对象到另外一个对象上，如果只有一个参数，那个这个对象的属性或者方法将被添加到Simple上。",
+            "params": [
+                {
+                    "name": "dest",
+                    "description": "源对象",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "拷贝的对象",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "dest 修改后的dest对象",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 36,
+            "description": "拷贝一个对象到另外一个对象上，不会覆盖冲突属性",
+            "params": [
+                {
+                    "name": "dest",
+                    "description": "源对象",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "拷贝的对象",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "dest 修改后的dest对象",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 55,
+            "description": "设置一个类为另外一个类的子类，可以使用instanceof判断之间的关系",
+            "params": [
+                {
+                    "name": "subCls",
+                    "description": "用于继承的子类",
+                    "type": "Object"
+                },
+                {
+                    "name": "superCls",
+                    "description": "被继承的父类",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "subCls 返回子类",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 71,
+            "description": "遍历一个数组或者对象，并执行回调函数",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "被遍历的对象",
+                    "type": "Object | Array"
+                },
+                {
+                    "name": "callback",
+                    "description": "执行的回调函数",
+                    "type": "Function"
+                },
+                {
+                    "name": "conext",
+                    "description": "回调函数内部的作用域",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "object 被遍历的对象",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 93,
+            "description": "声明一个命名空间\n \n Simple.namespace(\"Simple.dd\");\n Simple.dd.Drag=function(){}",
+            "params": [
+                {
+                    "name": "arguments",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "o 根据给出的字符串创建的对象",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 123,
+            "description": "在控制台输出信息",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "需要输出的内容",
+                    "type": "String"
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 132,
+            "description": "替换字符串的辅助函数",
+            "params": [
+                {
+                    "name": "template",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "map",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "beforeReplace",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "替换后的字符串"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 145,
+            "description": "获取当前页面的可视宽高",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "需要后去宽高的HTML对象",
+                    "type": "Object"
+                },
+                {
+                    "name": "isDoc",
+                    "description": "是否获取整个高度(加上滚动条部分)",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "Object.w 宽度",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 184,
+            "description": "获取当前页面的宽高(加上滚动条部分)",
+            "return": {
+                "description": "Object.w 宽度",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 195,
+            "description": "获取当前页面的可视宽高",
+            "return": {
+                "description": "Object.w 宽度",
+                "type": "Object"
+            },
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 206,
+            "description": "将Simple下的插件桥接到jQuery",
+            "params": [
+                {
+                    "name": "methodName",
+                    "description": "插件名称",
+                    "type": "String"
+                },
+                {
+                    "name": "widget",
+                    "description": "对应的插件",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 260,
+            "description": "设置某个对象相对参考对象的位置",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "node",
+                            "description": "需要设置位置的对象",
+                            "type": "Object"
+                        },
+                        {
+                            "name": "context",
+                            "description": "相对对象",
+                            "type": "Object"
+                        },
+                        {
+                            "name": "position",
+                            "description": "可选参数(\"cc cc\")",
+                            "type": "String"
+                        },
+                        {
+                            "name": "offset",
+                            "description": "'0,5'",
+                            "type": "String|Function"
+                        }
+                    ]
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "simple.js",
+            "line": 354,
+            "description": "让某个元素 相对body局中",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "需要获取位置的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "event"
+        },
+        {
+            "file": "widget.js",
+            "line": 15,
+            "description": "该Id也为实例化后可以根据此ID获取实例对象 如果没有指定，则会自动生成一个Id，格式为widget-uuid",
+            "itemtype": "property",
+            "name": "id",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 23,
+            "description": "触发该widget操作的node",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String",
+            "default": "null",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 31,
+            "description": "ui渲染的位置",
+            "itemtype": "property",
+            "name": "container",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 39,
+            "description": "为生成的el添加的类",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 47,
+            "description": "为container指定的类名",
+            "itemtype": "property",
+            "name": "containerClass",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 55,
+            "description": "当没有指定container时，创建container时使用的标签",
+            "itemtype": "property",
+            "name": "tagName",
+            "type": "String",
+            "default": "'div'",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 63,
+            "description": "该widget组件需要使用的模版，可以通过外部加载",
+            "itemtype": "property",
+            "name": "template",
+            "type": "String",
+            "default": "''",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 71,
+            "description": "实例化时需要执行的插件",
+            "itemtype": "property",
+            "name": "plugins",
+            "type": "Array",
+            "default": "[]",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 80,
+            "description": "该widget被实例化后出现的位置",
+            "itemtype": "property",
+            "name": "position",
+            "type": "String",
+            "default": "null",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 88,
+            "description": "通过bindUI为该组件绑定事件",
+            "type": "Object",
+            "itemtype": "property",
+            "name": "{Object} events",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 95,
+            "description": "为该生成的el设定的样式",
+            "itemtype": "property",
+            "name": "style",
+            "type": "Object",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 102,
+            "description": "存储实例化的插件实例对象,可以通过插件的名字获取",
+            "itemtype": "property",
+            "name": "_pluginsInc",
+            "type": "Object",
+            "access": "private",
+            "tagname": "",
+            "default": "null",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 111,
+            "description": "初始化widget",
+            "itemtype": "method",
+            "name": "init",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 125,
+            "description": "取得该实例的指定Id",
+            "itemtype": "method",
+            "name": "_getterId",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 134,
+            "description": "取得指定的node",
+            "itemtype": "method",
+            "name": "_getterNode",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 147,
+            "description": "取得渲染的容器",
+            "itemtype": "method",
+            "name": "_getterContainer",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 168,
+            "description": "用于自动生成容器的方法， 在没有渲染且没有指定容器的方法在会调用此方法",
+            "itemtype": "method",
+            "name": "_autoBuildContainer",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 183,
+            "description": "初始化一些特殊的属性，所有在这里初始化的属性都会被插件类捕捉到",
+            "itemtype": "method",
+            "name": "initAttrs",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 189,
+            "description": "在初始化后执行的方法，首先创造渲染的主体，其次调用render方法进行渲染 如果有插件，则该类的插件也会在这里实例化",
+            "itemtype": "method",
+            "name": "afterInit",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 194,
+            "description": "初始化后执行的事件",
+            "itemtype": "event",
+            "name": "afterInit",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 215,
+            "description": "如果该组件是延迟渲染的，则针对el的事件绑定在这里进行",
+            "itemtype": "method",
+            "name": "initBaseEvents",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 221,
+            "description": "对组件进行渲染",
+            "itemtype": "method",
+            "name": "render",
+            "params": [
+                {
+                    "name": "container",
+                    "description": "指定渲染到的容器",
+                    "type": "String | HTMLElement"
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 227,
+            "description": "渲染前执行的事件",
+            "itemtype": "event",
+            "name": "beforeRender",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 232,
+            "description": "渲染后执行的事件",
+            "itemtype": "event",
+            "name": "afterRender",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 261,
+            "description": "通过该方法判断该组件是否已渲染",
+            "itemtype": "method",
+            "name": "isRender",
+            "return": {
+                "description": "组件是否渲染"
+            },
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 270,
+            "description": "构建渲染的主体，在这里会进行模版的解析。",
+            "itemtype": "method",
+            "name": "buildRender",
+            "access": "protected",
+            "tagname": "",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 310,
+            "description": "空方法，用于组件的复写",
+            "itemtype": "method",
+            "name": "renderUI",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 318,
+            "description": "空方法，用于事件的绑定",
+            "itemtype": "method",
+            "name": "bindUI",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 326,
+            "description": "显示该组件，如果该组件没有被渲染，则先渲染该组件，再显示",
+            "itemtype": "method",
+            "name": "show",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 335,
+            "description": "隐藏该组件",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 345,
+            "description": "通过解析domEvents为dom元素绑定事件",
+            "access": "protected",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_dispatchEvents",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 362,
+            "description": "设定widget的位置",
+            "itemtype": "method",
+            "name": "setPosition",
+            "params": [
+                {
+                    "name": "node",
+                    "description": "需要设定的节点",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "context",
+                    "description": "设定节点位置的参考节点",
+                    "type": "JQuery Object"
+                },
+                {
+                    "name": "position",
+                    "description": "节点的位置",
+                    "type": "String | Array"
+                },
+                {
+                    "name": "offset",
+                    "description": "节点相对位置的偏移量",
+                    "type": "Object"
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 390,
+            "description": "用于解析设定了widget名字的组件",
+            "itemtype": "method",
+            "name": "parser",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "组件解析的范围",
+                    "type": "String | HTMLElement"
+                }
+            ],
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 408,
+            "description": "销毁该组件",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 413,
+            "description": "销毁前执行的事件",
+            "itemtype": "event",
+            "name": "beforeDestory",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 418,
+            "description": "销毁后执行的事件",
+            "itemtype": "event",
+            "name": "afterDestory",
+            "class": "Simple.Widget",
+            "module": "widget"
+        },
+        {
+            "file": "widget.js",
+            "line": 449,
+            "description": "通过Id取得实例化的对象，如果该Id不存在则自动生成一个",
+            "itemtype": "method",
+            "name": "Widget.byId",
+            "static": 1,
+            "params": [
+                {
+                    "name": "id",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Widget组件的实例"
+            },
+            "class": "Simple.Widget",
+            "module": "widget"
+        }
+    ]
+}
