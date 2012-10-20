@@ -84,18 +84,11 @@
             "fors": {},
             "namespaces": {}
         },
-        "ui\\menu(冲突2012-10-09 16-20-03).js": {
-            "name": "ui\\menu(冲突2012-10-09 16-20-03).js",
+        "ui\\menu.js": {
+            "name": "ui\\menu.js",
             "modules": {
                 "ui.menu": 1
             },
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "ui\\menu.js": {
-            "name": "ui\\menu.js",
-            "modules": {},
             "classes": {
                 "Simple.MenuItem": 1,
                 "Simple.Menu": 1,
@@ -195,6 +188,17 @@
             "name": "simple.js",
             "modules": {},
             "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "transition.js": {
+            "name": "transition.js",
+            "modules": {
+                "transition": 1
+            },
+            "classes": {
+                "Simple.Transition": 1
+            },
             "fors": {},
             "namespaces": {}
         },
@@ -439,6 +443,20 @@
             "line": 121,
             "description": "为SimpleUI提供基本的事件支持，简化事件操作流程，提升响应速度，\n并且针对SimpleUI的组件特性加入了对node节点的disabled嗅探\n\n * 当该节点的的样式类中包含`disable`，则不会对该操作进行响应\n * 支持二级命名空间事件命名\n * 支持面向切面的事件编程,该类被设计为用于继承的基类。"
         },
+        "transition": {
+            "name": "transition",
+            "submodules": {},
+            "classes": {
+                "Simple.Transition": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "transition.js",
+            "line": 5,
+            "description": "为SimpleUI的组件提供缓动效果，此效果使用CSS3的transition属性实现，目前包含slide,drop,fade,sacle等四种效果。 在低级浏览器下只有机械式的显示隐藏",
+            "extends": "Simple.Attribute"
+        },
         "widget": {
             "name": "widget",
             "submodules": {},
@@ -449,7 +467,7 @@
             "namespaces": {},
             "tag": "module",
             "file": "widget.js",
-            "line": 6,
+            "line": 5,
             "description": "继承自Attribute类，为所有的SimpleUI的UI组件提供基类支持，拥有`init`,`render`,`destroy`生命周期. 这个基类提供了很多可以复写的方法，可以方便的实现自定义行为，从而降低工作量.\n>该类被设计为用于继承的基类，通常不会被直接实例化",
             "extends": "Simple.Attribute"
         }
@@ -752,6 +770,20 @@
             "line": 121,
             "description": "为SimpleUI提供基本的事件支持，简化事件操作流程，提升响应速度，\n并且针对SimpleUI的组件特性加入了对node节点的disabled嗅探\n\n * 当该节点的的样式类中包含`disable`，则不会对该操作进行响应\n * 支持二级命名空间事件命名\n * 支持面向切面的事件编程,该类被设计为用于继承的基类。"
         },
+        "Simple.Transition": {
+            "name": "Simple.Transition",
+            "shortname": "Simple.Transition",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "transition",
+            "namespace": "",
+            "file": "transition.js",
+            "line": 5,
+            "description": "为SimpleUI的组件提供缓动效果，此效果使用CSS3的transition属性实现，目前包含slide,drop,fade,sacle等四种效果。 在低级浏览器下只有机械式的显示隐藏"
+        },
         "Simple.Widget": {
             "name": "Simple.Widget",
             "shortname": "Simple.Widget",
@@ -763,7 +795,7 @@
             "module": "widget",
             "namespace": "",
             "file": "widget.js",
-            "line": 6,
+            "line": 5,
             "description": "继承自Attribute类，为所有的SimpleUI的UI组件提供基类支持，拥有`init`,`render`,`destroy`生命周期. 这个基类提供了很多可以复写的方法，可以方便的实现自定义行为，从而降低工作量.\n>该类被设计为用于继承的基类，通常不会被直接实例化",
             "extends": "Simple.Attribute"
         }
@@ -2992,7 +3024,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 12,
             "description": "指定生成的容器的tagName",
             "itemtype": "property",
@@ -3003,7 +3035,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 19,
             "description": "指定每个Item的文字",
             "itemtype": "property",
@@ -3014,7 +3046,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 26,
             "description": "指定每个Item的图标",
             "itemtype": "property",
@@ -3024,7 +3056,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 32,
             "description": "该菜单项的帮助信息",
             "itemtype": "property",
@@ -3034,7 +3066,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 38,
             "description": "跳转的链接地址",
             "itemtype": "property",
@@ -3044,7 +3076,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 44,
             "description": "该菜单项是否被禁用",
             "itemtype": "property",
@@ -3055,7 +3087,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 51,
             "description": "该菜单项是否被选中",
             "itemtype": "property",
@@ -3066,7 +3098,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 58,
             "description": "该菜单项的点击事件",
             "itemtype": "property",
@@ -3076,7 +3108,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 64,
             "description": "生成该菜单的模版",
             "itemtype": "property",
@@ -3086,7 +3118,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 76,
             "description": "渲染该菜单项",
             "itemtype": "method",
@@ -3095,7 +3127,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 89,
             "description": "为该菜单项绑定事件",
             "itemtype": "method",
@@ -3104,7 +3136,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 100,
             "description": "点击事件操作",
             "itemtype": "method",
@@ -3122,7 +3154,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 109,
             "description": "悬浮事件操作",
             "itemtype": "method",
@@ -3140,7 +3172,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 118,
             "description": "移出事件操作",
             "itemtype": "method",
@@ -3158,7 +3190,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 127,
             "description": "渲染菜单项的文字",
             "itemtype": "method",
@@ -3179,7 +3211,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 138,
             "description": "渲染菜单是否禁用",
             "itemtype": "method",
@@ -3200,7 +3232,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 149,
             "description": "渲染菜单的帮助信息",
             "itemtype": "method",
@@ -3221,7 +3253,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 160,
             "description": "渲染菜单是否被选中",
             "itemtype": "method",
@@ -3242,7 +3274,7 @@
             "module": "ui.drag"
         },
         {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
+            "file": "ui\\menu.js",
             "line": 171,
             "description": "渲染菜单的链接",
             "itemtype": "method",
@@ -3261,522 +3293,6 @@
             },
             "class": "Simple.MenuItem",
             "module": "ui.drag"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 199,
-            "description": "指定触发菜单显示的节点",
-            "itemtype": "property",
-            "name": "node",
-            "type": "String",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 205,
-            "description": "指定渲染菜单的数据",
-            "itemtype": "property",
-            "name": "items",
-            "type": "Array",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 211,
-            "description": "指定渲染菜单的父级模版",
-            "itemtype": "property",
-            "name": "items",
-            "type": "String",
-            "access": "protected",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 218,
-            "description": "私有属性判断是否有父级菜单",
-            "itemtype": "property",
-            "name": "_hasParentMenu",
-            "type": "Boolean",
-            "access": "private",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 225,
-            "description": "初始化一些属性，用来存储需要的数据",
-            "itemtype": "method",
-            "name": "initAttrs",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 237,
-            "description": "渲染该菜單",
-            "itemtype": "method",
-            "name": "renderUI",
-            "access": "protected",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 250,
-            "description": "渲染该菜單",
-            "itemtype": "method",
-            "name": "_parseItems",
-            "params": [
-                {
-                    "name": "items",
-                    "description": "每个菜单项的数据",
-                    "type": "Array"
-                }
-            ],
-            "access": "private",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 273,
-            "description": "通过菜单组渲染该菜单",
-            "itemtype": "method",
-            "name": "_parseItemsByGroup",
-            "params": [
-                {
-                    "name": "items",
-                    "description": "每个菜单项的数据",
-                    "type": "Array"
-                }
-            ],
-            "access": "private",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 292,
-            "description": "通过单个菜单渲染该菜单",
-            "itemtype": "method",
-            "name": "_parseItemsBySingle",
-            "params": [
-                {
-                    "name": "items",
-                    "description": "每个菜单项的数据",
-                    "type": "Array"
-                }
-            ],
-            "access": "private",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 320,
-            "description": "通过单个菜单数组渲染该菜单",
-            "itemtype": "method",
-            "name": "_parseItemsByArray",
-            "params": [
-                {
-                    "name": "items",
-                    "description": "每个菜单项的数据",
-                    "type": "Array"
-                }
-            ],
-            "access": "private",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 327,
-            "description": "为已有的菜单增加数据",
-            "itemtype": "method",
-            "name": "addChild",
-            "params": [
-                {
-                    "name": "items",
-                    "description": "每个菜单项的数据",
-                    "type": "Array"
-                }
-            ],
-            "access": "public",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 336,
-            "description": "获取菜单中的菜单项",
-            "itemtype": "method",
-            "name": "getItem",
-            "params": [
-                {
-                    "name": "index",
-                    "description": "菜单项的序列",
-                    "type": "Int"
-                }
-            ],
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 344,
-            "description": "为该菜单绑定事件",
-            "itemtype": "method",
-            "name": "bindUI",
-            "access": "protected",
-            "tagname": "",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 387,
-            "description": "隐藏该菜单",
-            "itemtype": "method",
-            "name": "hide",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 408,
-            "description": "菜单显示相对node位置",
-            "params": [
-                {
-                    "name": "node",
-                    "description": "相对的参考节点",
-                    "type": "JQuery Object"
-                }
-            ],
-            "itemtype": "method",
-            "name": "showAt",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 422,
-            "description": "调整菜单显示的位置",
-            "itemtype": "method",
-            "name": "fixPosition",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 442,
-            "description": "销毁该菜单",
-            "itemtype": "method",
-            "name": "destroy",
-            "class": "Simple.Menu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu(冲突2012-10-09 16-20-03).js",
-            "line": 478,
-            "description": "右键菜单显示的位置",
-            "params": [
-                {
-                    "name": "node",
-                    "description": "相对的参考节点",
-                    "type": "JQuery Object"
-                },
-                {
-                    "name": "e",
-                    "description": "传入的jQuery包装的Event对象",
-                    "type": "JQuery Event"
-                }
-            ],
-            "itemtype": "method",
-            "name": "showAt",
-            "class": "Simple.ContextMenu",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 12,
-            "description": "指定生成的容器的tagName",
-            "itemtype": "property",
-            "name": "tagName",
-            "type": "String",
-            "default": "ul",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 19,
-            "description": "指定每个Item的文字",
-            "itemtype": "property",
-            "name": "label",
-            "type": "String",
-            "default": "simple-menu",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 26,
-            "description": "指定每个Item的图标",
-            "itemtype": "property",
-            "name": "icon",
-            "type": "String",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 32,
-            "description": "该菜单项的帮助信息",
-            "itemtype": "property",
-            "name": "helper",
-            "type": "String",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 38,
-            "description": "跳转的链接地址",
-            "itemtype": "property",
-            "name": "url",
-            "type": "String",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 44,
-            "description": "该菜单项是否被禁用",
-            "itemtype": "property",
-            "name": "disabled",
-            "type": "Boolean",
-            "default": "false",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 51,
-            "description": "该菜单项是否被选中",
-            "itemtype": "property",
-            "name": "checked",
-            "type": "Boolean",
-            "default": "false",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 58,
-            "description": "该菜单项的点击事件",
-            "itemtype": "property",
-            "name": "handle",
-            "type": "Function",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 64,
-            "description": "生成该菜单的模版",
-            "itemtype": "property",
-            "name": "template",
-            "type": "String",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 76,
-            "description": "渲染该菜单项",
-            "itemtype": "method",
-            "name": "renderUI",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 89,
-            "description": "为该菜单项绑定事件",
-            "itemtype": "method",
-            "name": "bindUI",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 100,
-            "description": "点击事件操作",
-            "itemtype": "method",
-            "name": "_onclick",
-            "params": [
-                {
-                    "name": "e",
-                    "description": "jQuery包装的Event",
-                    "type": "Event"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 109,
-            "description": "悬浮事件操作",
-            "itemtype": "method",
-            "name": "_onmouseover",
-            "params": [
-                {
-                    "name": "e",
-                    "description": "jQuery包装的Event",
-                    "type": "Event"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 118,
-            "description": "移出事件操作",
-            "itemtype": "method",
-            "name": "_onmouseout",
-            "params": [
-                {
-                    "name": "e",
-                    "description": "jQuery包装的Event",
-                    "type": "Event"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 127,
-            "description": "渲染菜单项的文字",
-            "itemtype": "method",
-            "name": "_setterFocus",
-            "params": [
-                {
-                    "name": "label",
-                    "description": "文字",
-                    "type": "String"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "return": {
-                "description": "label"
-            },
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 138,
-            "description": "渲染菜单是否禁用",
-            "itemtype": "method",
-            "name": "_setterDisabled",
-            "params": [
-                {
-                    "name": "disabled",
-                    "description": "是否禁用该菜单",
-                    "type": "Boolean"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "return": {
-                "description": "disabled"
-            },
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 149,
-            "description": "渲染菜单的帮助信息",
-            "itemtype": "method",
-            "name": "_setterHelper",
-            "params": [
-                {
-                    "name": "helper",
-                    "description": "帮助信息",
-                    "type": "String"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "return": {
-                "description": "helper"
-            },
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 160,
-            "description": "渲染菜单是否被选中",
-            "itemtype": "method",
-            "name": "_setterChecked",
-            "params": [
-                {
-                    "name": "checked",
-                    "description": "菜单项是否被选中",
-                    "type": "Boolean"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "return": {
-                "description": "checked"
-            },
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
-        },
-        {
-            "file": "ui\\menu.js",
-            "line": 171,
-            "description": "渲染菜单的链接",
-            "itemtype": "method",
-            "name": "_setterUrl",
-            "params": [
-                {
-                    "name": "url",
-                    "description": "菜单的链接",
-                    "type": "String"
-                }
-            ],
-            "access": "protected",
-            "tagname": "",
-            "return": {
-                "description": "url"
-            },
-            "class": "Simple.MenuItem",
-            "module": "ui.menu"
         },
         {
             "file": "ui\\menu.js",
@@ -5052,7 +4568,7 @@
                 "description": "dest 修改后的dest对象",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5075,7 +4591,7 @@
                 "description": "dest 修改后的dest对象",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5098,7 +4614,7 @@
                 "description": "subCls 返回子类",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5126,7 +4642,7 @@
                 "description": "object 被遍历的对象",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5144,7 +4660,7 @@
                 "description": "o 根据给出的字符串创建的对象",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5158,7 +4674,7 @@
                     "type": "String"
                 }
             ],
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5185,7 +4701,7 @@
             "return": {
                 "description": "替换后的字符串"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5208,7 +4724,7 @@
                 "description": "Object.w 宽度",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5219,7 +4735,7 @@
                 "description": "Object.w 宽度",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5230,7 +4746,7 @@
                 "description": "Object.w 宽度",
                 "type": "Object"
             },
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5249,7 +4765,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5285,7 +4801,7 @@
                     ]
                 }
             ],
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
@@ -5299,12 +4815,101 @@
                     "type": "Object"
                 }
             ],
-            "class": "Simple.Widget",
+            "class": "Simple.Transition",
             "module": "event"
         },
         {
+            "file": "transition.js",
+            "line": 13,
+            "description": "缓动动画时间间隔",
+            "itemtype": "property",
+            "name": "time",
+            "type": "int",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 20,
+            "description": "缓动动画效果类型,可选值有 slide,drop,fade,sacle",
+            "itemtype": "property",
+            "name": "type",
+            "type": "String",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 27,
+            "description": "设置缓动的节点",
+            "itemtype": "property",
+            "name": "node",
+            "type": "String | HTMLElement",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 41,
+            "description": "显示该节点",
+            "itemtype": "method",
+            "name": "show",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 46,
+            "description": "显示该节点后触发的事件",
+            "itemtype": "event",
+            "name": "show",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 63,
+            "description": "隐藏该节点",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 68,
+            "description": "隐藏该节点后触发的事件",
+            "itemtype": "event",
+            "name": "hide",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
+            "file": "transition.js",
+            "line": 87,
+            "description": "建立缓动效果到属性之间的映射",
+            "itemtype": "method",
+            "name": "_mapType",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "time",
+                    "description": "",
+                    "type": "Int"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Simple.Transition",
+            "module": "transition"
+        },
+        {
             "file": "widget.js",
-            "line": 15,
+            "line": 14,
             "description": "该Id也为实例化后可以根据此ID获取实例对象 如果没有指定，则会自动生成一个Id，格式为widget-uuid",
             "itemtype": "property",
             "name": "id",
@@ -5315,7 +4920,7 @@
         },
         {
             "file": "widget.js",
-            "line": 23,
+            "line": 22,
             "description": "触发该widget操作的node",
             "itemtype": "property",
             "name": "node",
@@ -5326,7 +4931,7 @@
         },
         {
             "file": "widget.js",
-            "line": 31,
+            "line": 30,
             "description": "ui渲染的位置",
             "itemtype": "property",
             "name": "container",
@@ -5337,7 +4942,7 @@
         },
         {
             "file": "widget.js",
-            "line": 39,
+            "line": 38,
             "description": "为生成的el添加的类",
             "itemtype": "property",
             "name": "className",
@@ -5348,7 +4953,7 @@
         },
         {
             "file": "widget.js",
-            "line": 47,
+            "line": 46,
             "description": "为container指定的类名",
             "itemtype": "property",
             "name": "containerClass",
@@ -5359,7 +4964,7 @@
         },
         {
             "file": "widget.js",
-            "line": 55,
+            "line": 54,
             "description": "当没有指定container时，创建container时使用的标签",
             "itemtype": "property",
             "name": "tagName",
@@ -5370,7 +4975,7 @@
         },
         {
             "file": "widget.js",
-            "line": 63,
+            "line": 62,
             "description": "该widget组件需要使用的模版，可以通过外部加载",
             "itemtype": "property",
             "name": "template",
@@ -5381,7 +4986,7 @@
         },
         {
             "file": "widget.js",
-            "line": 71,
+            "line": 70,
             "description": "实例化时需要执行的插件",
             "itemtype": "property",
             "name": "plugins",
@@ -5392,7 +4997,7 @@
         },
         {
             "file": "widget.js",
-            "line": 80,
+            "line": 79,
             "description": "该widget被实例化后出现的位置",
             "itemtype": "property",
             "name": "position",
@@ -5403,7 +5008,7 @@
         },
         {
             "file": "widget.js",
-            "line": 88,
+            "line": 87,
             "description": "通过bindUI为该组件绑定事件",
             "type": "Object",
             "itemtype": "property",
@@ -5413,7 +5018,7 @@
         },
         {
             "file": "widget.js",
-            "line": 95,
+            "line": 94,
             "description": "为该生成的el设定的样式",
             "itemtype": "property",
             "name": "style",
@@ -5423,7 +5028,7 @@
         },
         {
             "file": "widget.js",
-            "line": 102,
+            "line": 101,
             "description": "存储实例化的插件实例对象,可以通过插件的名字获取",
             "itemtype": "property",
             "name": "_pluginsInc",
@@ -5436,7 +5041,7 @@
         },
         {
             "file": "widget.js",
-            "line": 111,
+            "line": 110,
             "description": "初始化widget",
             "itemtype": "method",
             "name": "init",
@@ -5445,7 +5050,7 @@
         },
         {
             "file": "widget.js",
-            "line": 125,
+            "line": 124,
             "description": "取得该实例的指定Id",
             "itemtype": "method",
             "name": "_getterId",
@@ -5456,7 +5061,7 @@
         },
         {
             "file": "widget.js",
-            "line": 134,
+            "line": 133,
             "description": "取得指定的node",
             "itemtype": "method",
             "name": "_getterNode",
@@ -5478,7 +5083,7 @@
         },
         {
             "file": "widget.js",
-            "line": 168,
+            "line": 169,
             "description": "用于自动生成容器的方法， 在没有渲染且没有指定容器的方法在会调用此方法",
             "itemtype": "method",
             "name": "_autoBuildContainer",
@@ -5489,7 +5094,7 @@
         },
         {
             "file": "widget.js",
-            "line": 183,
+            "line": 184,
             "description": "初始化一些特殊的属性，所有在这里初始化的属性都会被插件类捕捉到",
             "itemtype": "method",
             "name": "initAttrs",
@@ -5498,7 +5103,7 @@
         },
         {
             "file": "widget.js",
-            "line": 189,
+            "line": 191,
             "description": "在初始化后执行的方法，首先创造渲染的主体，其次调用render方法进行渲染 如果有插件，则该类的插件也会在这里实例化",
             "itemtype": "method",
             "name": "afterInit",
@@ -5507,7 +5112,7 @@
         },
         {
             "file": "widget.js",
-            "line": 194,
+            "line": 196,
             "description": "初始化后执行的事件",
             "itemtype": "event",
             "name": "afterInit",
@@ -5516,7 +5121,7 @@
         },
         {
             "file": "widget.js",
-            "line": 215,
+            "line": 217,
             "description": "如果该组件是延迟渲染的，则针对el的事件绑定在这里进行",
             "itemtype": "method",
             "name": "initBaseEvents",
@@ -5525,7 +5130,7 @@
         },
         {
             "file": "widget.js",
-            "line": 221,
+            "line": 223,
             "description": "对组件进行渲染",
             "itemtype": "method",
             "name": "render",
@@ -5541,7 +5146,7 @@
         },
         {
             "file": "widget.js",
-            "line": 227,
+            "line": 229,
             "description": "渲染前执行的事件",
             "itemtype": "event",
             "name": "beforeRender",
@@ -5550,7 +5155,7 @@
         },
         {
             "file": "widget.js",
-            "line": 232,
+            "line": 234,
             "description": "渲染后执行的事件",
             "itemtype": "event",
             "name": "afterRender",
@@ -5559,7 +5164,7 @@
         },
         {
             "file": "widget.js",
-            "line": 261,
+            "line": 264,
             "description": "通过该方法判断该组件是否已渲染",
             "itemtype": "method",
             "name": "isRender",
@@ -5571,7 +5176,7 @@
         },
         {
             "file": "widget.js",
-            "line": 270,
+            "line": 273,
             "description": "构建渲染的主体，在这里会进行模版的解析。",
             "itemtype": "method",
             "name": "buildRender",
@@ -5582,7 +5187,7 @@
         },
         {
             "file": "widget.js",
-            "line": 310,
+            "line": 315,
             "description": "空方法，用于组件的复写",
             "itemtype": "method",
             "name": "renderUI",
@@ -5591,7 +5196,7 @@
         },
         {
             "file": "widget.js",
-            "line": 318,
+            "line": 323,
             "description": "空方法，用于事件的绑定",
             "itemtype": "method",
             "name": "bindUI",
@@ -5600,7 +5205,7 @@
         },
         {
             "file": "widget.js",
-            "line": 326,
+            "line": 331,
             "description": "显示该组件，如果该组件没有被渲染，则先渲染该组件，再显示",
             "itemtype": "method",
             "name": "show",
@@ -5609,7 +5214,7 @@
         },
         {
             "file": "widget.js",
-            "line": 335,
+            "line": 340,
             "description": "隐藏该组件",
             "itemtype": "method",
             "name": "hide",
@@ -5618,7 +5223,7 @@
         },
         {
             "file": "widget.js",
-            "line": 345,
+            "line": 350,
             "description": "通过解析domEvents为dom元素绑定事件",
             "access": "protected",
             "tagname": "",
@@ -5629,7 +5234,7 @@
         },
         {
             "file": "widget.js",
-            "line": 362,
+            "line": 367,
             "description": "设定widget的位置",
             "itemtype": "method",
             "name": "setPosition",
@@ -5660,23 +5265,7 @@
         },
         {
             "file": "widget.js",
-            "line": 390,
-            "description": "用于解析设定了widget名字的组件",
-            "itemtype": "method",
-            "name": "parser",
-            "params": [
-                {
-                    "name": "context",
-                    "description": "组件解析的范围",
-                    "type": "String | HTMLElement"
-                }
-            ],
-            "class": "Simple.Widget",
-            "module": "widget"
-        },
-        {
-            "file": "widget.js",
-            "line": 408,
+            "line": 397,
             "description": "销毁该组件",
             "itemtype": "method",
             "name": "destroy",
@@ -5685,7 +5274,7 @@
         },
         {
             "file": "widget.js",
-            "line": 413,
+            "line": 402,
             "description": "销毁前执行的事件",
             "itemtype": "event",
             "name": "beforeDestory",
@@ -5694,7 +5283,7 @@
         },
         {
             "file": "widget.js",
-            "line": 418,
+            "line": 407,
             "description": "销毁后执行的事件",
             "itemtype": "event",
             "name": "afterDestory",
@@ -5703,7 +5292,7 @@
         },
         {
             "file": "widget.js",
-            "line": 449,
+            "line": 438,
             "description": "通过Id取得实例化的对象，如果该Id不存在则自动生成一个",
             "itemtype": "method",
             "name": "Widget.byId",

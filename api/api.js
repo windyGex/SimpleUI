@@ -21,12 +21,14 @@ YUI.add("yuidoc-meta", function(Y) {
         "Simple.Selectable",
         "Simple.Tip",
         "Simple.TipBase",
+        "Simple.Transition",
         "Simple.Widget"
     ],
     "modules": [
         "attribute",
         "declare",
         "event",
+        "transition",
         "ui.auto-complete",
         "ui.button",
         "ui.button-group",
@@ -56,6 +58,11 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "event",
             "name": "event",
             "description": "为SimpleUI提供基本的事件支持，简化事件操作流程，提升响应速度，\n并且针对SimpleUI的组件特性加入了对node节点的disabled嗅探\n\n * 当该节点的的样式类中包含`disable`，则不会对该操作进行响应\n * 支持二级命名空间事件命名\n * 支持面向切面的事件编程,该类被设计为用于继承的基类。"
+        },
+        {
+            "displayName": "transition",
+            "name": "transition",
+            "description": "为SimpleUI的组件提供缓动效果，此效果使用CSS3的transition属性实现，目前包含slide,drop,fade,sacle等四种效果。 在低级浏览器下只有机械式的显示隐藏"
         },
         {
             "displayName": "ui.auto-complete",

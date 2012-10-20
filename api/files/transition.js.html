@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ui.dialog</title>
+    <title>transition.js</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     
@@ -181,49 +181,163 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>ui.dialog Module</h1>
-<div class="box clearfix meta">
-    
+                        <h1 class="file-heading">File: transition.js</h1>
 
-    
-
-    
-        <div class="foundat">
-            Defined in: <a href="..&#x2F;files&#x2F;ui_dialog.js.html#l4"><code>ui\dialog.js:4</code></a>
-        </div>
-    
-
-    
-</div>
-
-
-
-<div class="box intro">
-    <p>对话框组件，提供可定制的遮罩对话框，支持多窗口,拖动等特性</p>
-</div>
-
-
-
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
-        
-            <p>This module provides the following classes:</p>
-
-            <ul class="module-classes">
-            
-                <li class="module-class">
-                    <a href="..&#x2F;classes/Simple.Dialog.html">
-                        Simple.Dialog
-                    </a>
-                </li>
-            
-            </ul>
-        
-    </div>
-
-    <div class="yui3-u-1-2">
-        
-    </div>
+<div class="file">
+    <pre class="code prettyprint linenums">
+define([&#x27;simple&#x27;, &#x27;attribute&#x27;, &#x27;declare&#x27;, &#x27;support&#x27;], function(S, Attribute, declare, support) {
+	
+	var $ = S.$, Transition;
+	
+	&#x2F;**
+	 * 为SimpleUI的组件提供缓动效果，此效果使用CSS3的transition属性实现，目前包含slide,drop,fade,sacle等四种效果。 在低级浏览器下只有机械式的显示隐藏
+	 * 
+	 * @module transition
+	 * @class Simple.Transition
+	 * @extends Simple.Attribute
+	 *&#x2F;
+	Transition = declare(&#x27;Transition&#x27;, Attribute, {
+		&#x2F;**
+		 * 缓动动画时间间隔
+		 * 
+		 * @property time
+		 * @type int
+		 *&#x2F;
+		time: 150,
+		&#x2F;**
+		 * 缓动动画效果类型,可选值有 slide,drop,fade,sacle
+		 * 
+		 * @property type
+		 * @type String
+		 *&#x2F;
+		type: &#x27;slide&#x27;,
+		&#x2F;**
+		 * 设置缓动的节点
+		 * 
+		 * @property node
+		 * @type String | HTMLElement
+		 *&#x2F;
+		node: &#x27;&#x27;,
+		init: function() {
+			this.node = $(this.node);
+			this._mapType(this.type,this.time);
+			if ($.support.transition) {
+				this.node.css(this.transitionBefore);
+			}
+		},
+		&#x2F;**
+		 * 显示该节点
+		 * 
+		 * @method show
+		 *&#x2F;
+		&#x2F;**
+		 * 显示该节点后触发的事件
+		 * 
+		 * @event show
+		 *&#x2F;
+		show: function() {
+			var self = this;
+			this.node.show();
+			if ($.support.transition) {
+				setTimeout(function() {
+					self.node.css(self.transitionAfter);
+					self.trigger(&#x27;show&#x27;);
+				}, this.time);
+			} else {
+				self.trigger(&#x27;show&#x27;);
+			}
+		},
+		&#x2F;**
+		 * 隐藏该节点
+		 * 
+		 * @method hide
+		 *&#x2F;
+		&#x2F;**
+		 * 隐藏该节点后触发的事件
+		 * 
+		 * @event hide
+		 *&#x2F;
+		hide: function() {
+			var self = this;
+			if ($.support.transition) {
+				this.node.css(this.transitionBefore);
+				this.node.one($.support.transition.eventType, function() {
+					$(this).hide();
+					self.trigger(&#x27;hide&#x27;);
+				});
+			} else {
+				this.node.hide();
+				this.trigger(&#x27;hide&#x27;);
+			}
+			
+		},
+		&#x2F;**
+		 * 建立缓动效果到属性之间的映射
+		 * @method _mapType
+		 * @param type {String}
+		 * @param time {Int}
+		 * @private
+		 *&#x2F;
+		_mapType: function(type,time) {
+			var transitionBefore, transitionAfter;
+			switch (type) {
+				case &#x27;slide&#x27;:
+					transitionBefore = {
+						opacity: 0,
+						transform: &#x27;translateY(-10px)&#x27;
+					};
+					transitionBefore[$.support.transition.attr] = &#x27;opacity &#x27; + (time &#x2F; 1000) + &#x27;s ease-in-out,&#x27;
+							+ $.support.transition.transform + &#x27; &#x27; + (time &#x2F; 1000) + &#x27;s  ease-in-out&#x27;;
+					transitionAfter = {
+						opacity: 1,
+						transform: &#x27;translateY(0px)&#x27;
+					}
+					break;
+				case &#x27;drop&#x27;:
+					transitionBefore = {
+						opacity: 0,
+						transform: &#x27;translateX(-10px)&#x27;
+					};
+					transitionBefore[$.support.transition.attr] = &#x27;opacity &#x27; + (time &#x2F; 1000) + &#x27;s  ease-in-out, &#x27;
+							+ $.support.transition.transform + &#x27; &#x27; + (time &#x2F; 1000) + &#x27;s  ease-in-out&#x27;;
+					transitionAfter = {
+						opacity: 1,
+						transform: &#x27;translateX(0px)&#x27;
+					}
+					break;
+				case &#x27;fade&#x27;:
+					transitionBefore = {
+						opacity: 0
+					};
+					transitionBefore[$.support.transition.attr] = &#x27;opacity &#x27; + (time &#x2F; 1000) + &#x27;s  ease-in-out&#x27;;
+					transitionAfter = {
+						opacity: 1
+					}
+					break;
+				
+				case &#x27;scale&#x27;:
+					transitionBefore = {
+						opacity: 0,
+						transform: &#x27;scale(1.3)&#x27;
+					};
+					transitionBefore[$.support.transition.attr] = &#x27;opacity &#x27; + (time &#x2F; 1000) + &#x27;s  ease-in-out,&#x27;
+							+ $.support.transition.transform + &#x27; &#x27; + (time &#x2F; 1000) + &#x27;s  ease-in-out&#x27;;
+					transitionAfter = {
+						opacity: 1,
+						transform: &#x27;scale(1)&#x27;
+					}
+			}
+			
+			this.transitionBefore = transitionBefore;
+			this.transitionAfter = transitionAfter;
+		}
+	});
+	
+	S.bridgeTojQuery(&#x27;transition&#x27;, Transition);
+	
+	return Transition;
+});
+    </pre>
 </div>
 
                     </div>

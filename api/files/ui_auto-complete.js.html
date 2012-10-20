@@ -43,8 +43,7 @@
  <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
 <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
 <li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
-<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
-<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://github.com/WindyGex/SimpleUI">下载</a></li>
 </ul> </div> 
 	<div class="container">
     <div id="bd" class="yui3-g">
@@ -105,6 +104,8 @@
             
                 <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
             
+                <li><a href="..&#x2F;classes/Simple.Transition.html">Simple.Transition</a></li>
+            
                 <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
             
             </ul>
@@ -116,6 +117,8 @@
                 <li><a href="..&#x2F;modules/declare.html">declare</a></li>
             
                 <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/transition.html">transition</a></li>
             
                 <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
             
@@ -182,7 +185,7 @@
 
 <div class="file">
     <pre class="code prettyprint linenums">
-define([&#x27;simple&#x27;, &#x27;declare&#x27;, &#x27;widget&#x27;, &#x27;css!css&#x2F;auto-complete&#x27;], function(S, declare, Widget){
+define([&#x27;simple&#x27;, &#x27;declare&#x27;, &#x27;widget&#x27;], function(S, declare, Widget){
 
     var $ = S.$, AutoComplete, &#x2F;&#x2F;存储远程获取的数据
 	_cacheData = {};

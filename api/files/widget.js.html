@@ -43,8 +43,7 @@
  <ul class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://simpleui.org/category/guides/">指南</a></li>
 <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 current_page_item"><a href="http://simpleui.org/api">文档</a></li>
 <li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://simpleui.org/deploy">部署</a></li>
-<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://simpleui.org/download">下载</a></li>
-<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="http://simpleui.org/about">关于</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://github.com/WindyGex/SimpleUI">下载</a></li>
 </ul> </div> 
 	<div class="container">
     <div id="bd" class="yui3-g">
@@ -105,6 +104,8 @@
             
                 <li><a href="..&#x2F;classes/Simple.TipBase.html">Simple.TipBase</a></li>
             
+                <li><a href="..&#x2F;classes/Simple.Transition.html">Simple.Transition</a></li>
+            
                 <li><a href="..&#x2F;classes/Simple.Widget.html">Simple.Widget</a></li>
             
             </ul>
@@ -116,6 +117,8 @@
                 <li><a href="..&#x2F;modules/declare.html">declare</a></li>
             
                 <li><a href="..&#x2F;modules/event.html">event</a></li>
+            
+                <li><a href="..&#x2F;modules/transition.html">transition</a></li>
             
                 <li><a href="..&#x2F;modules/ui.auto-complete.html">ui.auto-complete</a></li>
             
@@ -182,467 +185,454 @@
 
 <div class="file">
     <pre class="code prettyprint linenums">
-define([&#x27;simple&#x27;, &#x27;attribute&#x27;, &#x27;declare&#x27;], function(S, Attribute, declare) {
-	
-	var uuid = 0, Widget,
-		$ = S.$;
-	
-	&#x2F;**
-	 * 继承自Attribute类，为所有的SimpleUI的UI组件提供基类支持，拥有&#x60;init&#x60;,&#x60;render&#x60;,&#x60;destroy&#x60;生命周期. 这个基类提供了很多可以复写的方法，可以方便的实现自定义行为，从而降低工作量.
-	 * &gt;该类被设计为用于继承的基类，通常不会被直接实例化
-	 * 
-	 * @module widget
-	 * @extends Simple.Attribute
-	 * @class Simple.Widget
-	 *&#x2F;
-	Widget = declare(&#x27;Widget&#x27;, Attribute, {
-		&#x2F;**
-		 * 该Id也为实例化后可以根据此ID获取实例对象 如果没有指定，则会自动生成一个Id，格式为widget-uuid
-		 * 
-		 * @property id
-		 * @type String
-		 * @default &#x27;&#x27;
-		 *&#x2F;
-		id: &#x27;&#x27;,
-		&#x2F;**
-		 * 触发该widget操作的node
-		 * 
-		 * @property node
-		 * @type String
-		 * @default null
-		 *&#x2F;
-		node: &#x27;&#x27;,
-		&#x2F;**
-		 * ui渲染的位置
-		 * 
-		 * @property container
-		 * @type String
-		 * @default &#x27;&#x27;
-		 *&#x2F;
-		container: &#x27;&#x27;,
-		&#x2F;**
-		 * 为生成的el添加的类
-		 * 
-		 * @property className
-		 * @type String
-		 * @default &#x27;&#x27;
-		 *&#x2F;
-		className: &#x27;&#x27;,
-		&#x2F;**
-		 * 为container指定的类名
-		 * 
-		 * @property containerClass
-		 * @type String
-		 * @default &#x27;&#x27;
-		 *&#x2F;
-		containerClass: &#x27;&#x27;,
-		&#x2F;**
-		 * 当没有指定container时，创建container时使用的标签
-		 * 
-		 * @property tagName
-		 * @type String
-		 * @default &#x27;div&#x27;
-		 *&#x2F;
-		tagName: &#x27;div&#x27;,
-		&#x2F;**
-		 * 该widget组件需要使用的模版，可以通过外部加载
-		 * 
-		 * @property template
-		 * @type String
-		 * @default &#x27;&#x27;
-		 *&#x2F;
-		template: &#x27;&#x27;,
-		&#x2F;**
-		 * 实例化时需要执行的插件
-		 * 
-		 * @property {Array} plugins
-		 * @type Array
-		 * @default []
-		 *&#x2F;
-		plugins: [],
-		
-		&#x2F;**
-		 * 该widget被实例化后出现的位置
-		 * 
-		 * @property position
-		 * @type String
-		 * @default null
-		 *&#x2F;
-		position: null,
-		&#x2F;**
-		 * 通过bindUI为该组件绑定事件
-		 * 
-		 * @type Object
-		 * @property {Object} events
-		 *&#x2F;
-		events: null,
-		&#x2F;**
-		 * 为该生成的el设定的样式
-		 * 
-		 * @property style
-		 * @type Object
-		 *&#x2F;
-		style: &#x27;&#x27;,
-		&#x2F;**
-		 * 存储实例化的插件实例对象,可以通过插件的名字获取
-		 * 
-		 * @property _pluginsInc
-		 * @type Object
-		 * @private
-		 * @default null
-		 *&#x2F;
-		_pluginsInc: null,
-		&#x2F;**
-		 * 初始化widget
-		 * 
-		 * @method init
-		 *&#x2F;
-		init: function() {
-			this.node = this.get(&#x27;node&#x27;);
-			this.container = this.get(&#x27;container&#x27;);
-			
-			this.initAttrs();
-			this.initBaseEvents();
-			&#x2F;&#x2F; 缓存该对象以便获取
-			Widget._inc[this.get(&#x27;id&#x27;)] = this;
-		},
-		&#x2F;**
-		 * 取得该实例的指定Id
-		 * 
-		 * @method _getterId
-		 * @protected
-		 *&#x2F;
-		_getterId: function(id) {
-			return id ? id : &#x27;widget-&#x27; + (uuid++);
-		},
-		&#x2F;**
-		 * 取得指定的node
-		 * 
-		 * @method _getterNode
-		 * @protected
-		 *&#x2F;
-		_getterNode: function(node) {
-			if (!(node instanceof $)) {
-				return $(node);
-			} else {
-				return node;
-			}
-		},
-		&#x2F;**
-		 * 取得渲染的容器
-		 * 
-		 * @method _getterContainer
-		 * @protected
-		 *&#x2F;
-		_getterContainer: function(node) {
-			var $node;
-			if (node) {
-				$node = $(node);
-				$node.addClass(this.get(&#x27;containerClass&#x27;));
-			} else {
-				&#x2F;*
-				 * $node = $(&#x27;&lt;&#x27; + this.get(&#x27;tagName&#x27;) + &#x27;&gt;&#x27;); $node.appendTo(document.body);
-				 * &#x2F;&#x2F;标识是否是自动生成的dom，在destroy的时候移除掉 this._autoContainer = true;
-				 *&#x2F;
-				$node = null;
-			}
-			
-			return $node;
-		},
-		&#x2F;**
-		 * 用于自动生成容器的方法， 在没有渲染且没有指定容器的方法在会调用此方法
-		 * 
-		 * @method _autoBuildContainer
-		 * @protected
-		 *&#x2F;
-		_autoBuildContainer: function() {
-			
-			var $node = $(&#x27;&lt;&#x27; + this.get(&#x27;tagName&#x27;) + &#x27;&gt;&#x27;);
-			$node.addClass(this.get(&#x27;containerClass&#x27;));
-			$node.appendTo(document.body);
-			&#x2F;&#x2F; 标识是否是自动生成的dom，在destroy的时候移除掉
-			this._autoContainer = true;
-			this.container = $node;
-		},
-		&#x2F;**
-		 * 初始化一些特殊的属性，所有在这里初始化的属性都会被插件类捕捉到
-		 * 
-		 * @method initAttrs
-		 *&#x2F;
-		initAttrs: function() {},
-		&#x2F;**
-		 * 在初始化后执行的方法，首先创造渲染的主体，其次调用render方法进行渲染 如果有插件，则该类的插件也会在这里实例化
-		 * 
-		 * @method afterInit
-		 *&#x2F;
-		&#x2F;**
-		 * 初始化后执行的事件
-		 * 
-		 * @event afterInit
-		 *&#x2F;
-		afterInit: function() {
-			if (this.container) {
-				this.render();
-			}
-			&#x2F;* 插件机制 *&#x2F;
-			if (this.plugins.length) {
-				S.each(this.plugins, function(name, index) {
-					if (this.constructor.plugins[name]) {
-						this._pluginsInc[name] = new this.constructor.plugins[name]({
-							host: this
-						});
-					}
-				}, this);
-			}
-			this.trigger(&#x27;afterInit&#x27;);
-		},
-		&#x2F;**
-		 * 如果该组件是延迟渲染的，则针对el的事件绑定在这里进行
-		 * 
-		 * @method initBaseEvents
-		 *&#x2F;
-		initBaseEvents: $.noop,
-		&#x2F;**
-		 * 对组件进行渲染
-		 * 
-		 * @method render
-		 * @param container {String | HTMLElement} 指定渲染到的容器
-		 *&#x2F;
-		&#x2F;**
-		 * 渲染前执行的事件
-		 * 
-		 * @event beforeRender
-		 *&#x2F;
-		&#x2F;**
-		 * 渲染后执行的事件
-		 * 
-		 * @event afterRender
-		 *&#x2F;
-		render: function(container) {
-			if (this.trigger(&#x27;beforeRender&#x27;) === false) {
-				return false;
-			}
-			if (!this._rendered) {
-				if (container) {
-					this.container = $(container);
-				} else {
-					if (!this.container) {
-						this._autoBuildContainer();
-					}
-					
-				}
-				this.buildRender();
-				this.renderUI();
-				this.el &amp;&amp; this.el.removeClass(&#x27;simple-hidden&#x27;);
-				if (this.trigger(&#x27;afterRender&#x27;) === false) {
-					return false;
-				}
-				this._delegateEvents();
-				this.bindUI();
-				this._rendered = true;
-			}
-		},
-		&#x2F;**
-		 * 通过该方法判断该组件是否已渲染
-		 * 
-		 * @method isRender
-		 * @return 组件是否渲染
-		 *&#x2F;
-		isRender: function() {
-			return this._rendered;
-		},
-		&#x2F;**
-		 * 构建渲染的主体，在这里会进行模版的解析。
-		 * 
-		 * @method buildRender
-		 * @protected
-		 *&#x2F;
-		buildRender: function() {
-			var template = this.get(&#x27;template&#x27;);
-			if (template) {
-				
-				template = S.replace(template, this, function(value, key) {
-					if (!value) {
-						value = &#x27;&#x27;;
-					}
-					return value;
-				});
-				
-				this.el = $(template);
-				&#x2F;&#x2F; avoid page reflow
-				this.el.addClass(this.get(&#x27;className&#x27;) + &#x27; simple-hidden&#x27;);
-				this.el.css(this.style);
-				
-				this.container.append(this.el);
-				
-				this._widgetPonits = this.el.find(&#x27;[widgetPoint]&#x27;);
-				&#x2F;&#x2F; TODO:解析widgetType
-				this._widgetType = this.el.find(&#x27;[widgetType]&#x27;);
-				
-				S.each(this._widgetPonits, function(el) {
-					var widgetPoint = el.getAttribute(&#x27;widgetPoint&#x27;);
-					if (widgetPoint) {
-						this[widgetPoint] = $(el);
-					}
-				}, this);
-				
-			} else {
-				this.el = this.container;
-				return false;
-			}
-		},
-		&#x2F;**
-		 * 空方法，用于组件的复写
-		 * 
-		 * @method renderUI
-		 *&#x2F;
-		renderUI: function() {
+define([&#x27;simple&#x27;, &#x27;attribute&#x27;, &#x27;declare&#x27;], function(S, Attribute, declare){
 
-		},
-		&#x2F;**
-		 * 空方法，用于事件的绑定
-		 * 
-		 * @method bindUI
-		 *&#x2F;
-		bindUI: function() {
-
-		},
-		&#x2F;**
-		 * 显示该组件，如果该组件没有被渲染，则先渲染该组件，再显示
-		 * 
-		 * @method show
-		 *&#x2F;
-		show: function() {
-			this.render(document.body);
-			this.el.show();
-		},
-		&#x2F;**
-		 * 隐藏该组件
-		 * 
-		 * @method hide
-		 *&#x2F;
-		hide: function() {
-			if (this.el) {
-				this.el.hide();
-			}
-		},
-		&#x2F;**
-		 * 通过解析domEvents为dom元素绑定事件
-		 * 
-		 * @protected
-		 * @method _dispatchEvents
-		 *&#x2F;
-		_delegateEvents: function() {
-			var events = this.get(&#x27;events&#x27;);
-			if (!events) {
-				return;
-			}
-			S.each(events, function(handle, selector) {
-				S.each(handle, function(callback, eventType) {
-					this.el.delegate(selector, eventType, $.proxy(this[callback], this));
-				}, this);
-			}, this);
-		},
-		&#x2F;**
-		 * 设定widget的位置
-		 * 
-		 * @method setPosition
-		 * @param {jQuery Object} node 需要设定的节点
-		 * @param {jQuery Object} context 设定节点位置的参考节点
-		 * @param {String | Array} position 节点的位置
-		 * @param {Object} offset 节点相对位置的偏移量
-		 *&#x2F;
-		setPosition: function(node, context, position, offset) {
-			if (position) {
-				if (typeof position === &quot;string&quot;) {
-					S.position.at({
-						node: node,
-						context: context,
-						position: position,
-						offset: offset
-					});
-				} else {
-					node.css({
-						top: position[1],
-						left: position[0]
-					});
-				}
-			} else {
-				S.position.atBody(node);
-			}
-		},
-		&#x2F;**
-		 * 用于解析设定了widget名字的组件
-		 * 
-		 * @method parser
-		 * @param context {String | HTMLElement} 组件解析的范围
-		 *&#x2F;
-		parser: function(context) {
-			context = context || document.body;
-			context = $(context);
-			context.find([&#x27;nodeType&#x27;]).each(function() {
-				var type = this.getAttribute(&#x27;nodeType&#x27;);
-				if (type) {
-					require([type], function(WidgetType) {
-						new WidgetType()
-					});
-				}
-			});
-		},
-		&#x2F;**
-		 * 销毁该组件
-		 * 
-		 * @method destroy
-		 *&#x2F;
-		&#x2F;**
-		 * 销毁前执行的事件
-		 * 
-		 * @event beforeDestory
-		 *&#x2F;
-		&#x2F;**
-		 * 销毁后执行的事件
-		 * 
-		 * @event afterDestory
-		 *&#x2F;
-		destroy: function() {
-			if (this.trigger(&#x27;beforeDestory&#x27;) === false) {
-				return false;
-			}
-			this.node = null;
-			if (this.el) {
-				this.el.undelegate();
-				this.el.remove();
-			}
-			&#x2F;&#x2F; 是自动生成的container
-			if (this._autoContainer) {
-				this.container.remove();
-			}
-			this.el = null;
-			this.container = null;
-			this.off();
-			if (this._pluginInc) {
-				S.each(this._pluginInc, function(cacheInc) {
-					cacheInc.destroy &amp;&amp; cacheInc.destroy();
-				});
-			}
-			this.trigger(&#x27;afterDestory&#x27;);
-		}
-	});
-	
-	Widget._inc = {};
-	&#x2F;**
-	 * 通过Id取得实例化的对象，如果该Id不存在则自动生成一个
-	 * 
-	 * @method Widget.byId
-	 * @static
-	 * @param {Object} id
-	 * @return Widget组件的实例
-	 *&#x2F;
-	Widget.byId = function(id) {
-		return Widget._inc[id];
-	}
-	return Widget;
-	
+    var uuid = 0, Widget, $ = S.$;
+    
+    &#x2F;**
+     * 继承自Attribute类，为所有的SimpleUI的UI组件提供基类支持，拥有&#x60;init&#x60;,&#x60;render&#x60;,&#x60;destroy&#x60;生命周期. 这个基类提供了很多可以复写的方法，可以方便的实现自定义行为，从而降低工作量.
+     * &gt;该类被设计为用于继承的基类，通常不会被直接实例化
+     *
+     * @module widget
+     * @extends Simple.Attribute
+     * @class Simple.Widget
+     *&#x2F;
+    Widget = declare(&#x27;Widget&#x27;, Attribute, {
+        &#x2F;**
+         * 该Id也为实例化后可以根据此ID获取实例对象 如果没有指定，则会自动生成一个Id，格式为widget-uuid
+         *
+         * @property id
+         * @type String
+         * @default &#x27;&#x27;
+         *&#x2F;
+        id: &#x27;&#x27;,
+        &#x2F;**
+         * 触发该widget操作的node
+         *
+         * @property node
+         * @type String
+         * @default null
+         *&#x2F;
+        node: &#x27;&#x27;,
+        &#x2F;**
+         * ui渲染的位置
+         *
+         * @property container
+         * @type String
+         * @default &#x27;&#x27;
+         *&#x2F;
+        container: &#x27;&#x27;,
+        &#x2F;**
+         * 为生成的el添加的类
+         *
+         * @property className
+         * @type String
+         * @default &#x27;&#x27;
+         *&#x2F;
+        className: &#x27;&#x27;,
+        &#x2F;**
+         * 为container指定的类名
+         *
+         * @property containerClass
+         * @type String
+         * @default &#x27;&#x27;
+         *&#x2F;
+        containerClass: &#x27;&#x27;,
+        &#x2F;**
+         * 当没有指定container时，创建container时使用的标签
+         *
+         * @property tagName
+         * @type String
+         * @default &#x27;div&#x27;
+         *&#x2F;
+        tagName: &#x27;div&#x27;,
+        &#x2F;**
+         * 该widget组件需要使用的模版，可以通过外部加载
+         *
+         * @property template
+         * @type String
+         * @default &#x27;&#x27;
+         *&#x2F;
+        template: &#x27;&#x27;,
+        &#x2F;**
+         * 实例化时需要执行的插件
+         *
+         * @property {Array} plugins
+         * @type Array
+         * @default []
+         *&#x2F;
+        plugins: [],
+        
+        &#x2F;**
+         * 该widget被实例化后出现的位置
+         *
+         * @property position
+         * @type String
+         * @default null
+         *&#x2F;
+        position: null,
+        &#x2F;**
+         * 通过bindUI为该组件绑定事件
+         *
+         * @type Object
+         * @property {Object} events
+         *&#x2F;
+        events: null,
+        &#x2F;**
+         * 为该生成的el设定的样式
+         *
+         * @property style
+         * @type Object
+         *&#x2F;
+        style: &#x27;&#x27;,
+        &#x2F;**
+         * 存储实例化的插件实例对象,可以通过插件的名字获取
+         *
+         * @property _pluginsInc
+         * @type Object
+         * @private
+         * @default null
+         *&#x2F;
+        _pluginsInc: null,
+        &#x2F;**
+         * 初始化widget
+         *
+         * @method init
+         *&#x2F;
+        init: function(){
+            this.node = this.get(&#x27;node&#x27;);
+            this.container = this.get(&#x27;container&#x27;);
+            
+            this.initAttrs();
+            this.initBaseEvents();
+            &#x2F;&#x2F; 缓存该对象以便获取
+            Widget._inc[this.get(&#x27;id&#x27;)] = this;
+        },
+        &#x2F;**
+         * 取得该实例的指定Id
+         *
+         * @method _getterId
+         * @protected
+         *&#x2F;
+        _getterId: function(id){
+            return id ? id : &#x27;widget-&#x27; + (uuid++);
+        },
+        &#x2F;**
+         * 取得指定的node
+         *
+         * @method _getterNode
+         * @protected
+         *&#x2F;
+        _getterNode: function(node){
+            if (!(node instanceof $)) {
+                return $(node);
+            }
+            else {
+                return node;
+            }
+        },
+        &#x2F;**
+         * 取得渲染的容器
+         *
+         * @method _getterContainer
+         * @protected
+         *&#x2F;
+        _getterContainer: function(node){
+            var $node;
+            if (node) {
+                $node = $(node);
+                $node.addClass(this.get(&#x27;containerClass&#x27;));
+            }
+            else {
+                &#x2F;*
+                 * $node = $(&#x27;&lt;&#x27; + this.get(&#x27;tagName&#x27;) + &#x27;&gt;&#x27;); $node.appendTo(document.body);
+                 * &#x2F;&#x2F;标识是否是自动生成的dom，在destroy的时候移除掉 this._autoContainer = true;
+                 *&#x2F;
+                $node = null;
+            }
+            
+            return $node;
+        },
+        &#x2F;**
+         * 用于自动生成容器的方法， 在没有渲染且没有指定容器的方法在会调用此方法
+         *
+         * @method _autoBuildContainer
+         * @protected
+         *&#x2F;
+        _autoBuildContainer: function(){
+        
+            var $node = $(&#x27;&lt;&#x27; + this.get(&#x27;tagName&#x27;) + &#x27;&gt;&#x27;);
+            $node.addClass(this.get(&#x27;containerClass&#x27;));
+            $node.appendTo(document.body);
+            &#x2F;&#x2F; 标识是否是自动生成的dom，在destroy的时候移除掉
+            this._autoContainer = true;
+            this.container = $node;
+        },
+        &#x2F;**
+         * 初始化一些特殊的属性，所有在这里初始化的属性都会被插件类捕捉到
+         *
+         * @method initAttrs
+         *&#x2F;
+        initAttrs: function(){
+        },
+        &#x2F;**
+         * 在初始化后执行的方法，首先创造渲染的主体，其次调用render方法进行渲染 如果有插件，则该类的插件也会在这里实例化
+         *
+         * @method afterInit
+         *&#x2F;
+        &#x2F;**
+         * 初始化后执行的事件
+         *
+         * @event afterInit
+         *&#x2F;
+        afterInit: function(){
+            if (this.container) {
+                this.render();
+            }
+            &#x2F;* 插件机制 *&#x2F;
+            if (this.plugins.length) {
+                S.each(this.plugins, function(name, index){
+                    if (this.constructor.plugins[name]) {
+                        this._pluginsInc[name] = new this.constructor.plugins[name]({
+                            host: this
+                        });
+                    }
+                }, this);
+            }
+            this.trigger(&#x27;afterInit&#x27;);
+        },
+        &#x2F;**
+         * 如果该组件是延迟渲染的，则针对el的事件绑定在这里进行
+         *
+         * @method initBaseEvents
+         *&#x2F;
+        initBaseEvents: $.noop,
+        &#x2F;**
+         * 对组件进行渲染
+         *
+         * @method render
+         * @param container {String | HTMLElement} 指定渲染到的容器
+         *&#x2F;
+        &#x2F;**
+         * 渲染前执行的事件
+         *
+         * @event beforeRender
+         *&#x2F;
+        &#x2F;**
+         * 渲染后执行的事件
+         *
+         * @event afterRender
+         *&#x2F;
+        render: function(container){
+            if (this.trigger(&#x27;beforeRender&#x27;) === false) {
+                return false;
+            }
+            if (!this._rendered) {
+                if (container) {
+                    this.container = $(container);
+                }
+                else {
+                    if (!this.container) {
+                        this._autoBuildContainer();
+                    }
+                    
+                }
+                this.buildRender();
+                this.renderUI();
+                this.el &amp;&amp; this.el.removeClass(&#x27;simple-hidden&#x27;);
+                if (this.trigger(&#x27;afterRender&#x27;) === false) {
+                    return false;
+                }
+                this._delegateEvents();
+                this.bindUI();
+                this._rendered = true;
+            }
+        },
+        &#x2F;**
+         * 通过该方法判断该组件是否已渲染
+         *
+         * @method isRender
+         * @return 组件是否渲染
+         *&#x2F;
+        isRender: function(){
+            return this._rendered;
+        },
+        &#x2F;**
+         * 构建渲染的主体，在这里会进行模版的解析。
+         *
+         * @method buildRender
+         * @protected
+         *&#x2F;
+        buildRender: function(){
+            var template = this.get(&#x27;template&#x27;);
+            if (template) {
+            
+                template = S.replace(template, this, function(value, key){
+                    if (!value) {
+                        value = &#x27;&#x27;;
+                    }
+                    return value;
+                });
+                
+                this.el = $(template);
+                &#x2F;&#x2F; avoid page reflow
+                this.el.addClass(this.get(&#x27;className&#x27;) + &#x27; simple-hidden&#x27;);
+                this.el.css(this.style);
+                
+                this.container.append(this.el);
+                
+                this._widgetPonits = this.el.find(&#x27;[widgetPoint]&#x27;);
+                &#x2F;&#x2F; TODO:解析widgetType
+                &#x2F;&#x2F;this._widgetType = this.el.find(&#x27;[widgetType]&#x27;);
+                S.each(this._widgetPonits, function(el){
+                    var widgetPoint = el.getAttribute(&#x27;widgetPoint&#x27;);
+                    if (widgetPoint) {
+                        this[widgetPoint] = $(el);
+                    }
+                }, this);
+                
+               &#x2F;&#x2F; Widget.parse(this.el);
+                
+            }
+            else {
+                this.el = this.container;
+                return false;
+            }
+        },
+        &#x2F;**
+         * 空方法，用于组件的复写
+         *
+         * @method renderUI
+         *&#x2F;
+        renderUI: function(){
+        
+        },
+        &#x2F;**
+         * 空方法，用于事件的绑定
+         *
+         * @method bindUI
+         *&#x2F;
+        bindUI: function(){
+        
+        },
+        &#x2F;**
+         * 显示该组件，如果该组件没有被渲染，则先渲染该组件，再显示
+         *
+         * @method show
+         *&#x2F;
+        show: function(){
+            this.render(document.body);
+            this.el.show();
+        },
+        &#x2F;**
+         * 隐藏该组件
+         *
+         * @method hide
+         *&#x2F;
+        hide: function(){
+            if (this.el) {
+                this.el.hide();
+            }
+        },
+        &#x2F;**
+         * 通过解析domEvents为dom元素绑定事件
+         *
+         * @protected
+         * @method _dispatchEvents
+         *&#x2F;
+        _delegateEvents: function(){
+            var events = this.get(&#x27;events&#x27;);
+            if (!events) {
+                return;
+            }
+            S.each(events, function(handle, selector){
+                S.each(handle, function(callback, eventType){
+                    this.el.delegate(selector, eventType, $.proxy(this[callback], this));
+                }, this);
+            }, this);
+        },
+        &#x2F;**
+         * 设定widget的位置
+         *
+         * @method setPosition
+         * @param {jQuery Object} node 需要设定的节点
+         * @param {jQuery Object} context 设定节点位置的参考节点
+         * @param {String | Array} position 节点的位置
+         * @param {Object} offset 节点相对位置的偏移量
+         *&#x2F;
+        setPosition: function(node, context, position, offset){
+            if (position) {
+                if (typeof position === &quot;string&quot;) {
+                    S.position.at({
+                        node: node,
+                        context: context,
+                        position: position,
+                        offset: offset
+                    });
+                }
+                else {
+                    node.css({
+                        top: position[1],
+                        left: position[0]
+                    });
+                }
+            }
+            else {
+                S.position.atBody(node);
+            }
+        },
+        &#x2F;**
+         * 销毁该组件
+         *
+         * @method destroy
+         *&#x2F;
+        &#x2F;**
+         * 销毁前执行的事件
+         *
+         * @event beforeDestory
+         *&#x2F;
+        &#x2F;**
+         * 销毁后执行的事件
+         *
+         * @event afterDestory
+         *&#x2F;
+        destroy: function(){
+            if (this.trigger(&#x27;beforeDestory&#x27;) === false) {
+                return false;
+            }
+            this.node = null;
+            if (this.el) {
+                this.el.undelegate();
+                this.el.remove();
+            }
+            &#x2F;&#x2F; 是自动生成的container
+            if (this._autoContainer) {
+                this.container.remove();
+            }
+            this.el = null;
+            this.container = null;
+            this.off();
+            if (this._pluginInc) {
+                S.each(this._pluginInc, function(cacheInc){
+                    cacheInc.destroy &amp;&amp; cacheInc.destroy();
+                });
+            }
+            this.trigger(&#x27;afterDestory&#x27;);
+        }
+    });
+    
+    Widget._inc = {};
+    &#x2F;**
+     * 通过Id取得实例化的对象，如果该Id不存在则自动生成一个
+     *
+     * @method Widget.byId
+     * @static
+     * @param {Object} id
+     * @return Widget组件的实例
+     *&#x2F;
+    Widget.byId = function(id){
+        return Widget._inc[id];
+    }
 });
 
     </pre>

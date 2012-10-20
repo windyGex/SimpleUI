@@ -449,15 +449,15 @@ h2, h3, h4, h5, h6 {
     border-color: #d4d8eb;
 }
 
-/* Loading spinners. */
-#bd.loading .apidocs,
-#api-list.loading .yui3-tabview-panel {
+/* api-loading spinners. */
+#bd.api-loading .apidocs,
+#api-list.api-loading .yui3-tabview-panel {
     background: #fff url(../img/spinner.gif) no-repeat center 70px;
     min-height: 150px;
 }
 
-#bd.loading .apidocs .content,
-#api-list.loading .yui3-tabview-panel .apis {
+#bd.api-loading .apidocs .content,
+#api-list.api-loading .yui3-tabview-panel .apis {
     display: none;
 }
 

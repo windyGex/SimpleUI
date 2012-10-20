@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Simple.Selectable</title>
+    <title>Simple.Transition</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     
@@ -181,7 +181,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>Simple.Selectable Class</h1>
+                        <h1>Simple.Transition Class</h1>
 <div class="box meta">
     
 
@@ -189,13 +189,13 @@
 
     
         <div class="foundat">
-            Defined in: <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l5"><code>ui\selectable.js:5</code></a>
+            Defined in: <a href="..&#x2F;files&#x2F;transition.js.html#l5"><code>transition.js:5</code></a>
         </div>
     
 
     
         
-            Module: <a href="../modules/ui.selectable.html">ui.selectable</a>
+            Module: <a href="../modules/transition.html">transition</a>
         
     
 
@@ -205,14 +205,7 @@
 
 
 <div class="box intro">
-    <p>让一个dom元素可以被框选</p>
-
-<pre class="code"><code class="prettyprint">require(['ui/selectable'],function(){
-    $('#test').selectable({
-        selectNode:'li'
-    });
-});
-</code></pre>
+    <p>为SimpleUI的组件提供缓动效果，此效果使用CSS3的transition属性实现，目前包含slide,drop,fade,sacle等四种效果。 在低级浏览器下只有机械式的显示隐藏</p>
 </div>
 
 
@@ -229,6 +222,8 @@
         
         
         
+            <li class="api-class-tab events"><a href="#events">Events</a></li>
+        
     </ul>
 
     <div>
@@ -241,8 +236,22 @@
 
                     <ul class="index-list methods">
                         
+                            <li class="index-item method private">
+                                <a href="#method__mapType">_mapType</a>
+
+                                
+                                
+                            </li>
+                        
                             <li class="index-item method">
-                                <a href="#method_destroy">destroy</a>
+                                <a href="#method_hide">hide</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_show">show</a>
 
                                 
                                 
@@ -259,13 +268,6 @@
                     <ul class="index-list properties">
                         
                             <li class="index-item property">
-                                <a href="#property_delay">delay</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property">
                                 <a href="#property_node">node</a>
 
                                 
@@ -273,28 +275,14 @@
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_onSelectEnd">onSelectEnd</a>
+                                <a href="#property_time">time</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_onSelectStart">onSelectStart</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property">
-                                <a href="#property_selectCls">selectCls</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property">
-                                <a href="#property_selectNode">selectNode</a>
+                                <a href="#property_type">type</a>
 
                                 
                                 
@@ -307,6 +295,28 @@
             
 
             
+                <div class="index-section events">
+                    <h3>Events</h3>
+
+                    <ul class="index-list events">
+                        
+                            <li class="index-item event">
+                                <a href="#event_hide">hide</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item event">
+                                <a href="#event_show">show</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
         </div>
 
         
@@ -314,8 +324,118 @@
                 <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="method_destroy" class="method item">
-    <h3 class="name"><code>destroy</code></h3>
+                    <div id="method__mapType" class="method item private">
+    <h3 class="name"><code>_mapType</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>type</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>time</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+        <span class="flag private">private</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;transition.js.html#l87"><code>transition.js:87</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>建立缓动效果到属性之间的映射</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">type</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">time</code>
+                        <span class="type">Int</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_hide" class="method item">
+    <h3 class="name"><code>hide</code></h3>
 
     
         <span class="paren">()</span>
@@ -346,7 +466,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l70"><code>ui\selectable.js:70</code></a>
+        <a href="..&#x2F;files&#x2F;transition.js.html#l63"><code>transition.js:63</code></a>
         
         </p>
 
@@ -357,7 +477,7 @@
     </div>
 
     <div class="description">
-        <p>销毁框选特性</p>
+        <p>隐藏该节点</p>
     </div>
 
     
@@ -368,17 +488,18 @@
 </div>
 
                 
-            </div>
-        
+                    <div id="method_show" class="method item">
+    <h3 class="name"><code>show</code></h3>
 
-        
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
+    
+        <span class="paren">()</span>
+    
 
-                
-                    <div id="property_delay" class="property item">
-    <h3 class="name"><code>delay</code></h3>
-    <span class="type">Int</span>
+    
+
+    
+
+    
 
     
 
@@ -399,9 +520,10 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l39"><code>ui\selectable.js:39</code></a>
+        <a href="..&#x2F;files&#x2F;transition.js.html#l41"><code>transition.js:41</code></a>
         
         </p>
+
 
         
 
@@ -409,17 +531,23 @@
     </div>
 
     <div class="description">
-        <p>延迟触发selectable事件</p>
+        <p>显示该节点</p>
     </div>
 
-    
-        <p><strong>Default:</strong> 3</p>
     
 
     
 
     
 </div>
+
+                
+            </div>
+        
+
+        
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
 
                 
                     <div id="property_node" class="property item">
@@ -445,7 +573,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l18"><code>ui\selectable.js:18</code></a>
+        <a href="..&#x2F;files&#x2F;transition.js.html#l27"><code>transition.js:27</code></a>
         
         </p>
 
@@ -455,11 +583,9 @@
     </div>
 
     <div class="description">
-        <p>设置需要框选元素的父级容器</p>
+        <p>设置缓动的节点</p>
     </div>
 
-    
-        <p><strong>Default:</strong> &#x27;&#x27;</p>
     
 
     
@@ -468,9 +594,9 @@
 </div>
 
                 
-                    <div id="property_onSelectEnd" class="property item">
-    <h3 class="name"><code>onSelectEnd</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    <div id="property_time" class="property item">
+    <h3 class="name"><code>time</code></h3>
+    <span class="type">Int</span>
 
     
 
@@ -491,7 +617,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l55"><code>ui\selectable.js:55</code></a>
+        <a href="..&#x2F;files&#x2F;transition.js.html#l13"><code>transition.js:13</code></a>
         
         </p>
 
@@ -501,11 +627,9 @@
     </div>
 
     <div class="description">
-        <p>框选结束时触发的事件</p>
+        <p>缓动动画时间间隔</p>
     </div>
 
-    
-        <p><strong>Default:</strong> empty Function</p>
     
 
     
@@ -514,54 +638,8 @@
 </div>
 
                 
-                    <div id="property_onSelectStart" class="property item">
-    <h3 class="name"><code>onSelectStart</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l46"><code>ui\selectable.js:46</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>框选开始时触发的事件</p>
-    </div>
-
-    
-        <p><strong>Default:</strong> empty Function</p>
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_selectCls" class="property item">
-    <h3 class="name"><code>selectCls</code></h3>
+                    <div id="property_type" class="property item">
+    <h3 class="name"><code>type</code></h3>
     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
 
     
@@ -583,7 +661,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l32"><code>ui\selectable.js:32</code></a>
+        <a href="..&#x2F;files&#x2F;transition.js.html#l20"><code>transition.js:20</code></a>
         
         </p>
 
@@ -593,57 +671,9 @@
     </div>
 
     <div class="description">
-        <p>选中的元素加上的类，以表明该元素被选中了</p>
+        <p>缓动动画效果类型,可选值有 slide,drop,fade,sacle</p>
     </div>
 
-    
-        <p><strong>Default:</strong> &#x27;simple-selectable&#x27;</p>
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_selectNode" class="property item">
-    <h3 class="name"><code>selectNode</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;ui_selectable.js.html#l25"><code>ui\selectable.js:25</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>node元素中的子集节点，会被选中,应该是一个jQuery选择器</p>
-    </div>
-
-    
-        <p><strong>Default:</strong> &#x27;&#x27;</p>
     
 
     
@@ -657,6 +687,98 @@
 
         
 
+        
+            <div id="events" class="api-class-tabpanel">
+                <h2 class="off-left">Events</h2>
+
+                
+                    <div id="event_hide" class="events item">
+    <h3 class="name"><code>hide</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;transition.js.html#l68"><code>transition.js:68</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>隐藏该节点后触发的事件</p>
+    </div>
+
+    
+
+
+    
+</div>
+
+                
+                    <div id="event_show" class="events item">
+    <h3 class="name"><code>show</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;transition.js.html#l46"><code>transition.js:46</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>显示该节点后触发的事件</p>
+    </div>
+
+    
+
+
+    
+</div>
+
+                
+            </div>
         
     </div>
 </div>
