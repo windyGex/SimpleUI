@@ -246,7 +246,7 @@ define(['simple', 'widget', 'declare'], function(S, Widget, declare, css){
             
             this._parseItems(items);
             
-            this.hide();
+            this.el.hide();
         },
         /**
          * 渲染该菜單
