@@ -446,4 +446,5 @@ define(['simple', 'attribute', 'declare'], function(S, Attribute, declare){
     Widget.byId = function(id){
         return Widget._inc[id];
     }
+    return Widget;
 });
