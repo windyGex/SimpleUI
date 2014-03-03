@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" type="text/css" href="../src/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/button.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/auto-complete.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/pagination.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/dialog.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/selectable.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/resizeable.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/date-picker.css"/>
+    <style type="text/css">
+        #test1, #test2 {
+            width: 100px;
+            height: 20px;
+            font-size: 14px;
+            text-indent: 20px;
+            background: #0783d2
+        }
+
+        #test2 {
+            background: red;
+            height: 350px;
+            width: 500px;
+        }
+
+        .sui-grid{
+            margin:10px;
+        }
+
+
+    </style>
+</head>
+<body style="padding: 50px">
+<input type="" id="date"/>
+<input type="" id="date"/>
+<div class="sui-grid">
+    <div class="sui-grid-header">
+        <div class="sui-grid-header-inner">
+            <table class="sui-grid-table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>age</th>
+                        <th>name</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="sui-grid-body">
+        <div class="sui-grid-body-inner">
+            <div class="sui-grid-row">
+                <table class="sui-grid-table">
+                    <tr>
+                        <td>1234</td>
+                        <td>20</td>
+                        <td>xing</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sui-grid">
+    <div class="sui-grid-view sui-grid-frozen">
+        <div class="sui-grid-header">
+            <div class="sui-grid-header-inner">
+                <table class="sui-grid-table">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="sui-grid-body">
+            <div class="sui-grid-body-inner">
+                <div class="sui-grid-row">
+                    <table class="sui-grid-table">
+                        <tr>
+                            <td>1234</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sui-grid-row">
+                    <table class="sui-grid-table">
+                        <tr>
+                            <td>1234</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sui-grid-row">
+                    <table class="sui-grid-table">
+                        <tr>
+                            <td>1234</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sui-grid-row">
+                    <table class="sui-grid-table">
+                        <tr>
+                            <td>1234</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sui-grid-row">
+                    <table class="sui-grid-table">
+                        <tr>
+                            <td>1234</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sui-grid-view">
+    <div class="sui-grid-header">
+        <div class="sui-grid-header-inner">
+            <table class="sui-grid-table">
+                <thead>
+                <tr>
+                    <th>age</th>
+                    <th>name</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="sui-grid-body">
+        <div class="sui-grid-body-inner">
+            <div class="sui-grid-row">
+                <table class="sui-grid-table">
+                    <tr>
+                        <td>20</td>
+                        <td>xing</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sui-grid-row">
+                <table class="sui-grid-table">
+                    <tr>
+                        <td>20</td>
+                        <td>xing</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sui-grid-row">
+                <table class="sui-grid-table">
+                    <tr>
+                        <td>20</td>
+                        <td>xing</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sui-grid-row">
+                <table class="sui-grid-table">
+                    <tr>
+                        <td>20</td>
+                        <td>xing</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sui-grid-row">
+                <table class="sui-grid-table">
+                    <tr>
+                        <td>20</td>
+                        <td>xing</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+        </div>
+</div>
+
+<script src="../lib/require.js"></script>
+<script type="">
+    require.config({
+        paths:{
+            'jquery':'../lib/jquery'
+        }
+    });
+</script>
+
+<script src="../dest/sui.min.js"></script>
+
+</div>
+<script>
+    require(['sui'], function (S) {
+
+        var store = new S.JsonStore({
+            data:{
+                list:[{
+                    'id':'xing',
+                    'age':'ge'
+                },{
+                    'id':'abc',
+                    'age':20
+                }]
+            },
+            schema:{
+                meta:[{key:'first',locator:'list[0].id'}],
+                listLocator:'list'
+            }
+        });
+
+
+
+
+      /*  var grid = new S.Grid({
+            header:[{
+                field:'id',
+                label:'id'
+            },{
+                field:'age',
+                label:'age'
+            }]
+        }).render(document.body) */
+
+        new S.DatePicker({
+            node:'input'
+        });
+
+        new S.Dialog({
+            content:'#test'
+        })
+
+    });
+</script>
+</body>
+</html>
