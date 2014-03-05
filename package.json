@@ -11,7 +11,9 @@
   "main": "./src/sui.js",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-requirejs": "~0.4.0"
+    "grunt-requirejs": "~0.4.0",
+    "assemble": "~0.4.36",
+    "highlight.js": "~8.0.0"
   },
   "dependencies": {},
   "repository": {

@@ -1,0 +1,47 @@
+.sui-menu{
+  @extend .sui-popup;
+  @extend .sui-autocomplete;
+}
+.sui-menu-item{
+  @extend .sui-autocomplete-item;
+  cursor: pointer;
+}
+.sui-menu-title{
+  font-size: $font-size-large;
+  color: $body-color-light;
+  padding: 5px 10px 0 10px;
+}
+.sui-menu-content{
+  padding:5px 0px 10px;
+  border-bottom: 1px solid $auto-complete-border;
+  &:last-child{
+    border:0;
+    padding-bottom: 0;
+  }
+}
+.sui-menu-node{
+  color:$body-color;
+  &:hover{
+    color: $body-color;
+    text-decoration: none;
+  }
+  em{
+    font-style: normal;
+    color:$body-color-lighter;
+    float: right;
+    display: none;
+  }
+}
+
+.sui-menu-hassub{
+  i{
+    display: inline-block;
+    border-color: transparent transparent  transparent $body-color-lighter;
+    border-width: 5px;
+    border-style: solid;
+    top:3px;
+    float: right;
+    margin-right: -10px;
+    position: relative;
+  }
+}

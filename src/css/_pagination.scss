@@ -1,0 +1,46 @@
+
+
+$pagination-border-color:#ccc;
+$pagination-border-radius:2px;
+
+.sui-pagination-item{
+  font-size:$font-size-base;
+  padding:5px 9px;
+  border:1px solid $pagination-border-color;
+  margin-right: 5px;
+  color:$body-color;
+  cursor: pointer;
+  border-radius: $pagination-border-radius;
+  text-decoration: none;
+  &:hover{
+    color: $primary;
+    border-color: $primary;
+  }
+  &:active{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15) inset;
+  }
+
+  &.sui-state-disabled{
+    color:$body-color-lighter;
+    cursor: default;
+    border-color:lighten($pagination-border-color,5%);
+  }
+
+}
+.sui-pagination-item.sui-state-current{
+  border:0;
+  font-weight: bolder;
+  color:$body-color-light;
+  cursor: default;
+}
+.sui-pagination-ellipsis{
+  @extend .sui-pagination-item;
+  @extend .sui-pagination-item.sui-state-current;
+  font-weight: normal;
+  &:hover{
+    color:$body-color-light;
+  }
+  &:active{
+    box-shadow: none;
+  }
+}
