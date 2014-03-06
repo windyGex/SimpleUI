@@ -269,15 +269,14 @@ define(function (require) {
                 for (k in tail) {
 
                     if (tail.hasOwnProperty(k) && k.match(PREFIX_REG_EXP)) {
-                        tail[k].fn.apply(tail[k].ctx, args.concat({
+                        return tail[k].fn.apply(tail[k].ctx, args.concat({
                             type: type,
                             currentType: tail[k]._by
                         }));
                     }
-
                 }
             }
-            return this;
+
         },
         /**
          * 在一个方法之后执行callback

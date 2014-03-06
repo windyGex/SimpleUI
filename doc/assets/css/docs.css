@@ -3609,3 +3609,13 @@ h5:hover .anchor {
     width:220px;
     padding:5px 5px;
 }
+
+.demo-autocomplete-title{
+    font-size: 14px;
+    font-weight: bold;
+    color:#666;
+    margin:5px 0px 10px 10px;
+}
+.panel-docs ul,.panel-docs li{
+    list-style:circle;
+}

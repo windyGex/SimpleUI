@@ -72,16 +72,16 @@ require(['sui'],function(S){
                     switch(key){
 
                         case 'song':
-                            html += "<h3>Song：</h3>";
+                            html += "<h3 class='demo-autocomplete-title'>Song：</h3>";
                             break;
                         case 'singer':
-                            html += "<h3>Singer：</h3>";
+                            html += "<h3 class='demo-autocomplete-title'>Singer：</h3>";
                             break;
                         case 'album':
-                            html += "<h3>Album：</h3>";
+                            html += "<h3 class='demo-autocomplete-title'>Album：</h3>";
                             break;
                         case 'mv':
-                            html += "<h3>MV：</h3>";
+                            html += "<h3 class='demo-autocomplete-title'>MV：</h3>";
                             break;
                     }
                     $.each(items.splice(0,3),function(index,item){

@@ -195,6 +195,8 @@ define(function (require) {
                 this.bindUI();
                 this.el.removeClass('sui-hidden');
                 this._rendered = true;
+            }else{
+                this.get('container').append(this.el);
             }
             return this;
         },
@@ -346,7 +348,7 @@ define(function (require) {
             this.el.show();
             setTimeout(function () {
                 this.el.addClass('sui-transition');
-            }.bind(this), 0);
+            }.bind(this), 10);
             this.set('visible', true);
             return this;
         },
@@ -357,7 +359,7 @@ define(function (require) {
          */
         hide: function () {
             if (this.isRender()) {
-                this.el.removeClass('sui-transition')
+                this.el.removeClass('sui-transition');
                     setTimeout(function(){
                         this.el.hide();
                     }.bind(this),300);

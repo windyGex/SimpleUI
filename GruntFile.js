@@ -11,10 +11,10 @@ module.exports = function (grunt) {
                     },
                     name: "sui",
                     exclude:["jquery"],
-                    out: "dest/sui.min.js",
-                    optimize:"uglify2",
-                    preserveLicenseComments:false,
-                    generateSourceMaps:true
+                    out: "dist/sui.min.js",
+                    optimize:"none"//,
+                    //preserveLicenseComments:false,
+                   // generateSourceMaps:true
                 }
             },
             compileIncludejQuery:{
@@ -24,10 +24,10 @@ module.exports = function (grunt) {
                         "jquery":"../lib/jquery"
                     },
                     name: "sui",
-                    out: "dest/sui.all.min.js",
-                    optimize:"uglify2",
-                    preserveLicenseComments:false,
-                    generateSourceMaps:true
+                    out: "dist/sui.all.min.js",
+                    optimize:"none"//,
+                    //preserveLicenseComments:false,
+                   // generateSourceMaps:true
                 }
             }
         },
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     flatten: false,
-                    assets: 'dest/assets',
+                    assets: 'dist/docs/assets',
                     data: ['doc/data/*.json'],
                     partials: ['doc/includes/**/*.{html,scss}'],
                     //helpers: ['doc/helpers/*.js'],
@@ -57,14 +57,24 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'doc/pages',
                 src: '**/*.{html,md}',
-                dest: 'dest/docs/'
+                dest: 'dist/docs/'
+            }
+        },
+
+        copy: {
+            dist:{
+                files: [
+                    {expand:true, cwd: 'dist/', src: ['sui.all.min.js'], dest: 'doc/assets/js/'},
+                    {expand:true, cwd: 'doc/assets/', src: ['**/*'], dest: 'dist/docs/assets/', filter:'isFile'}
+                ]
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-requirejs');
     grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
 
-    grunt.registerTask('default', ['assemble','requirejs']);
+    grunt.registerTask('default', ['assemble','requirejs','copy']);
 }

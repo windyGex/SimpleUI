@@ -20,6 +20,7 @@ $dialog-zindex:1000;
   -webkit-transition:opacity .35s ease-out, -webkit-transform .35s ease-out 0s;
   -o-transition:opacity .35s ease-out, -o-transform .35s ease-out 0s;
   transition:opacity .35s ease-out, transform .35s ease-out 0s;
+  min-width:300px;
 }
 
 .sui-dialog.sui-transition{
@@ -50,10 +51,18 @@ $dialog-zindex:1000;
 
 .sui-modal{
   background: $dialog-modal-color;
-  opacity: $dialog-modal-opacity;
-  filter:alpha(opacity=($dialog-modal-opacity*100));
+  opacity: 0;
   position: absolute;
   z-index: $dialog-zindex - 1;
+  -moz-transition:opacity .35s ease-out;
+  -webkit-transition:opacity .35s ease-out;
+  -o-transition:opacity .35s ease-out;
+  transition:opacity .35s ease-out;
+}
+
+.sui-modal.sui-transition{
+  opacity: $dialog-modal-opacity;
+  filter:alpha(opacity=($dialog-modal-opacity*100));
 }
 
 .sui-dialog-handle{
@@ -75,5 +84,14 @@ $dialog-zindex:1000;
 .sui-content-iframe{
   width:100%;
   height:100%;
+}
+
+.sui-icon-confirm,.sui-icon-alert{
+  font-size:32px;
+  margin-right:10px;
+  color:$primary;
+}
+.sui-icon-alert{
+  color:$warn;
 }
 

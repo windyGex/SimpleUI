@@ -239,7 +239,7 @@ define(function(require) {
                             return false;
                         }
                         if (n == 'close') {
-                            self.hide();
+                            self.destroy();
                         } else {
                             self[n + 'Dialog']();
                         }
@@ -373,7 +373,13 @@ define(function(require) {
             this.inherit(arguments);
         },
         setPosition: function(config){
-            if(this._position){
+            config = config || {};
+            if(config instanceof Array){
+                this.el.css({
+                    width: config[0],
+                    height: config[1]
+                });
+            }else if(this._position){
                 this._position.setPosition(config);
             }
         }
@@ -395,7 +401,7 @@ define(function(require) {
      * @static
      * @return Simple.Dialog的实例
      */
-    $.ajaxDialog = Dialog.ajaxDialog =  function(config) {
+    $.ajaxDialog = Dialog.Ajax =  function(config) {
 
         var _ajaxDialogCache = {}, dialog, options;
 
@@ -453,7 +459,7 @@ define(function(require) {
      * @static
      * @return Simple.Dialog的实例
      */
-    $.iframeDialog = Dialog.iframeDialog = function(config) {
+    $.iframeDialog = Dialog.Iframe = function(config) {
 
         var options, dialog, id = (uuid++);
 
@@ -484,16 +490,16 @@ define(function(require) {
     };
     /**
      * 弹出一个警告的窗口
-     * @method Simple.alertDialog
+     * @method Dialog.Alert
      * @param {Object} config
      * @see Simple.Dialog
      * @static
      * @return Simple.Dialog的实例
      */
-    $.alertDialog = Dialog.alertDialog = function(config) {
+    $.alertDialog = Dialog.Alert = function(config) {
 
         config = $.extend({}, config, {
-            node: '<div class="sui-dialog-alert"><i class="sui-icon sui-icon-alert"></i>' + config.node + '</div>',
+            content: '<div class="sui-dialog-alert"><i class="sui-icon-alert sui-icon-font"></i>' + config.content + '</div>',
             buttons: [{
                     label: 'OK',
                     className: 'sui-button-primary',
@@ -520,10 +526,10 @@ define(function(require) {
      * @static
      * @return Simple.Dialog的实例
      */
-    $.confirmDialog = Dialog.confirmDialog = function(config) {
+    $.confirmDialog = Dialog.Confirm = function(config) {
 
         config = $.extend({}, config, {
-            node: '<div class="sui-dialog-confirm"><i class="sui-icon sui-icon-confirm"></i>' + config.node + '</div>',
+            content: '<div class="sui-dialog-confirm"><i class="sui-icon-confirm sui-icon-font"></i>' + config.content + '</div>',
             buttons: [{
                     label: 'OK',
                     className: 'sui-button-primary',

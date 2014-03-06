@@ -3,16 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Untitled Document</title>
-    <link rel="stylesheet" type="text/css" href="../src/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/button.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/auto-complete.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/menu.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/pagination.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/dialog.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/selectable.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/resizeable.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/grid.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/date-picker.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/sui.css"/>
     <style type="text/css">
         #test1, #test2 {
             width: 100px;
@@ -38,6 +29,7 @@
 <body style="padding: 50px">
 <input type="" id="date"/>
 <input type="" id="date"/>
+<a>sdfsdf</a>
 <div class="sui-grid">
     <div class="sui-grid-header">
         <div class="sui-grid-header-inner">
@@ -214,23 +206,23 @@
 
 
 
-      /*  var grid = new S.Grid({
-            header:[{
-                field:'id',
-                label:'id'
-            },{
-                field:'age',
-                label:'age'
-            }]
-        }).render(document.body) */
 
-        new S.DatePicker({
-            node:'input'
-        });
+
+        new S.Button().render(document.body);
 
         new S.Dialog({
             content:'#test'
         })
+
+        new S.Menu({
+            node:'a',
+            items:[{
+                label:'test',
+                url:'test'
+        },{
+                label:'test',
+                url:'test'
+            }]})
 
     });
 </script>
