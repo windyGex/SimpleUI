@@ -1,15 +1,14 @@
 
-$dialog-border-color:#ccc;
 $dialog-bg:#fff;
 $dialog-modal-color:#eee;
 $dialog-modal-opacity:.7;
 $dialog-zindex:1000;
 
 .sui-dialog{
-  border:1px $dialog-border-color solid;
+  border:1px $primary-bg solid;
   position: fixed;
   _position: absolute;
-  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   z-index: $dialog-zindex;
   background:$dialog-bg;
   -moz-transform:scale(0);
@@ -34,6 +33,8 @@ $dialog-zindex:1000;
 .sui-dialog-title{
   font-size: $font-size-large;
   padding:15px 60px 5px 20px;
+  margin:0;
+
 }
 
 .sui-dialog-content{
@@ -57,13 +58,18 @@ $dialog-zindex:1000;
 
 .sui-dialog-handle{
   position: absolute;
-  top:13px;
+  top:10px;
   right:15px;
 }
 
 .sui-dialog-close,.sui-dialog-min,.sui-dialog-max{
   @include inline-block;
-  margin-left:8px;
+  cursor: pointer;
+  font-size: 12px;
+  color:$primary-bg;
+  &:hover{
+    color:lighten($primary-bg,10%);
+  }
 }
 
 .sui-content-iframe{

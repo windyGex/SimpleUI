@@ -5,7 +5,7 @@ name: QuickStart
 ---
 
 Welcome to SimpleUI. This guide provides a quick introduction so you can be productive as quickly as possible.
-First, You can get SimpleUI through the following way.
+First, You can get SimpleUI through the following ways.
 
 #### CDN
 

@@ -31,6 +31,8 @@ define(function(require) {
          * @default null
          */
         node: null,
+
+        content:'',
         /**
          * dialog的标题,为false则不渲染标题
          *
@@ -156,7 +158,6 @@ define(function(require) {
             }
             if (this.node.length) {
                 dialogContent = this.node.clone(true);
-                //this.content = dialogContent;
                 this.set('content',dialogContent);
             }
             //this.setFocus();
@@ -401,7 +402,7 @@ define(function(require) {
         config = $.extend({
             url: '',
             data: [],
-            onLoad: $.noop,
+            onload: $.noop,
             loadingMessage: 'loading...'
         }, config);
 

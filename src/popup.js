@@ -34,7 +34,7 @@ define(function (require) {
 
         name: 'Popup',
 
-        className:'sui-popup',
+        className: 'sui-popup',
 
         template: '<div><div data-role="contentElement"></div></div>',
         /**
@@ -59,7 +59,7 @@ define(function (require) {
         triggerType: 'click',
 
 
-        position:'lt lb',
+        position: 'lt lb',
 
 
         initBaseEvents: function () {
@@ -90,7 +90,7 @@ define(function (require) {
                     var currentTrigger = $(e.target), node;
                     this.currentTrigger = currentTrigger;
                     node = alignNode.length ? alignNode : this.currentTrigger;
-                    this.showAt(node,e);
+                    this.showAt(node, e);
                     return false;
                 }, hide = this.hide;
 
@@ -182,17 +182,27 @@ define(function (require) {
          */
         fixPosition: function () {
 
-            var position = this.get('position');
+            var position = this.get('position'),
+                positionSplit;
+
 
             if (!isFitHorizontal(this.el)) {
-
-
+                if (position.indexOf('l') >= 0) {
+                    position = position.replace(/l/g, 'r');
+                } else {
+                    position = position.replace(/r/g, 'l');
+                }
             }
 
             //如果垂直放不下
             if (!isFitVertical(this.el)) {
-
+                positionSplit = position.split(' ');
+                position = [positionSplit[1],positionSplit[0]].join(' ');
             }
+
+            this._position.setPosition({
+                position:position
+            });
         },
 
         _setterPosition: function (position) {

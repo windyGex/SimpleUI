@@ -80,6 +80,11 @@ small{
   font-family: "iconfont";
   font-size: $icon-size-default;
   font-style: normal;
+  color:$body-color;
+  &:hover{
+    text-decoration: none;
+    color:$body-color;
+  }
 }
 
 img {
