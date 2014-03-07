@@ -66,7 +66,7 @@ autoComplete.on('select',function(value){
 
 #### Examples
 
-* Get suggestions from taobao.com Open API.
+##### Get suggestions from taobao.com Open API.
 
 <div class="demo">
 	<input type="text" id="taobao" class="input-text"/>
@@ -107,7 +107,7 @@ new S.AutoComplete({
     }
 });
 ```
-* Get suggestions from qq.com and custom display content.
+##### Get suggestions from qq.com and custom display content.
 
 <div class="demo">
 	<input type="text" id="soso" class="input-text"/>

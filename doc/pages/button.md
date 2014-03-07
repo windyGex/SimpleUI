@@ -1,73 +1,75 @@
-﻿<div class="description">
-	Button类提供了类似桌面按钮的功能，虽然原生HTML元素包含button，但是对于一些富应用，button还是需要定制的。
-	Button模块包含三个类：Button,DropDownButton,ComboButton。其中DropButton与ComboButton继承自Button
-</div>
+﻿---
+title: Button -- SimpleUI
+category: Components
+name: Button
+---
 
-Button provide element like HTML Button Element.
+Button is an element like HTML Button Element but provide more function.
 
-## 开始使用
-	
-	require(['ui/button'],function(Button){
-		
-		//代码写在这里
-		
-	});
-
-## demo--一个普通的按钮
+#### Markup
 
 <div class="demo" id="demo">
-	
+	<div class="sui-button sui-button-normal" role="button">Block Element</div>
+	<a class="sui-button sui-button-normal" role="button">Anchor</a>
+	<button class="sui-button sui-button-normal">Normal Button</button>
 </div>
 
-调用代码：
-	
-	new Button({
-		container:'#demo'
-	});
-	
-## demo--一个下拉按钮
+```html
+<div class="sui-button sui-button-normal" role="button">Block Element</div>
+<a class="sui-button sui-button-normal" role="button">Anchor</a>
+<button class="sui-button sui-button-normal">Normal Button</button>
+```
 
-<div class="demo" id="demo2">
 	
+#### Method
+
+##### `set`
+
+Using `set` method to change dialog's property will be reflected the UI.
+Currently supports settable properties have `label`,`icon`,`disabled`.
+
+
+```javascript
+var button = new S.Button({
+	label:'test',
+	disabled:true,
+	handle:function(){
+		console.log('click event');
+	}
+}).render(document.body);
+button.set('disabled',false);
+```
+
+#### Examples
+
+##### Render  buttons
+
+<div class="demo" id="button-wrap">
+	<p id="disable-primary"><a href="javascript:;">Click me to disable primary Button</a></p>
 </div>
+```javascript
+var primaryButton = new S.Button({
+	label:'Primary button',
+	className:'sui-button-primary',
+	handle:function(){
+		console.log('click event');
+	}
+}).render('#button-wrap');
 
-调用代码：
-	
-	var menu = new Simple.Menu({
-		items:[{label:'simple-menu'}]
-	})
-	new Simple.DropDownButton({
-		container:'#demo',
-		dropdown:menu
-	});
-	
-## Button的常用方法
+var warnButton = new S.Button({
+        label:'Warn button',
+        className:'sui-button-warn',
+        handle:function(){
+            console.log('click event');
+        }
+}).render('#button-wrap');
 
-* `set`,该方法从Attribute继承而来，用于设置一些属性,目前支持可设置的参数有：
-** label,icon,disabled
+$('#disable-primary').click(function(){
+    primaryButton.set('disabled',true);
+});
+```
 
-改变Button的属性既可以通过在初始化的传入参数，也可以在实例化完成后手动调用set方法来达到同样的目的。
-
-### 禁用按钮
-	
-	var button = new Button({
-		disabled:true
-	})
-	//或者是下面的代码
-	var button = new Button();
-	button.set('disabled',true);
-	
-### 启用按钮
-
-	button.set('disabled',false);
-
-## 销毁
-
-	button.destroy();
-
-<script src="http://simpleui.org/demo/button.js">
-
-</script>
+<script src="{{assets}}/js/demo/button.js"></script>
 
 	
 	
